@@ -1284,6 +1284,78 @@ table td {
     background: linear-gradient(135deg, var(--blue), var(--teal));
 }
 
+
+.menu-toggle{
+    display:none;
+    font-size:24px;
+    cursor:pointer;
+    color:var(--fivth-color);
+}
+
+@media(max-width:991px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-menu{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#fff;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:0;
+        padding:15px;
+        border-radius:0 0 15px 15px;
+        box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+        opacity:0;
+        visibility:hidden;
+        transform:translateY(-15px);
+        transition:.3s;
+    }
+
+    .nav-menu.active{
+        opacity:1;
+        visibility:visible;
+        transform:translateY(0);
+    }
+
+    .nav-menu li{
+        width:100%;
+        padding:8px 0;
+    }
+
+    .nav-menu a{
+        display:block;
+        width:100%;
+    }
+
+    .consult-btn{
+        display:none;
+    }
+
+    /* Dropdown Mobile */
+
+    .nav-menu .dropdown-menu{
+        position:static;
+        opacity:1;
+        visibility:visible;
+        transform:none;
+        display:none;
+        width:100%;
+        box-shadow:none;
+        padding-left:15px;
+        margin-top:10px;
+    }
+
+    .nav-menu .dropdown.active .dropdown-menu{
+        display:block;
+    }
+}
+
 @media(max-width:1024px) {
     .result-grid {
         grid-template-columns: 1fr 1fr;
@@ -1436,310 +1508,310 @@ table td {
    GLOBAL RESPONSIVE FIX
 ========================================= */
 
-img{
-    max-width:100%;
-    height:auto;
-    display:block;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-table{
-    width:100%;
+table {
+    width: 100%;
 }
 
 .tax-table,
-.table-responsive{
-    overflow-x:auto;
-    -webkit-overflow-scrolling:touch;
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .calculator-box,
 .calculatorbox2,
 .result-card,
 .summary-box,
-.info-card{
-    width:100%;
-    overflow:hidden;
+.info-card {
+    width: 100%;
+    overflow: hidden;
 }
 
 /* ================== 1200px ================== */
 
-@media(max-width:1200px){
+@media(max-width:1200px) {
 
-    .container{
-        max-width:100%;
-        padding:0 20px;
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
     }
 
-    .result-grid{
-        grid-template-columns:1fr 1fr;
+    .result-grid {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .income-grid{
-        grid-template-columns:1.5fr 1fr;
+    .income-grid {
+        grid-template-columns: 1.5fr 1fr;
     }
 
 }
 
 /* ================== 992px ================== */
 
-@media(max-width:992px){
+@media(max-width:992px) {
 
-    .nav-menu{
-        gap:15px;
+    .nav-menu {
+        gap: 15px;
     }
 
-    .result-grid{
-        grid-template-columns:1fr;
+    .result-grid {
+        grid-template-columns: 1fr;
     }
 
-    .income-grid{
-        grid-template-columns:1fr;
+    .income-grid {
+        grid-template-columns: 1fr;
     }
 
-    .income-form{
-        grid-template-columns:1fr 1fr;
+    .income-form {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .tax-tables{
-        flex-direction:column;
+    .tax-tables {
+        flex-direction: column;
     }
 
-    .chart-panel{
-        min-height:auto;
+    .chart-panel {
+        min-height: auto;
     }
 
 }
 
 /* ================== 768px ================== */
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-    .premium-navbar{
-        width:96%;
+    .premium-navbar {
+        width: 96%;
     }
 
-    .nav-container{
-        padding:10px 15px;
+    .nav-container {
+        padding: 10px 15px;
     }
 
-    .logo img{
-        width:110px;
-        height:45px;
+    .logo img {
+        width: 110px;
+        height: 45px;
     }
 
     .calculator-section,
     .calculator2,
-    .tax-result-section{
-        padding:40px 15px;
+    .tax-result-section {
+        padding: 40px 15px;
     }
 
     .calculator-box,
     .calculatorbox2,
-    .result-card{
-        padding:20px;
+    .result-card {
+        padding: 20px;
     }
 
     .result-header,
-    .result-actions{
-        flex-direction:column;
-        align-items:flex-start;
+    .result-actions {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .save-tax-strip,
-    .email-strip{
-        flex-direction:column;
-        align-items:stretch;
+    .email-strip {
+        flex-direction: column;
+        align-items: stretch;
     }
 
-    .income-form{
-        grid-template-columns:1fr;
+    .income-form {
+        grid-template-columns: 1fr;
     }
 
-    .steps-grid{
-        grid-template-columns:1fr 1fr;
+    .steps-grid {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .form-row{
-        flex-direction:column;
-        gap:20px;
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .action-buttons{
-        flex-direction:column;
+    .action-buttons {
+        flex-direction: column;
     }
 
     .back-btn,
     .next-btn,
     .continue-btn,
-    .file-btn{
-        width:100%;
+    .file-btn {
+        width: 100%;
     }
 
 }
 
 /* ================== 576px ================== */
 
-@media(max-width:576px){
+@media(max-width:576px) {
 
-    .main-heading{
-        font-size:22px;
+    .main-heading {
+        font-size: 22px;
     }
 
-    .tax-info-section h2{
-        font-size:24px;
+    .tax-info-section h2 {
+        font-size: 24px;
     }
 
-    .result-header h3{
-        font-size:18px;
+    .result-header h3 {
+        font-size: 18px;
     }
 
     .calculator-box,
     .calculatorbox2,
-    .result-card{
-        padding:16px;
+    .result-card {
+        padding: 16px;
     }
 
-    .chart-legend{
-        grid-template-columns:1fr;
+    .chart-legend {
+        grid-template-columns: 1fr;
     }
 
-    .bar-wrap{
-        width:38px;
+    .bar-wrap {
+        width: 38px;
     }
 
-    .bar{
-        width:28px;
+    .bar {
+        width: 28px;
     }
 
-    .regime-tabs{
-        overflow-x:auto;
-        white-space:nowrap;
-        gap:15px;
+    .regime-tabs {
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 15px;
     }
 
-    .steps{
-        overflow-x:auto;
-        white-space:nowrap;
+    .steps {
+        overflow-x: auto;
+        white-space: nowrap;
     }
 
-    .steps li{
-        flex-shrink:0;
+    .steps li {
+        flex-shrink: 0;
     }
 
 }
 
 /* ================== 480px ================== */
 
-@media(max-width:480px){
+@media(max-width:480px) {
 
     .calculator-section,
     .calculator2,
-    .tax-result-section{
-        padding:30px 12px;
+    .tax-result-section {
+        padding: 30px 12px;
     }
 
-    .main-heading{
-        font-size:20px;
+    .main-heading {
+        font-size: 20px;
     }
 
-    .tax-info-section h2{
-        font-size:22px;
+    .tax-info-section h2 {
+        font-size: 22px;
     }
 
     .input-group label,
-    .form-group label{
-        font-size:13px;
+    .form-group label {
+        font-size: 13px;
     }
 
     .input-group select,
-    .form-group input{
-        height:48px !important;
-        font-size:13px;
+    .form-group input {
+        height: 48px !important;
+        font-size: 13px;
     }
 
     .tax-table th,
-    .tax-table td{
-        padding:10px;
-        font-size:12px;
+    .tax-table td {
+        padding: 10px;
+        font-size: 12px;
     }
 
-    .steps-grid{
-        grid-template-columns:1fr;
+    .steps-grid {
+        grid-template-columns: 1fr;
     }
 
 }
 
 /* ================== 360px ================== */
 
-@media(max-width:360px){
+@media(max-width:360px) {
 
-    .logo img{
-        width:95px;
+    .logo img {
+        width: 95px;
     }
 
-    .main-heading{
-        font-size:18px;
+    .main-heading {
+        font-size: 18px;
     }
 
-    .result-header h3{
-        font-size:16px;
+    .result-header h3 {
+        font-size: 16px;
     }
 
-    .bar-wrap{
-        width:30px;
+    .bar-wrap {
+        width: 30px;
     }
 
-    .bar{
-        width:22px;
+    .bar {
+        width: 22px;
     }
 
-    .result-box h4{
-        font-size:18px;
+    .result-box h4 {
+        font-size: 18px;
     }
 
 }
 
 /* ================== 320px ================== */
 
-@media(max-width:320px){
+@media(max-width:320px) {
 
     .calculator-section,
     .calculator2,
     .tax-result-section,
-    .tax-info-section{
-        padding-left:10px;
-        padding-right:10px;
+    .tax-info-section {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .calculator-box,
     .calculatorbox2,
     .result-card,
     .summary-box,
-    .info-card{
-        padding:12px;
+    .info-card {
+        padding: 12px;
     }
 
     .main-heading,
-    .tax-info-section h2{
-        font-size:16px;
+    .tax-info-section h2 {
+        font-size: 16px;
     }
 
-    .bar-wrap{
-        width:24px;
+    .bar-wrap {
+        width: 24px;
     }
 
-    .bar{
-        width:16px;
+    .bar {
+        width: 16px;
     }
 
 }
 
 /* ================== 200px ================== */
 
-@media(max-width:200px){
+@media(max-width:200px) {
 
-    *{
-        word-wrap:break-word;
+    * {
+        word-wrap: break-word;
     }
 
     .calculator-box,
@@ -1748,32 +1820,32 @@ table{
     .summary-box,
     .info-card,
     .chart-panel,
-    .result-box{
-        padding:8px;
-        border-radius:10px;
+    .result-box {
+        padding: 8px;
+        border-radius: 10px;
     }
 
     .main-heading,
     .tax-info-section h2,
-    .result-header h3{
-        font-size:13px;
-        line-height:1.4;
+    .result-header h3 {
+        font-size: 13px;
+        line-height: 1.4;
     }
 
     .input-group label,
     .form-group label,
     .result-box li,
     .tax-table th,
-    .tax-table td{
-        font-size:10px;
+    .tax-table td {
+        font-size: 10px;
     }
 
-    .bar-wrap{
-        width:18px;
+    .bar-wrap {
+        width: 18px;
     }
 
-    .bar{
-        width:12px;
+    .bar {
+        width: 12px;
     }
 
 }
