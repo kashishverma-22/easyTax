@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITR-Filling</title>
+
+    <!-- bootstap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/itr-filing.css">
+</head>
+
+<body>
+    <nav class="premium-navbar">
+        <div class="nav-container">
+              <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <!-- Navigation -->
+            <ul class="nav-menu">
+
+                <li><a href="index.html">Home</a></li>
+
+                <!-- Business Setup -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Business Setup
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="company-registration.html">Company Registration</a></li>
+                        <li><a class="dropdown-item" href="fssai-registration.html">FSSAI Registration</a></li>
+                        <li><a class="dropdown-item" href="iec-registration.html">IEC Certification</a></li>
+                        <li><a class="dropdown-item" href="iso-certification.html">ISO Certification</a></li>
+                    </ul>
+                </li>
+
+                <!-- Tax & Compliance -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Tax & Compliance
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="gst-registration.html">GST Registration</a></li>
+                        <li><a class="dropdown-item" href="gst-return-filing.html">GST Return Filing</a></li>
+                        <li><a class="dropdown-item" href="itr-filing.html">ITR Filing</a></li>
+                        <li><a class="dropdown-item" href="incomeTax.html">Income Tax Calculator</a></li>
+                        <li><a class="dropdown-item" href="gstCalculator.html">GST Calculator</a></li>
+                    </ul>
+                </li>
+
+                <!-- Trademark -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Trademark & IP
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="trademark-registration.html">Trademark Registration</a></li>
+                    </ul>
+                </li>
+
+                <!-- Digital Services -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Digital Services
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="website-designing.html">Website Designing</a></li>
+                        <li><a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="#" class="consult-btn">
+                Get Consultation
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+    </nav>
+
+    <section class="itr-hero-section">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-7">
+
+                    <div class="itr-hero-content">
+
+                        <span class="hero-tag">
+                            Income Tax Return Filing
+                        </span>
+
+                        <h1>
+                            File Your
+                            <span>Income Tax Return Online</span>
+                        </h1>
+
+                        <p>
+                            File your Income Tax Return quickly and accurately with
+                            expert assistance. Whether you are a salaried employee,
+                            freelancer, professional, or business owner, our team
+                            ensures hassle-free tax filing, maximum deductions, and
+                            timely compliance with Income Tax regulations.
+                        </p>
+
+                        <div class="itr-points">
+
+                            <div class="point-item">
+                                <i class="fa-solid fa-file-invoice-dollar"></i>
+                                <span>100% Online Process</span>
+                            </div>
+
+                            <div class="point-item">
+                                <i class="fa-solid fa-user-shield"></i>
+                                <span>Expert Tax Assistance</span>
+                            </div>
+
+                            <div class="point-item">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>Fast Filing Support</span>
+                            </div>
+
+                            <div class="point-item">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Maximum Tax Benefits</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5">
+
+                    <div class="itr-form-card">
+
+                        <h3>
+                            Apply For ITR Filing
+                        </h3>
+
+                        <form id="itrForm">
+
+                            <input type="text" id="itrName" class="form-control" placeholder="Full Name">
+
+                            <small id="itrNameError"></small>
+
+                            <input type="tel" id="itrPhone" class="form-control" placeholder="Mobile Number">
+
+                            <small id="itrPhoneError"></small>
+
+                            <input type="email" id="itrEmail" class="form-control" placeholder="Email Address">
+
+                            <small id="itrEmailError"></small>
+
+                            <select id="itrType" class="form-control">
+
+                                <option value="">
+                                    Select Taxpayer Type
+                                </option>
+
+                                <option>
+                                    Salaried Employee
+                                </option>
+
+                                <option>
+                                    Business Owner
+                                </option>
+
+                                <option>
+                                    Freelancer
+                                </option>
+
+                                <option>
+                                    Professional
+                                </option>
+
+                            </select>
+
+                            <small id="itrTypeError"></small>
+
+                            <button type="submit">
+
+                                Get Free Consultation
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                            <div id="itrSuccessMsg"></div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="itr-overview-section">
+
+        <div class="container">
+
+            <div class="itr-overview-grid">
+
+                <!-- Left Content -->
+
+                <div class="itr-overview-content">
+
+                    <span>Income Tax Return Overview</span>
+
+                    <h2>
+                        What is Income Tax Return (ITR)?
+                    </h2>
+
+                    <p>
+                        An Income Tax Return (ITR) is an official form submitted to the
+                        Income Tax Department that contains complete details of your
+                        annual income, tax payments, deductions, exemptions, and tax
+                        liabilities. Filing ITR helps taxpayers remain compliant with
+                        Indian tax regulations and maintain a transparent financial
+                        record.
+                    </p>
+
+                    <p>
+                        Whether you are a salaried employee, freelancer, consultant,
+                        self-employed professional, business owner, or investor, filing
+                        your return on time offers multiple financial advantages while
+                        protecting you from penalties and legal notices.
+                    </p>
+
+                    <div class="itr-overview-points">
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Tax Compliance
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Claim Tax Refunds
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Income Proof
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Avoid Penalties
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Loan Approval Support
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Visa Documentation
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Card -->
+
+                <div class="itr-overview-card">
+
+                    <div class="itr-icon">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+
+                    <h3>
+                        Easy ITR Filing
+                    </h3>
+
+                    <p>
+                        Our experienced tax professionals help you choose the correct
+                        ITR form, calculate tax liability, maximize eligible deductions,
+                        and file your return accurately without any hassle.
+                    </p>
+
+                    <a href="#itrForm">
+                        Start Filing Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="itr-benefits-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Benefits of ITR Filing</span>
+
+                <h2>
+                    Why Should You File Your ITR?
+                </h2>
+
+                <p>
+                    Filing your Income Tax Return on time offers several financial
+                    and legal advantages beyond tax compliance.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="itr-benefit-card">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-money-bill-transfer"></i>
+                        </div>
+
+                        <h4>
+                            Claim Tax Refund
+                        </h4>
+
+                        <p>
+                            Easily claim excess tax deducted through TDS and receive
+                            your eligible income tax refund directly into your bank account.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="itr-benefit-card">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+
+                        <h4>
+                            Easier Loan Approval
+                        </h4>
+
+                        <p>
+                            Banks and financial institutions often require ITR
+                            records while approving home, business, or personal loans.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="itr-benefit-card">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-file-shield"></i>
+                        </div>
+
+                        <h4>
+                            Strong Financial Proof
+                        </h4>
+
+                        <p>
+                            ITR serves as valid proof of income for visa processing,
+                            government tenders, and financial documentation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="itr-benefit-card">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+
+                        <h4>
+                            Carry Forward Losses
+                        </h4>
+
+                        <p>
+                            Timely filing allows taxpayers to carry forward eligible
+                            business and capital losses to future years.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="itr-eligible-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>ITR Eligibility</span>
+
+                <h2>Who Should File Income Tax Return?</h2>
+
+                <p>
+                    Income Tax Return filing is important for individuals,
+                    professionals, businesses, and investors to remain compliant
+                    and maintain proper financial records.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="itr-eligible-card">
+
+                        <div class="eligible-icon">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+
+                        <h4>Salaried Individuals</h4>
+
+                        <p>
+                            Employees earning taxable income should file ITR to
+                            report income, claim deductions, and receive tax refunds.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="itr-eligible-card">
+
+                        <div class="eligible-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <h4>Freelancers</h4>
+
+                        <p>
+                            Freelancers and self-employed professionals must report
+                            their earnings and fulfill income tax obligations.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="itr-eligible-card">
+
+                        <div class="eligible-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+
+                        <h4>Business Owners</h4>
+
+                        <p>
+                            Proprietors and business owners need to file ITR to
+                            declare profits, expenses, and taxable income.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="itr-eligible-card">
+
+                        <div class="eligible-icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+
+                        <h4>Professionals</h4>
+
+                        <p>
+                            Doctors, lawyers, consultants, architects, and other
+                            professionals should file returns regularly.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="itr-eligible-card">
+
+                        <div class="eligible-icon">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+
+                        <h4>Investors & Traders</h4>
+
+                        <p>
+                            Individuals earning income from stocks, mutual funds,
+                            capital gains, or trading activities must file ITR.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="itr-eligible-card">
+
+                        <div class="eligible-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+
+                        <h4>NRIs</h4>
+
+                        <p>
+                            Non-Resident Indians with taxable income in India may
+                            also be required to file Income Tax Returns.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="itr-documents-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Required Documents</span>
+
+                <h2>Documents Required For ITR Filing</h2>
+
+                <p>
+                    Keep the following documents ready before filing your Income Tax
+                    Return to ensure a smooth and hassle-free filing process.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="itr-document-card">
+
+                        <div class="itr-doc-icon">
+                            <i class="fa-solid fa-id-card"></i>
+                        </div>
+
+                        <h4>PAN Card</h4>
+
+                        <p>
+                            Permanent Account Number (PAN) is mandatory for filing
+                            Income Tax Returns and verifying taxpayer details.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="itr-document-card">
+
+                        <div class="itr-doc-icon">
+                            <i class="fa-solid fa-address-card"></i>
+                        </div>
+
+                        <h4>Aadhaar Card</h4>
+
+                        <p>
+                            Aadhaar is required for identity verification and PAN
+                            linking as per Income Tax Department guidelines.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="itr-document-card">
+
+                        <div class="itr-doc-icon">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+
+                        <h4>Form 16</h4>
+
+                        <p>
+                            Salaried individuals should keep Form 16 ready to
+                            report salary income and TDS deductions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="itr-document-card">
+
+                        <div class="itr-doc-icon">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+
+                        <h4>Bank Statements</h4>
+
+                        <p>
+                            Bank statements help verify interest income, transactions,
+                            and other financial details during filing.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="itr-document-card">
+
+                        <div class="itr-doc-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+
+                        <h4>Investment Proofs</h4>
+
+                        <p>
+                            Investment and deduction proofs under sections like
+                            80C, 80D, and others may be required.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="itr-document-card">
+
+                        <div class="itr-doc-icon">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+
+                        <h4>Income Details</h4>
+
+                        <p>
+                            Salary slips, business income records, rental income,
+                            and other earnings should be available.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="itr-process-section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>ITR Filing Process</span>
+
+                <h2>Simple Steps To File Your Income Tax Return</h2>
+
+                <p>
+                    Our experts handle the complete filing process from document
+                    verification to successful submission and e-verification.
+                </p>
+
+            </div>
+
+            <div class="itr-process-wrapper">
+
+                <div class="itr-process-card">
+
+                    <div class="process-number">
+                        01
+                    </div>
+
+                    <div class="process-content">
+
+                        <h3>Submit Your Details</h3>
+
+                        <p>
+                            Fill out the consultation form and share your basic
+                            personal and income details with our team.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="itr-process-card">
+
+                    <div class="process-number">
+                        02
+                    </div>
+
+                    <div class="process-content">
+
+                        <h3>Document Verification</h3>
+
+                        <p>
+                            Our experts verify PAN, Aadhaar, Form 16, bank
+                            statements, and other required documents.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="itr-process-card">
+
+                    <div class="process-number">
+                        03
+                    </div>
+
+                    <div class="process-content">
+
+                        <h3>Income Assessment</h3>
+
+                        <p>
+                            We review salary, business income, capital gains,
+                            interest income, and other earnings.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="itr-process-card">
+
+                    <div class="process-number">
+                        04
+                    </div>
+
+                    <div class="process-content">
+
+                        <h3>Tax Calculation</h3>
+
+                        <p>
+                            Eligible deductions and exemptions are applied to
+                            calculate your final tax liability accurately.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="itr-process-card">
+
+                    <div class="process-number">
+                        05
+                    </div>
+
+                    <div class="process-content">
+
+                        <h3>ITR Filing</h3>
+
+                        <p>
+                            The correct ITR form is selected and your return is
+                            filed securely with the Income Tax Department.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="itr-process-card">
+
+                    <div class="process-number">
+                        06
+                    </div>
+
+                    <div class="process-content">
+
+                        <h3>E-Verification</h3>
+
+                        <p>
+                            After successful filing, we help complete
+                            e-verification and provide the acknowledgement receipt.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="itr-process-section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>Simple Process</span>
+                <h2>ITR Filing Process</h2>
+                <p>
+                    File your Income Tax Return online through a simple and hassle-free process.
+                </p>
+            </div>
+
+            <div class="itr-process-wrapper">
+
+                <div class="itr-process-card">
+                    <div class="process-number">01</div>
+                    <div class="process-content">
+                        <h3>Submit Your Details</h3>
+                        <p>
+                            Share your PAN card, Aadhaar card, Form 16, bank statements, and income details with our tax
+                            experts.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="itr-process-card">
+                    <div class="process-number">02</div>
+                    <div class="process-content">
+                        <h3>Document Verification</h3>
+                        <p>
+                            Our professionals carefully review all submitted documents and verify income and tax
+                            information.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="itr-process-card">
+                    <div class="process-number">03</div>
+                    <div class="process-content">
+                        <h3>Tax Calculation</h3>
+                        <p>
+                            We calculate your taxable income, deductions, exemptions, and applicable tax liability.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="itr-process-card">
+                    <div class="process-number">04</div>
+                    <div class="process-content">
+                        <h3>ITR Preparation</h3>
+                        <p>
+                            The appropriate ITR form is prepared accurately based on your income source and category.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="itr-process-card">
+                    <div class="process-number">05</div>
+                    <div class="process-content">
+                        <h3>Return Submission</h3>
+                        <p>
+                            Your Income Tax Return is filed securely on the Income Tax Department portal.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="itr-process-card">
+                    <div class="process-number">06</div>
+                    <div class="process-content">
+                        <h3>E-Verification</h3>
+                        <p>
+                            We help complete Aadhaar OTP or net banking verification to successfully complete the filing
+                            process.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="itr-types-section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>ITR Forms</span>
+                <h2>Different Types of ITR Forms</h2>
+                <p>
+                    Selecting the correct Income Tax Return form is important for accurate filing and compliance.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="itr-type-card">
+
+                        <div class="itr-type-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <h4>ITR-1</h4>
+
+                        <p>
+                            For salaried individuals having income up to ₹50 lakh from salary, pension, house property,
+                            and other sources.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="itr-type-card">
+
+                        <div class="itr-type-icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+
+                        <h4>ITR-2</h4>
+
+                        <p>
+                            Suitable for individuals and HUFs with capital gains, foreign assets, or multiple house
+                            properties.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="itr-type-card">
+
+                        <div class="itr-type-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+
+                        <h4>ITR-3</h4>
+
+                        <p>
+                            For professionals, freelancers, and business owners earning income from business or
+                            profession.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="itr-type-card">
+
+                        <div class="itr-type-icon">
+                            <i class="fa-solid fa-file-invoice"></i>
+                        </div>
+
+                        <h4>ITR-4</h4>
+
+                        <p>
+                            Applicable for taxpayers opting for presumptive taxation under Sections 44AD, 44ADA, and
+                            44AE.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="itr-faq-section">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>Frequently Asked Questions</span>
+                <h2>Income Tax Return (ITR) FAQs</h2>
+                <p>
+                    Get answers to the most commonly asked questions about ITR filing.
+                </p>
+            </div>
+
+            <div class="faq-wrapper">
+
+                <div class="faq-item active">
+
+                    <button class="faq-question">
+                        Who is required to file an Income Tax Return?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Individuals whose income exceeds the basic exemption limit or who wish to claim refunds,
+                            apply for loans, or maintain financial compliance should file ITR.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        What documents are required for ITR filing?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            PAN Card, Aadhaar Card, Form 16, bank statements, investment proofs, and income-related
+                            documents are commonly required.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        Can I claim a tax refund through ITR?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes, if excess tax has been deducted or paid during the financial year, you can claim a
+                            refund while filing your ITR.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        Is it mandatory to file ITR every year?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            If your income falls under taxable limits or certain conditions apply, filing ITR every year
+                            is mandatory under income tax laws.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        How long does ITR filing take?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Once documents are submitted, ITR filing can usually be completed within a few hours to 1
+                            working day.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="itr-cta-section">
+
+        <div class="container">
+
+            <div class="itr-cta-box">
+
+                <div class="itr-cta-content">
+
+                    <span>File Your Return Today</span>
+
+                    <h2>
+                        Hassle-Free Income Tax Return Filing Services
+                    </h2>
+
+                    <p>
+                        Let our experienced tax professionals handle your Income Tax Return filing accurately and on
+                        time. Get expert assistance, maximum deductions, and complete compliance support.
+                    </p>
+
+                    <div class="itr-cta-buttons">
+
+                        <a href="#itrForm" class="itr-primary-btn">
+                            Apply Now
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="tel:+919999999999" class="itr-secondary-btn">
+                            <i class="fa-solid fa-phone"></i>
+                            Call Expert
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="itr-cta-icon">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/itr-filing.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISO-Certification</title>
+
+    <!-- bootstap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/iso-certification.css">
+</head>
+
+<body>
+
+    <nav class="premium-navbar">
+        <div class="nav-container">
+              <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <!-- Navigation -->
+            <ul class="nav-menu">
+
+                <li><a href="index.html">Home</a></li>
+
+                <!-- Business Setup -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Business Setup
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="company-registration.html">Company Registration</a></li>
+                        <li><a class="dropdown-item" href="fssai-registration.html">FSSAI Registration</a></li>
+                        <li><a class="dropdown-item" href="iec-registration.html">IEC Certification</a></li>
+                        <li><a class="dropdown-item" href="iso-certification.html">ISO Certification</a></li>
+                    </ul>
+                </li>
+
+                <!-- Tax & Compliance -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Tax & Compliance
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="gst-registration.html">GST Registration</a></li>
+                        <li><a class="dropdown-item" href="gst-return-filing.html">GST Return Filing</a></li>
+                        <li><a class="dropdown-item" href="itr-filing.html">ITR Filing</a></li>
+                        <li><a class="dropdown-item" href="income-tax-calculator.html">Income Tax Calculator</a></li>
+                        <li><a class="dropdown-item" href="gst-calculator.html">GST Calculator</a></li>
+                    </ul>
+                </li>
+
+                <!-- Trademark -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Trademark & IP
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="trademark-registration.html">Trademark Registration</a></li>
+                    </ul>
+                </li>
+
+                <!-- Digital Services -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Digital Services
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="website-designing.html">Website Designing</a></li>
+                        <li><a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="#" class="consult-btn">
+                Get Consultation
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+    </nav>
+
+    <section class="iso-hero">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-7">
+
+                    <span class="iso-badge">
+                        ISO Registration
+                    </span>
+
+                    <h1>
+                        Get ISO Certification Registration Online
+                    </h1>
+
+                    <p>
+                        Enhance your business credibility and improve operational
+                        efficiency with ISO Certification. Get internationally
+                        recognized certification with expert assistance and
+                        complete documentation support.
+                    </p>
+
+                    <div class="iso-features">
+
+                        <div class="iso-feature-item">
+                            <i class="fa-solid fa-award"></i>
+                            <span>Quality Standards</span>
+                        </div>
+
+                        <div class="iso-feature-item">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>Global Recognition</span>
+                        </div>
+
+                        <div class="iso-feature-item">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span>Business Growth</span>
+                        </div>
+
+                        <div class="iso-feature-item">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>Quick Certification</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5">
+
+                    <div class="iso-form-card">
+
+                        <h3>Apply For ISO Certification</h3>
+
+                        <form id="isoForm">
+
+                            <input type="text" id="isoName" class="form-control" placeholder="Full Name">
+
+                            <small id="isoNameError"></small>
+
+                            <input type="tel" id="isoPhone" class="form-control" placeholder="Mobile Number">
+
+                            <small id="isoPhoneError"></small>
+
+                            <input type="email" id="isoEmail" class="form-control" placeholder="Email Address">
+
+                            <small id="isoEmailError"></small>
+
+                            <input type="text" id="isoBusiness" class="form-control" placeholder="Business Name">
+
+                            <small id="isoBusinessError"></small>
+
+                            <button type="submit">
+                                Get Free Consultation
+                            </button>
+
+                            <div id="isoSuccessMsg"></div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="iso-overview py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>ISO Certification</span>
+                <h2>What Is ISO Certification?</h2>
+            </div>
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <div class="iso-content">
+
+                        <p>
+                            ISO Certification is an internationally recognized
+                            standard that demonstrates an organization's commitment
+                            to quality, efficiency, safety and customer satisfaction.
+                        </p>
+
+                        <p>
+                            It helps businesses streamline operations, improve
+                            internal processes and build trust among customers,
+                            partners and stakeholders worldwide.
+                        </p>
+
+                        <div class="iso-points">
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                International Recognition
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Improved Business Processes
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Higher Customer Trust
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Competitive Advantage
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="iso-info-grid">
+
+                        <div class="iso-info-box">
+                            <i class="fa-solid fa-globe"></i>
+                            <h4>International Standards</h4>
+                            <p>
+                                Globally accepted quality and management standards.
+                            </p>
+                        </div>
+
+                        <div class="iso-info-box">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <h4>Quality Assurance</h4>
+                            <p>
+                                Ensure consistency and reliability in operations.
+                            </p>
+                        </div>
+
+                        <div class="iso-info-box">
+                            <i class="fa-solid fa-handshake"></i>
+                            <h4>Customer Trust</h4>
+                            <p>
+                                Build confidence and credibility among customers.
+                            </p>
+                        </div>
+
+                        <div class="iso-info-box">
+                            <i class="fa-solid fa-award"></i>
+                            <h4>Business Excellence</h4>
+                            <p>
+                                Improve performance and achieve sustainable growth.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="iso-benefits py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Why Choose ISO</span>
+                <h2>Benefits of ISO Certification</h2>
+                <p>
+                    ISO Certification helps businesses improve efficiency,
+                    strengthen customer confidence and achieve sustainable
+                    growth through internationally recognized standards.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iso-benefit-card">
+                        <div class="iso-benefit-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h4>Improved Business Credibility</h4>
+                        <p>
+                            Enhance your company's reputation and build trust
+                            among clients, investors and business partners.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iso-benefit-card">
+                        <div class="iso-benefit-icon">
+                            <i class="fa-solid fa-face-smile"></i>
+                        </div>
+                        <h4>Higher Customer Satisfaction</h4>
+                        <p>
+                            Deliver consistent quality products and services
+                            that meet customer expectations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iso-benefit-card">
+                        <div class="iso-benefit-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <h4>International Recognition</h4>
+                        <p>
+                            Gain worldwide acceptance and strengthen your
+                            position in global markets.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iso-benefit-card">
+                        <div class="iso-benefit-icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <h4>Better Process Management</h4>
+                        <p>
+                            Improve internal workflows and reduce operational
+                            inefficiencies within your organization.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iso-benefit-card">
+                        <div class="iso-benefit-icon">
+                            <i class="fa-solid fa-chart-column"></i>
+                        </div>
+                        <h4>Increased Market Opportunities</h4>
+                        <p>
+                            Open doors to new business opportunities and
+                            government tenders.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iso-benefit-card">
+                        <div class="iso-benefit-icon">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <h4>Competitive Advantage</h4>
+                        <p>
+                            Stand out from competitors and strengthen your
+                            market position effectively.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="iso-applicants py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Eligible Businesses</span>
+                <h2>Who Needs ISO Certification?</h2>
+                <p>
+                    ISO Certification is beneficial for organizations of all sizes
+                    looking to improve quality, efficiency and customer trust while
+                    gaining a competitive advantage in the market.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="iso-applicant-card">
+                        <div class="iso-applicant-icon">
+                            <i class="fa-solid fa-industry"></i>
+                        </div>
+                        <h4>Manufacturing Companies</h4>
+                        <p>
+                            Improve production quality and operational efficiency.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="iso-applicant-card">
+                        <div class="iso-applicant-icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h4>Service Providers</h4>
+                        <p>
+                            Deliver consistent services and enhance customer satisfaction.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="iso-applicant-card">
+                        <div class="iso-applicant-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h4>Startups</h4>
+                        <p>
+                            Build credibility and establish trust with clients.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="iso-applicant-card">
+                        <div class="iso-applicant-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h4>MSMEs</h4>
+                        <p>
+                            Strengthen business processes and improve growth potential.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="iso-applicant-card">
+                        <div class="iso-applicant-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h4>Educational Institutions</h4>
+                        <p>
+                            Enhance management systems and service quality.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="iso-applicant-card">
+                        <div class="iso-applicant-icon">
+                            <i class="fa-solid fa-hospital"></i>
+                        </div>
+                        <h4>Hospitals</h4>
+                        <p>
+                            Improve healthcare quality and patient satisfaction.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="iso-applicant-card">
+                        <div class="iso-applicant-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h4>IT Companies</h4>
+                        <p>
+                            Demonstrate quality standards and information security.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="iso-applicant-card">
+                        <div class="iso-applicant-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <h4>Export Businesses</h4>
+                        <p>
+                            Gain international recognition and market acceptance.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="iso-types py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>ISO Standards</span>
+                <h2>Types of ISO Certifications</h2>
+                <p>
+                    Different ISO certifications are designed to improve specific
+                    areas of business operations such as quality management,
+                    information security, food safety and environmental performance.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iso-type-card">
+                        <div class="iso-type-number">
+                            ISO 9001
+                        </div>
+
+                        <h4>Quality Management System</h4>
+
+                        <p>
+                            Focuses on improving product quality, customer
+                            satisfaction and operational efficiency.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iso-type-card">
+                        <div class="iso-type-number">
+                            ISO 14001
+                        </div>
+
+                        <h4>Environmental Management</h4>
+
+                        <p>
+                            Helps organizations manage environmental responsibilities
+                            and reduce their ecological impact.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iso-type-card">
+                        <div class="iso-type-number">
+                            ISO 22000
+                        </div>
+
+                        <h4>Food Safety Management</h4>
+
+                        <p>
+                            Ensures food safety practices are implemented throughout
+                            the supply chain.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iso-type-card">
+                        <div class="iso-type-number">
+                            ISO 27001
+                        </div>
+
+                        <h4>Information Security</h4>
+
+                        <p>
+                            Protects sensitive business information through robust
+                            security management systems.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iso-type-card">
+                        <div class="iso-type-number">
+                            ISO 45001
+                        </div>
+
+                        <h4>Occupational Health & Safety</h4>
+
+                        <p>
+                            Improves workplace safety and reduces health-related
+                            risks for employees.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iso-type-card">
+                        <div class="iso-type-number">
+                            ISO 50001
+                        </div>
+
+                        <h4>Energy Management</h4>
+
+                        <p>
+                            Helps organizations improve energy efficiency and
+                            reduce operational costs.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="iso-eligibility py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Eligibility Criteria</span>
+                <h2>ISO Certification Eligibility</h2>
+                <p>
+                    ISO Certification is available for organizations of all sizes
+                    and industries. Any legally operating entity seeking quality,
+                    efficiency and international recognition can apply.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iso-eligibility-card">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <h4>Proprietorship</h4>
+                        <p>
+                            Individual business owners can obtain ISO Certification
+                            to improve credibility and business standards.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iso-eligibility-card">
+                        <i class="fa-solid fa-handshake"></i>
+                        <h4>Partnership Firm</h4>
+                        <p>
+                            Partnership firms can strengthen operational processes
+                            and gain customer trust through ISO standards.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iso-eligibility-card">
+                        <i class="fa-solid fa-building"></i>
+                        <h4>LLP</h4>
+                        <p>
+                            Limited Liability Partnerships can improve efficiency
+                            and establish stronger business practices.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iso-eligibility-card">
+                        <i class="fa-solid fa-city"></i>
+                        <h4>Private Limited Company</h4>
+                        <p>
+                            Companies can enhance quality management and achieve
+                            international recognition.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iso-eligibility-card">
+                        <i class="fa-solid fa-landmark"></i>
+                        <h4>NGO / Trust</h4>
+                        <p>
+                            NGOs and trusts can demonstrate transparency and
+                            efficient organizational management.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iso-eligibility-card">
+                        <i class="fa-solid fa-school"></i>
+                        <h4>Educational Institutions</h4>
+                        <p>
+                            Schools, colleges and training institutes can improve
+                            service quality and institutional performance.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="iso-documents-section">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Required Documents</span>
+                <h2>Documents Required for ISO Certification</h2>
+                <p>
+                    Prepare the necessary documents to complete your ISO certification
+                    process smoothly and efficiently.
+                </p>
+            </div>
+
+
+            <div class="documents-grid">
+
+                <div class="document-card">
+                    <div class="doc-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3>Company Details</h3>
+                    <p>
+                        Company registration certificate, business details,
+                        and organization profile.
+                    </p>
+                </div>
+
+
+                <div class="document-card">
+                    <div class="doc-icon">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+                    <h3>Identity Proof</h3>
+                    <p>
+                        Owner/director identity proof such as PAN card,
+                        Aadhaar card or passport.
+                    </p>
+                </div>
+
+
+                <div class="document-card">
+                    <div class="doc-icon">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <h3>Business Documents</h3>
+                    <p>
+                        Business licenses, address proof and other
+                        relevant legal documents.
+                    </p>
+                </div>
+
+
+                <div class="document-card">
+                    <div class="doc-icon">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3>Process Documents</h3>
+                    <p>
+                        Quality policies, procedures and operational
+                        process information.
+                    </p>
+                </div>
+
+
+                <div class="document-card">
+                    <div class="doc-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3>Employee Details</h3>
+                    <p>
+                        Employee records, responsibilities and
+                        organizational structure.
+                    </p>
+                </div>
+
+
+                <div class="document-card">
+                    <div class="doc-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>Quality Records</h3>
+                    <p>
+                        Previous audit reports, performance records
+                        and improvement plans.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="iso-process-section">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Certification Process</span>
+                <h2>ISO Certification Process</h2>
+                <p>
+                    Our simple and transparent ISO certification process helps
+                    businesses get certified quickly with complete guidance.
+                </p>
+            </div>
+
+
+            <div class="process-wrapper">
+
+                <div class="process-card">
+                    <div class="process-number">01</div>
+                    <div class="process-content">
+                        <h3>Initial Consultation</h3>
+                        <p>
+                            We understand your business requirements and
+                            recommend the right ISO certification for your organization.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="process-card">
+                    <div class="process-number">02</div>
+                    <div class="process-content">
+                        <h3>Document Preparation</h3>
+                        <p>
+                            Required documents, policies and procedures are prepared
+                            according to ISO standards.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="process-card">
+                    <div class="process-number">03</div>
+                    <div class="process-content">
+                        <h3>Application Submission</h3>
+                        <p>
+                            Your certification application is submitted and verified
+                            by our certification experts.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="process-card">
+                    <div class="process-number">04</div>
+                    <div class="process-content">
+                        <h3>Audit & Verification</h3>
+                        <p>
+                            The organization process is reviewed to ensure compliance
+                            with ISO requirements.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="process-card">
+                    <div class="process-number">05</div>
+                    <div class="process-content">
+                        <h3>ISO Certificate Issued</h3>
+                        <p>
+                            After successful verification, your ISO certificate
+                            is issued and delivered.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="iso-features-section">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Why Choose ISO</span>
+                <h2>Features of ISO Certification</h2>
+                <p>
+                    ISO certification helps businesses improve their quality,
+                    efficiency and credibility with globally accepted standards.
+                </p>
+            </div>
+
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h3>International Recognition</h3>
+                    <p>
+                        Get worldwide recognition and build trust with customers,
+                        partners and stakeholders.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>Business Growth</h3>
+                    <p>
+                        Improve business performance and create better opportunities
+                        in competitive markets.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3>Quality Assurance</h3>
+                    <p>
+                        Maintain consistent quality standards and improve your
+                        products and services.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3>Customer Confidence</h3>
+                    <p>
+                        Increase customer satisfaction by following trusted
+                        international standards.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3>Process Improvement</h3>
+                    <p>
+                        Optimize internal processes and improve overall
+                        operational efficiency.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3>Competitive Advantage</h3>
+                    <p>
+                        Stand ahead of competitors with a certified and
+                        professional business identity.
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <section class="iso-faq-section">
+        <div class="container">
+
+            <div class="section-title">
+                <span>FAQ</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>
+                    Find answers to common questions related to ISO Certification.
+                </p>
+            </div>
+
+
+            <div class="faq-wrapper">
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is ISO Certification?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            ISO Certification is an internationally recognized
+                            certification that confirms an organization follows
+                            specific quality and management standards.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Who can apply for ISO Certification?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Any organization, startup, company, manufacturer,
+                            service provider or business can apply for ISO Certification.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How long does it take to get ISO Certification?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            The certification process usually depends on business
+                            type, documentation and compliance requirements.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What documents are required for ISO Certification?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Business documents, identity proof, company details,
+                            process documents and quality records are generally required.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is ISO Certification mandatory for every business?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            ISO Certification is not mandatory for every business,
+                            but it helps improve credibility, quality and market trust.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <section class="iso-cta-section">
+
+        <div class="container">
+
+            <div class="cta-box">
+
+                <div class="cta-content">
+                    <span>Get Certified Today</span>
+
+                    <h2>
+                        Ready to Get Your ISO Certification?
+                    </h2>
+
+                    <p>
+                        Start your ISO certification journey with our expert guidance.
+                        Get professional support for documentation, application and
+                        complete certification process.
+                    </p>
+
+
+                    <div class="cta-buttons">
+
+                        <a href="#" class="cta-btn primary-btn">
+                            Apply Now
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+
+                        <a href="#" class="cta-btn secondary-btn">
+                            Contact Us
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="cta-image">
+
+                    <div class="certificate-icon">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/iso-certification.js"></script>
+</body>
+
+</html>

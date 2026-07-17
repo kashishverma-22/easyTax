@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Calculator</title>
+
+    <link rel="stylesheet" href="css/incomeTax.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <nav class="premium-navbar">
+        <div class="nav-container">
+              <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <!-- Navigation -->
+            <ul class="nav-menu">
+
+                <li><a href="index.html">Home</a></li>
+
+                <!-- Business Setup -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Business Setup
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="company-registration.html">Company Registration</a></li>
+                        <li><a class="dropdown-item" href="fssai-registration.html">FSSAI Registration</a></li>
+                        <li><a class="dropdown-item" href="iec-registration.html">IEC Certification</a></li>
+                        <li><a class="dropdown-item" href="iso-certification.html">ISO Certification</a></li>
+                    </ul>
+                </li>
+
+                <!-- Tax & Compliance -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Tax & Compliance
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="gst-registration.html">GST Registration</a></li>
+                        <li><a class="dropdown-item" href="gst-return-filing.html">GST Return Filing</a></li>
+                        <li><a class="dropdown-item" href="itr-filing.html">ITR Filing</a></li>
+                        <li><a class="dropdown-item" href="incomeTax.html">Income Tax Calculator</a></li>
+                        <li><a class="dropdown-item" href="gstCalculator.html">GST Calculator</a></li>
+                    </ul>
+                </li>
+
+                <!-- Trademark -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Trademark & IP
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="trademark-registration.html">Trademark Registration</a></li>
+                    </ul>
+                </li>
+
+                <!-- Digital Services -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Digital Services
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="website-designing.html">Website Designing</a></li>
+                        <li><a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="#" class="consult-btn">
+                Get Consultation
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+    </nav>
+    <section class="tax-result-section" id="taxResultSection" style="display:none;">
+        <h2 class="main-heading">Income Tax Calculator</h2>
+
+        <div class="result-card">
+            <div class="result-header">
+                <h3 id="resultTitle">Summary</h3>
+                <div class="result-actions">
+                    <button class="file-now-btn">File now</button>
+                    <button class="recalculate-btn" id="recalculateBtn">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        Recalculate
+                    </button>
+                </div>
+            </div>
+
+            <div class="regime-tabs">
+                <button class="active">New regime</button>
+                <button>Old regime <span>Recommended</span></button>
+            </div>
+
+            <div class="result-grid">
+                <div class="chart-panel">
+                    <div class="bar-chart" aria-label="Income tax result chart">
+                        <div class="bar-wrap">
+                            <span id="barTotal" class="bar total"></span>
+                        </div>
+                        <div class="bar-wrap">
+                            <span id="barTaxable" class="bar taxable"></span>
+                        </div>
+                        <div class="bar-wrap">
+                            <span id="barDeduction" class="bar deduction"></span>
+                        </div>
+                        <div class="bar-wrap">
+                            <span id="barPayable" class="bar payable"></span>
+                        </div>
+                    </div>
+
+                    <div class="chart-legend">
+                        <span><b class="legend-total"></b>Total income</span>
+                        <span><b class="legend-taxable"></b>Taxable income</span>
+                        <span><b class="legend-deduction"></b>Deduction</span>
+                        <span><b class="legend-payable"></b>Tax payable</span>
+                    </div>
+                </div>
+
+                <div class="result-box">
+                    <p>Total income</p>
+                    <h4 id="resultTotalIncome">₹0</h4>
+                    <div class="result-divider"></div>
+                    <p>Exemption and deduction</p>
+                    <h4 id="resultDeduction">₹0</h4>
+                    <ul>
+                        <li><span>Exempt Allowances</span><b id="resultExempt">₹0</b></li>
+                        <li><span>Standard Deductions</span><b id="resultStandard">₹0</b></li>
+                        <li><span>Chapter VI A Deductions</span><b id="resultChapter">₹0</b></li>
+                    </ul>
+                </div>
+
+                <div class="result-box">
+                    <p>Taxable income</p>
+                    <h4 id="resultTaxableIncome">₹0</h4>
+                    <div class="result-divider"></div>
+                    <p>Tax payable</p>
+                    <h4 id="resultTaxPayable">₹0</h4>
+                    <ul>
+                        <li><span>Income tax</span><b id="resultIncomeTax">₹0</b></li>
+                        <li><span>Surcharge</span><b id="resultSurcharge">₹0</b></li>
+                        <li><span>Health and education cess</span><b id="resultCess">₹0</b></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="itr-note">ITR filing due date: <b>ITR 1/2 - July 31 and ITR 3/4 - Aug 31</b></p>
+
+            <div class="save-tax-strip">
+                <strong>Looking to save more tax?</strong>
+                <button>Get Started</button>
+            </div>
+
+            <form class="email-strip">
+                <input type="email" placeholder="Enter your email to get tax result">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Heading -->
+
+    <section class="calculator-section basic-page">
+
+        <h2 class="main-heading">
+            Income Tax Calculator
+        </h2>
+
+        <div class="calculator-box">
+
+            <!-- Steps -->
+
+            <ul class="steps">
+                <li class="active">Basic Details</li>
+                <li>Income Details</li>
+                <li>Deduction</li>
+            </ul>
+
+            <!-- Form -->
+
+            <div class="form-row">
+
+                <div class="input-group">
+                    <label>Financial Year</label>
+
+                    <select>
+                        <option>FY 2026-2027</option>
+                        <option>FY 2025-2026</option>
+                        <option>FY 2024-2025</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Age Group</label>
+
+                    <select>
+                        <option>0 - 60</option>
+                        <option>60 - 80</option>
+                        <option>80+</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="tax-slabs-section">
+
+                <h2>Income Tax Slab Rates</h2>
+
+                <div class="tax-tables">
+
+                    <!-- New Regime -->
+
+                    <div class="tax-table">
+
+                        <h3>New Regime Slab Rates</h3>
+
+                        <table>
+                            <tr>
+                                <th>Income Tax Slabs (Rs.)</th>
+                                <th>Income Tax Rates</th>
+                            </tr>
+
+                            <tr>
+                                <td>Up to 4 lakh</td>
+                                <td>Nil</td>
+                            </tr>
+
+                            <tr>
+                                <td>4 lakh to 8 lakh</td>
+                                <td>5%</td>
+                            </tr>
+
+                            <tr>
+                                <td>8 lakh to 12 lakh</td>
+                                <td>10%</td>
+                            </tr>
+
+                            <tr>
+                                <td>12 lakh to 16 lakh</td>
+                                <td>15%</td>
+                            </tr>
+
+                            <tr>
+                                <td>16 lakh to 20 lakh</td>
+                                <td>20%</td>
+                            </tr>
+
+                            <tr>
+                                <td>20 lakh to 24 lakh</td>
+                                <td>25%</td>
+                            </tr>
+
+                            <tr>
+                                <td>Above 24 lakh</td>
+                                <td>30%</td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+
+                    <!-- Old Regime -->
+
+                    <div class="tax-table">
+
+                        <h3>Old Regime Slab Rates</h3>
+
+                        <table class="table2">
+                            <tr>
+                                <th>Income Tax Slabs (Rs.)</th>
+                                <th>Income Tax Rates</th>
+                            </tr>
+
+                            <tr>
+                                <td>Up to 2.5 lakh</td>
+                                <td>Nil</td>
+                            </tr>
+
+                            <tr>
+                                <td>2.5 lakh - 5 lakh</td>
+                                <td>5%</td>
+                            </tr>
+
+                            <tr>
+                                <td>5 lakh - 10 lakh</td>
+                                <td>20%</td>
+                            </tr>
+
+                            <tr>
+                                <td>Above 10 lakh</td>
+                                <td>30%</td>
+                            </tr>
+
+                        </table>
+
+                        <p class="note">
+                            * Slab rates vary for resident senior and super senior citizens.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <button id="continueBtn" class="continue-btn">
+                    Continue
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="calculator2 ">
+
+        <div class="income-details-page calculatorbox2" style="display:none;">
+            <h2 class="main-heading">
+                Income Tax Calculator
+            </h2>
+
+            <ul class="steps">
+                <li class="active">Basic Details</li>
+                <li>Income Details</li>
+                <li>Deduction</li>
+            </ul>
+
+            <div class="income-grid">
+
+                <!-- Left Form -->
+
+                <div class="income-form">
+
+                    <div class="form-group">
+                        <label>Income from Salary</label>
+                        <input type="number" placeholder="₹">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Income from Interest</label>
+                        <input type="number" placeholder="₹">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Rental Income Received</label>
+                        <input type="number" placeholder="₹">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Income from Digital Assets</label>
+                        <input type="number" placeholder="₹">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Exempt Allowances</label>
+                        <input type="number" placeholder="₹">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Interest on Home Loan - Self Occupied</label>
+                        <input type="number" placeholder="₹">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Interest on Home Loan - Let Out</label>
+                        <input type="number" placeholder="₹">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Other Income</label>
+                        <input type="number" placeholder="₹">
+                    </div>
+
+                    <div class="action-buttons">
+
+                        <button id="backBtn" class="back-btn">
+                            Back
+                        </button>
+
+                        <button id="nextBtn" class="next-btn">
+                            Continue
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+                <!-- Right Summary -->
+
+                <div class="summary-box">
+
+                    <h4>Tax Liability Summary</h4>
+
+                    <div class="amount-box">
+                        <span>Old Regime</span>
+                        <h2>₹0</h2>
+                    </div>
+
+                    <div class="vs">VS</div>
+
+                    <div class="amount-box">
+                        <span>New Regime</span>
+                        <h2>₹0</h2>
+                    </div>
+
+                    <div class="save-box">
+                        <span>You Save</span>
+                        <h2>₹0</h2>
+                    </div><br>
+
+                    <button id="filebtn" class="file-btn">
+                        File Now
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+    <section class="calculator2 ">
+
+        <div class="deduction-page calculatorbox2" style="display:none;">
+            <h2 class="main-heading">
+                Income Tax Calculator
+            </h2>
+
+            <ul class="steps">
+                <li class="active">Basic Details</li>
+                <li>Income Details</li>
+                <li>Deduction</li>
+            </ul>
+
+            <div class="income-grid">
+
+                <!-- Left Form -->
+
+                <div class="income-form">
+
+                    <div class="form-group">
+                        <label>Basic deductions - 80C</label>
+                        <input type="number" placeholder="₹">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Medical insurance - 80D</label>
+                        <input type="number" placeholder="₹">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Interest on housing loan - 80EEA</label>
+                        <input type="number" placeholder="₹">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Employer’s contribution to NPS - 80CCD(2)</label>
+                        <input type="number" placeholder="₹">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Interest from deposits - 80TTA</label>
+                        <input type="number" placeholder="₹">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Donations to charity - 80G</label>
+                        <input type="number" placeholder="₹">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Employee’s contribution to NPS - 80CCD</label>
+                        <input type="number" placeholder="₹">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Any other deduction</label>
+                        <input type="number" placeholder="₹">
+                    </div>
+
+                    <div class="action-buttons">
+
+                        <button id="backBtn1" class="back-btn">
+                            Back
+                        </button>
+
+                        <button id="viewCalcBtn" class="next-btn">
+                            view Calculation
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+                <!-- Right Summary -->
+
+                <div class="summary-box">
+
+                    <h4>Tax Liability Summary</h4>
+
+                    <div class="amount-box">
+                        <span>Old Regime</span>
+                        <h2>₹0</h2>
+                    </div>
+
+                    <div class="vs">VS</div>
+
+                    <div class="amount-box">
+                        <span>New Regime</span>
+                        <h2>₹0</h2>
+                    </div>
+
+                    <div class="save-box">
+                        <span>You Save</span>
+                        <h2>₹0</h2>
+                    </div><br>
+
+                    <button id="filebtn" class="file-btn">
+                        File Now
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <!-- <section class="tax-info-section">
+
+         <div class="container">
+
+            <h2>Income Tax Guide</h2>
+            <p class="section-desc">
+                Understand Income Tax, compare tax regimes, explore deductions and learn
+                how to calculate your tax liability effectively.
+            </p> -->
+
+    <!-- What is Income Tax Calculator -->
+
+    <!-- <div class="info-card">
+                <h3>What is an Income Tax Calculator?</h3>
+
+                <p>
+                    An Income Tax Calculator is an online tool that helps taxpayers estimate
+                    their tax liability based on annual income, deductions, exemptions and
+                    selected tax regime. It provides a quick comparison between the Old and
+                    New Tax Regime to help users choose the most beneficial option.
+                </p>
+            </div> -->
+
+    <!-- New Tax Regime -->
+
+    <!-- <div class="info-card">
+
+                <h3>What is the New Tax Regime?</h3>
+
+                <p>
+                    The New Tax Regime offers lower tax rates but removes most deductions
+                    and exemptions available under the Old Tax Regime.
+                </p>
+
+                <div class="table-responsive">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Annual Income</th>
+                                <th>Tax Rate</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Up to ₹4,00,000</td>
+                                <td>Nil</td>
+                            </tr>
+                            <tr>
+                                <td>₹4,00,001 - ₹8,00,000</td>
+                                <td>5%</td>
+                            </tr>
+                            <tr>
+                                <td>₹8,00,001 - ₹12,00,000</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>₹12,00,001 - ₹16,00,000</td>
+                                <td>15%</td>
+                            </tr>
+                            <tr>
+                                <td>₹16,00,001 - ₹20,00,000</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>₹20,00,001 - ₹24,00,000</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <td>Above ₹24,00,000</td>
+                                <td>30%</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div> -->
+
+    <!-- Old Tax Regime -->
+
+    <!-- <div class="info-card">
+
+                <h3>What is the Old Tax Regime?</h3>
+
+                <p>
+                    The Old Tax Regime allows taxpayers to claim several deductions and
+                    exemptions under different sections of the Income Tax Act.
+                </p>
+
+                <div class="table-responsive">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Annual Income</th>
+                                <th>Tax Rate</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Up to ₹2,50,000</td>
+                                <td>Nil</td>
+                            </tr>
+                            <tr>
+                                <td>₹2,50,001 - ₹5,00,000</td>
+                                <td>5%</td>
+                            </tr>
+                            <tr>
+                                <td>₹5,00,001 - ₹10,00,000</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>Above ₹10,00,000</td>
+                                <td>30%</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div> -->
+
+    <!-- Deduction Table -->
+
+    <!-- <div class="info-card">
+
+                <h3>Deductions Available Under Old & New Regime</h3>
+
+                <div class="table-responsive">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Deduction Type</th>
+                                <th>Old Regime</th>
+                                <th>New Regime</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Section 80C</td>
+                                <td>✔ Available</td>
+                                <td>✖ Not Available</td>
+                            </tr>
+                            <tr>
+                                <td>Section 80D</td>
+                                <td>✔ Available</td>
+                                <td>✖ Not Available</td>
+                            </tr>
+                            <tr>
+                                <td>HRA Exemption</td>
+                                <td>✔ Available</td>
+                                <td>✖ Not Available</td>
+                            </tr>
+                            <tr>
+                                <td>Home Loan Interest</td>
+                                <td>✔ Available</td>
+                                <td>Limited</td>
+                            </tr>
+                            <tr>
+                                <td>NPS Deduction</td>
+                                <td>✔ Available</td>
+                                <td>Limited</td>
+                            </tr>
+                            <tr>
+                                <td>Standard Deduction</td>
+                                <td>✔ Available</td>
+                                <td>✔ Available</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div> -->
+
+    <!-- Tax Calculation -->
+
+    <!-- <div class="info-card">
+
+                <h3>How Much Tax Will You Pay?</h3>
+
+                <p>
+                    Your tax liability depends on your annual income, deductions,
+                    investments, exemptions, age category and selected tax regime.
+                    The calculator instantly estimates the amount of tax payable under
+                    both tax regimes.
+                </p>
+
+            </div> -->
+
+    <!-- Steps -->
+
+    <!-- <div class="info-card">
+
+                <h3>Steps to Use Income Tax Calculator</h3>
+
+                <div class="steps-grid">
+
+                    <div class="step-box">
+                        <span>01</span>
+                        <h4>Select Financial Year</h4>
+                    </div>
+
+                    <div class="step-box">
+                        <span>02</span>
+                        <h4>Enter Income Details</h4>
+                    </div>
+
+                    <div class="step-box">
+                        <span>03</span>
+                        <h4>Add Deductions</h4>
+                    </div>
+
+                    <div class="step-box">
+                        <span>04</span>
+                        <h4>Compare Tax Regimes</h4>
+                    </div>
+
+                </div>
+
+            </div> -->
+
+    <!-- </div> 
+
+    </section> -->
+
+
+
+
+
+    <script src="js/incomeTax.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1030 @@
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title span {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.section-title h2 {
+    font-size: 25px;
+    color: var(--fivth-color);
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.section-title p{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.iec-hero{
+    padding:180px 0 80px;
+    background:linear-gradient(135deg, rgba(122,170,206,.12),rgba(156,213,255,.08));
+}
+
+.iec-badge{
+    display:inline-block;
+    background:var(--third-color);
+    color:var(--fivth-color);
+    padding:8px 18px;
+    border-radius:50px;
+    font-weight:600;
+    font-size: 13px !important;
+    margin-bottom:20px;
+}
+
+.iec-hero h1{
+    font-size:24px;
+    line-height:1.15;
+    font-weight:700;
+    color:var(--fivth-color);
+}
+
+.iec-hero p{
+    font-size:14px;
+    color:#475569;
+    margin-top:20px;
+}
+
+.iec-features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    margin-top:35px;
+}
+
+.iec-feature-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:#fff;
+    padding:12px 18px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.iec-feature-item:hover{
+    transform:translateY(-3px);
+}
+
+.iec-feature-item i{
+    width:35px;
+    height:35px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:12px;
+    background:rgba(122,170,206,.15);
+    color:var(--primary-color);
+}
+
+.iec-feature-item span{
+    color:var(--fivth-color);
+    font-weight:600;
+    font-size:14px;
+}
+
+.iec-form-card{
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+}
+
+.iec-form-card h3{
+    text-align:center;
+    margin-bottom:25px;
+    color:var(--fivth-color);
+    font-size:20px;
+    font-weight:700;
+}
+
+.iec-form-card .form-control{
+    height:48px;
+    margin-bottom:10px;
+    border-radius:8px;
+}
+
+.iec-form-card button{
+    width:100%;
+    height:48px;
+    border:none;
+    border-radius:8px;
+    background:var(--primary-color);
+    color:#fff;
+    font-weight:600;
+}
+
+/* ======================================== */
+.iec-overview{
+    background:#fff;
+}
+
+.iec-content p{
+    color:#64748b;
+    font-size:16px;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+.iec-points{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-top:30px;
+}
+
+.iec-points div{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:var(--fivth-color);
+    font-weight:600;
+}
+
+.iec-points i{
+    color:var(--primary-color);
+}
+
+.iec-info-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.iec-info-box{
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    border:1px solid rgba(122,170,206,.15);
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+    transition:.35s;
+}
+
+.iec-info-box:hover{
+    transform:translateY(-5px);
+}
+
+.iec-info-box i{
+    width:55px;
+    height:55px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:15px;
+    background:rgba(122,170,206,.15);
+    color:var(--primary-color);
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.iec-info-box h4{
+    font-size:17px;
+    font-weight:700;
+    color:var(--fivth-color);
+    margin-bottom:10px;
+}
+
+.iec-info-box p{
+    margin:0;
+    color:#64748b;
+    font-size:14px;
+    line-height:1.7;
+}
+
+/* ============================= */
+.iec-applicants{
+    background:#f8fbff;
+}
+
+.iec-applicant-card{
+    background:#fff;
+    padding:30px 25px;
+    border-radius:22px;
+    text-align:center;
+    height:100%;
+    border:1px solid rgba(122,170,206,.15);
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    transition:.35s;
+}
+
+.iec-applicant-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(53,88,114,.12);
+}
+
+.iec-applicant-icon{
+    width:65px;
+    height:65px;
+    margin:0 auto 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:20px;
+    background:rgba(122,170,206,.15);
+    color:var(--primary-color);
+    font-size:24px;
+}
+
+.iec-applicant-card h4{
+    font-size:18px;
+    font-weight:700;
+    color:var(--fivth-color);
+    margin-bottom:12px;
+}
+
+.iec-applicant-card p{
+    color:#64748b;
+    line-height:1.8;
+    margin:0;
+    font-size:14px;
+}
+
+/* ================================== */
+.iec-benefits{
+    background:#fff;
+}
+
+.iec-benefit-card{
+    background:#fff;
+    padding:35px 30px;
+    border-radius:24px;
+    text-align:center;
+    height:100%;
+    border:1px solid rgba(122,170,206,.15);
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    transition:.35s;
+}
+
+.iec-benefit-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(53,88,114,.12);
+}
+
+.iec-benefit-icon{
+    width:65px;
+    height:65px;
+    margin:0 auto 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:20px;
+    background:rgba(122,170,206,.15);
+    color:var(--primary-color);
+    font-size:24px;
+}
+
+.iec-benefit-card h4{
+    font-size:18px;
+    font-weight:700;
+    color:var(--fivth-color);
+    margin-bottom:12px;
+}
+
+.iec-benefit-card p{
+    color:#64748b;
+    line-height:1.8;
+    font-size:14px;
+    margin:0;
+}
+
+/* ================================== */
+.iec-eligibility{
+    background:#f8fbff;
+}
+
+.iec-eligibility-card{
+    background:#fff;
+    padding:35px 30px;
+    text-align:center;
+    border-radius:24px;
+    height:100%;
+    border:1px solid rgba(122,170,206,.15);
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    transition:.35s;
+}
+
+.iec-eligibility-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(53,88,114,.12);
+}
+
+.iec-eligibility-card i{
+    width:65px;
+    height:65px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 20px;
+    border-radius:18px;
+    background:rgba(122,170,206,.15);
+    color:var(--primary-color);
+    font-size:24px;
+}
+
+.iec-eligibility-card h4{
+    font-size:18px;
+    font-weight:700;
+    color:var(--fivth-color);
+    margin-bottom:12px;
+}
+
+.iec-eligibility-card p{
+    color:#64748b;
+    font-size:14px;
+    line-height:1.8;
+    margin:0;
+}
+
+/* ================================== */
+
+.iec-documents{
+    background:#fff;
+}
+
+.iec-documents-content h3{
+    font-size:28px;
+    font-weight:700;
+    color:var(--fivth-color);
+    margin-bottom:20px;
+}
+
+.iec-documents-content p{
+    color:#64748b;
+    line-height:1.9;
+    margin-bottom:25px;
+}
+
+.iec-doc-points{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.iec-doc-points div{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:600;
+    color:var(--fivth-color);
+}
+
+.iec-doc-points i{
+    color:var(--primary-color);
+}
+
+.iec-documents-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.iec-document-card{
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    border:1px solid rgba(122,170,206,.15);
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+    transition:.35s;
+}
+
+.iec-document-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 50px rgba(53,88,114,.12);
+}
+
+.iec-document-card i{
+    width:60px;
+    height:60px;
+    margin:0 auto 15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:18px;
+    background:rgba(122,170,206,.15);
+    color:var(--primary-color);
+    font-size:22px;
+}
+
+.iec-document-card h4{
+    font-size:16px;
+    font-weight:700;
+    color:var(--fivth-color);
+    margin-bottom:5px;
+}
+
+.iec-document-card small{
+    color:#64748b;
+}
+
+/* ==================================== */
+.iec-process{
+    background:#f8fbff;
+}
+
+.iec-process-timeline{
+    position:relative;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:60px;
+}
+
+.iec-process-timeline::before{
+    content:"";
+    position:absolute;
+    top:42px;
+    left:8%;
+    width:84%;
+    height:3px;
+    background:linear-gradient(
+        90deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    z-index:0;
+}
+
+.iec-process-card{
+    position:relative;
+    background:#fff;
+    padding:35px 25px;
+    border-radius:24px;
+    text-align:center;
+    border:1px solid rgba(122,170,206,.15);
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    transition:.35s;
+    z-index:1;
+}
+
+.iec-process-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(53,88,114,.12);
+}
+
+.iec-step-number{
+    position:absolute;
+    top:15px;
+    right:20px;
+    font-size:14px;
+    font-weight:700;
+    color:var(--secondary-color);
+}
+
+.iec-process-icon{
+    width:65px;
+    height:65px;
+    margin:0 auto 20px;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(122,170,206,.15);
+    color:var(--primary-color);
+    font-size:24px;
+}
+
+.iec-process-card h4{
+    font-size:18px;
+    font-weight:700;
+    color:var(--fivth-color);
+    margin-bottom:12px;
+}
+
+.iec-process-card p{
+    color:#64748b;
+    line-height:1.8;
+    font-size:14px;
+    margin:0;
+}
+/* ============================== */
+.iec-features-section{
+    background:#fff;
+}
+
+.iec-feature-card{
+    background:#fff;
+    padding:35px 30px;
+    text-align:center;
+    border-radius:24px;
+    height:100%;
+    border:1px solid rgba(122,170,206,.15);
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    transition:.35s;
+}
+
+.iec-feature-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(53,88,114,.12);
+}
+
+.iec-feature-icon{
+    width:65px;
+    height:65px;
+    margin:0 auto 20px;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(122,170,206,.15);
+    color:var(--primary-color);
+    font-size:24px;
+}
+
+.iec-feature-card h4{
+    font-size:18px;
+    font-weight:700;
+    color:var(--fivth-color);
+    margin-bottom:12px;
+}
+
+.iec-feature-card p{
+    color:#64748b;
+    font-size:14px;
+    line-height:1.8;
+    margin:0;
+}
+
+/* ================================== */
+
+.iec-faq{
+    background:#f8fbff;
+}
+
+.iec-faq .accordion-item{
+    border:none;
+    margin-bottom:18px;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.iec-faq .accordion-button{
+    padding:20px 25px;
+    font-weight:600;
+    color:var(--fivth-color);
+    background:#fff;
+}
+
+.iec-faq .accordion-button:not(.collapsed){
+    background:rgba(122,170,206,.12);
+    color:var(--primary-color);
+    box-shadow:none;
+}
+
+.iec-faq .accordion-button:focus{
+    box-shadow:none;
+}
+
+.iec-faq .accordion-body{
+    padding:20px 25px;
+    color:#64748b;
+    line-height:1.8;
+}
+
+/* ==================================== */
+.iec-cta{
+    background:#fff;
+}
+
+.iec-cta-box{
+    background:linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    border-radius:30px;
+    padding:70px 50px;
+    text-align:center;
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+}
+
+.iec-cta-box span{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:50px;
+    background:rgba(255,255,255,.15);
+    margin-bottom:20px;
+    font-weight:500;
+}
+
+.iec-cta-box h2{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.iec-cta-box p{
+    max-width:700px;
+    margin:0 auto 30px;
+    line-height:1.8;
+    opacity:.95;
+}
+
+.iec-cta-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.iec-btn-primary,
+.iec-btn-secondary{
+    padding:14px 30px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.iec-btn-primary{
+    background:#fff;
+    color:var(--primary-color);
+}
+
+.iec-btn-secondary{
+    border:1px solid rgba(255,255,255,.3);
+    color:#fff;
+}
+
+.iec-btn-primary:hover,
+.iec-btn-secondary:hover{
+    transform:translateY(-3px);
+}
+
+/* ============================================ */
+#iecNameError,
+#iecPhoneError,
+#iecEmailError,
+#iecBusinessError{
+    display:block;
+    color:#dc2626;
+    font-size:13px;
+    font-weight:500;
+    margin:-5px 0 12px;
+}
+
+#iecSuccessMsg{
+    text-align:center;
+    font-size:14px;
+}
+
+#iecSuccessMsg i{
+    margin-right:6px;
+}
+
+/* responsive */
+/* =========================================
+   IEC PAGE RESPONSIVE CSS
+========================================= */
+
+/* 1200px */
+@media (max-width:1200px){
+
+    .iec-hero{
+        padding:160px 0 70px;
+    }
+
+    .iec-cta-box{
+        padding:60px 40px;
+    }
+
+    .iec-cta-box h2{
+        font-size:36px;
+    }
+
+}
+
+/* 992px */
+@media (max-width:992px){
+
+    .section-title{
+        margin-bottom:40px;
+    }
+
+    .section-title h2{
+        font-size:22px;
+    }
+
+    .iec-hero{
+        text-align:center;
+        padding:150px 0 60px;
+    }
+
+    .iec-hero h1{
+        font-size:22px;
+    }
+
+    .iec-features{
+        grid-template-columns:1fr;
+    }
+
+    .iec-form-card{
+        margin-top:40px;
+    }
+
+    .iec-info-grid,
+    .iec-documents-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .iec-process-timeline{
+        grid-template-columns:1fr;
+    }
+
+    .iec-process-timeline::before{
+        display:none;
+    }
+
+    .iec-cta-box h2{
+        font-size:32px;
+    }
+
+}
+
+/* 768px */
+@media (max-width:768px){
+
+    .section-title h2{
+        font-size:20px;
+    }
+
+    .section-title p{
+        font-size:14px;
+    }
+
+    .iec-hero{
+        padding:140px 0 50px;
+    }
+
+    .iec-hero h1{
+        font-size:20px;
+        line-height:1.4;
+    }
+
+    .iec-hero p{
+        font-size:14px;
+    }
+
+    .iec-points,
+    .iec-doc-points,
+    .iec-info-grid,
+    .iec-documents-grid{
+        grid-template-columns:1fr;
+    }
+
+    .iec-documents-content h3{
+        font-size:24px;
+    }
+
+    .iec-form-card{
+        padding:25px;
+    }
+
+    .iec-process-card,
+    .iec-benefit-card,
+    .iec-feature-card,
+    .iec-applicant-card,
+    .iec-eligibility-card{
+        padding:25px 20px;
+    }
+
+    .iec-cta-box{
+        padding:50px 25px;
+        border-radius:20px;
+    }
+
+    .iec-cta-box h2{
+        font-size:28px;
+    }
+
+}
+
+/* 576px */
+@media (max-width:576px){
+
+    .section-title{
+        margin-bottom:30px;
+    }
+
+    .section-title h2{
+        font-size:18px;
+    }
+
+    .iec-badge{
+        font-size:12px !important;
+        padding:7px 15px;
+    }
+
+    .iec-hero h1{
+        font-size:18px;
+    }
+
+    .iec-feature-item{
+        padding:10px 14px;
+    }
+
+    .iec-feature-item span{
+        font-size:13px;
+    }
+
+    .iec-form-card{
+        padding:20px;
+    }
+
+    .iec-form-card h3{
+        font-size:18px;
+    }
+
+    .iec-documents-content h3{
+        font-size:20px;
+    }
+
+    .iec-info-box,
+    .iec-document-card{
+        padding:20px;
+    }
+
+    .iec-process-card h4,
+    .iec-benefit-card h4,
+    .iec-feature-card h4,
+    .iec-applicant-card h4,
+    .iec-eligibility-card h4{
+        font-size:16px;
+    }
+
+    .iec-cta-box h2{
+        font-size:24px;
+    }
+
+    .iec-cta-buttons{
+        flex-direction:column;
+    }
+
+    .iec-btn-primary,
+    .iec-btn-secondary{
+        width:100%;
+    }
+
+}
+
+/* 480px */
+@media (max-width:480px){
+
+    .iec-hero{
+        padding:130px 0 40px;
+    }
+
+    .iec-hero h1{
+        font-size:16px;
+    }
+
+    .iec-hero p{
+        font-size:13px;
+    }
+
+    .iec-form-card{
+        padding:18px;
+    }
+
+    .iec-form-card .form-control,
+    .iec-form-card button{
+        height:45px;
+    }
+
+    .iec-info-box,
+    .iec-document-card,
+    .iec-process-card,
+    .iec-benefit-card,
+    .iec-feature-card,
+    .iec-applicant-card,
+    .iec-eligibility-card{
+        padding:18px;
+    }
+
+    .iec-cta-box{
+        padding:40px 20px;
+    }
+
+    .iec-cta-box h2{
+        font-size:20px;
+    }
+
+    .iec-cta-box p{
+        font-size:14px;
+    }
+
+}
+
+/* 360px */
+@media (max-width:360px){
+
+    .section-title h2{
+        font-size:16px;
+    }
+
+    .iec-hero h1{
+        font-size:15px;
+    }
+
+    .iec-form-card h3{
+        font-size:16px;
+    }
+
+    .iec-feature-item{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .iec-feature-item i{
+        margin-bottom:5px;
+    }
+
+    .iec-process-icon,
+    .iec-feature-icon,
+    .iec-benefit-icon,
+    .iec-applicant-icon{
+        width:55px;
+        height:55px;
+        font-size:20px;
+    }
+
+}
+
+/* 320px */
+@media (max-width:320px){
+
+    .iec-hero{
+        padding:120px 0 35px;
+    }
+
+    .iec-badge{
+        padding:6px 12px;
+        font-size:11px !important;
+    }
+
+    .iec-hero h1{
+        font-size:14px;
+    }
+
+    .iec-hero p{
+        font-size:12px;
+    }
+
+    .section-title h2{
+        font-size:15px;
+    }
+
+    .section-title p{
+        font-size:12px;
+    }
+
+    .iec-cta-box h2{
+        font-size:18px;
+    }
+
+    .iec-btn-primary,
+    .iec-btn-secondary{
+        padding:12px 18px;
+        font-size:13px;
+    }
+
+}
+
+/* 200px */
+@media (max-width:200px){
+
+    .iec-hero h1,
+    .section-title h2,
+    .iec-cta-box h2{
+        font-size:12px;
+        line-height:1.4;
+    }
+
+    .iec-hero p,
+    .section-title p,
+    .iec-cta-box p{
+        font-size:10px;
+    }
+
+    .iec-form-card,
+    .iec-info-box,
+    .iec-document-card,
+    .iec-process-card{
+        padding:10px;
+    }
+
+    .iec-btn-primary,
+    .iec-btn-secondary{
+        padding:8px;
+        font-size:10px;
+    }
+
+}

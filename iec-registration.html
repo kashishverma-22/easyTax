@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEC-Certification</title>
+
+    <!-- bootstap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/iec-registration.css">
+</head>
+
+<body>
+    <nav class="premium-navbar">
+        <div class="nav-container">
+              <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <!-- Navigation -->
+            <ul class="nav-menu">
+
+                <li><a href="index.html">Home</a></li>
+
+                <!-- Business Setup -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Business Setup
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="company-registration.html">Company Registration</a></li>
+                        <li><a class="dropdown-item" href="fssai-registration.html">FSSAI Registration</a></li>
+                        <li><a class="dropdown-item" href="iec-registration.html">IEC Certification</a></li>
+                        <li><a class="dropdown-item" href="iso-certification.html">ISO Certification</a></li>
+                    </ul>
+                </li>
+
+                <!-- Tax & Compliance -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Tax & Compliance
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="gst-registration.html">GST Registration</a></li>
+                        <li><a class="dropdown-item" href="gst-return-filing.html">GST Return Filing</a></li>
+                        <li><a class="dropdown-item" href="itr-filing.html">ITR Filing</a></li>
+                        <li><a class="dropdown-item" href="income-tax-calculator.html">Income Tax Calculator</a></li>
+                        <li><a class="dropdown-item" href="gst-calculator.html">GST Calculator</a></li>
+                    </ul>
+                </li>
+
+                <!-- Trademark -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Trademark & IP
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="trademark-registration.html">Trademark Registration</a></li>
+                    </ul>
+                </li>
+
+                <!-- Digital Services -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Digital Services
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="website-designing.html">Website Designing</a></li>
+                        <li><a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="#" class="consult-btn">
+                Get Consultation
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+    </nav>
+
+    <section class="iec-hero">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-7">
+
+                    <span class="iec-badge">
+                        Import Export Registration
+                    </span>
+
+                    <h1>
+                        Get IEC Certificate Registration Online
+                    </h1>
+
+                    <p>
+                        Start your international trade journey with Import Export
+                        Code (IEC) Registration. IEC is mandatory for businesses
+                        and individuals involved in importing or exporting goods
+                        and services from India.
+                    </p>
+
+                    <div class="iec-features">
+
+                        <div class="iec-feature-item">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>Global Trade Access</span>
+                        </div>
+
+                        <div class="iec-feature-item">
+                            <i class="fa-solid fa-certificate"></i>
+                            <span>DGFT Approved</span>
+                        </div>
+
+                        <div class="iec-feature-item">
+                            <i class="fa-solid fa-ship"></i>
+                            <span>Import & Export</span>
+                        </div>
+
+                        <div class="iec-feature-item">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>Quick Registration</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5">
+
+                    <div class="iec-form-card">
+
+                        <h3>Apply For IEC Registration</h3>
+
+                        <form id="iecForm">
+
+                            <input type="text" id="iecName" class="form-control" placeholder="Full Name">
+
+                            <small id="iecNameError"></small>
+
+                            <input type="tel" id="iecPhone" class="form-control" placeholder="Mobile Number">
+
+                            <small id="iecPhoneError"></small>
+
+                            <input type="email" id="iecEmail" class="form-control" placeholder="Email Address">
+
+                            <small id="iecEmailError"></small>
+
+                            <input type="text" id="iecBusiness" class="form-control" placeholder="Business Name">
+
+                            <small id="iecBusinessError"></small>
+
+                            <button type="submit">
+                                Get Free Consultation
+                            </button>
+
+                            <div id="iecSuccessMsg"></div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="iec-overview py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Import Export Code</span>
+                <h2>What Is IEC Certification?</h2>
+            </div>
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <div class="iec-content">
+
+                        <p>
+                            Import Export Code (IEC) is a 10-digit identification
+                            number issued by the Directorate General of Foreign Trade
+                            (DGFT). It is mandatory for businesses and individuals
+                            involved in importing or exporting goods and services
+                            from India.
+                        </p>
+
+                        <p>
+                            Without an IEC Certificate, businesses cannot carry out
+                            international trade activities or receive export benefits
+                            provided by the Government of India.
+                        </p>
+
+                        <div class="iec-points">
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Mandatory For Import Export
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                DGFT Approved Registration
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Lifetime Validity
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Global Business Expansion
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="iec-info-grid">
+
+                        <div class="iec-info-box">
+                            <i class="fa-solid fa-globe"></i>
+                            <h4>Global Trade Access</h4>
+                            <p>
+                                Start importing and exporting products worldwide.
+                            </p>
+                        </div>
+
+                        <div class="iec-info-box">
+                            <i class="fa-solid fa-certificate"></i>
+                            <h4>Government Approved</h4>
+                            <p>
+                                Official registration issued through DGFT.
+                            </p>
+                        </div>
+
+                        <div class="iec-info-box">
+                            <i class="fa-solid fa-infinity"></i>
+                            <h4>Lifetime Validity</h4>
+                            <p>
+                                No renewal required after IEC registration.
+                            </p>
+                        </div>
+
+                        <div class="iec-info-box">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <h4>Business Growth</h4>
+                            <p>
+                                Expand your business into international markets.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="iec-applicants py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Eligibility</span>
+                <h2>Who Needs IEC Registration?</h2>
+                <p>
+                    Any individual or business involved in importing or exporting
+                    goods and services from India must obtain an IEC Certificate
+                    issued by DGFT.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="iec-applicant-card">
+                        <div class="iec-applicant-icon">
+                            <i class="fa-solid fa-ship"></i>
+                        </div>
+                        <h4>Importers</h4>
+                        <p>Businesses importing goods from international markets.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="iec-applicant-card">
+                        <div class="iec-applicant-icon">
+                            <i class="fa-solid fa-plane-departure"></i>
+                        </div>
+                        <h4>Exporters</h4>
+                        <p>Businesses exporting products and services globally.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="iec-applicant-card">
+                        <div class="iec-applicant-icon">
+                            <i class="fa-solid fa-industry"></i>
+                        </div>
+                        <h4>Manufacturers</h4>
+                        <p>Manufacturing units selling products internationally.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="iec-applicant-card">
+                        <div class="iec-applicant-icon">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <h4>Traders</h4>
+                        <p>Wholesalers and traders engaged in global commerce.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="iec-applicant-card">
+                        <div class="iec-applicant-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <h4>E-Commerce Sellers</h4>
+                        <p>Online businesses selling products worldwide.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="iec-applicant-card">
+                        <div class="iec-applicant-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h4>Service Exporters</h4>
+                        <p>Professionals providing services to foreign clients.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="iec-applicant-card">
+                        <div class="iec-applicant-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h4>Startups</h4>
+                        <p>Growing startups planning to enter global markets.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="iec-applicant-card">
+                        <div class="iec-applicant-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h4>MSMEs</h4>
+                        <p>Small and medium enterprises involved in exports.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="iec-benefits py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Why Choose IEC</span>
+                <h2>Benefits of IEC Registration</h2>
+                <p>
+                    IEC Registration opens the door to international trade,
+                    government incentives and global business opportunities while
+                    ensuring smooth import-export operations.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iec-benefit-card">
+                        <div class="iec-benefit-icon">
+                            <i class="fa-solid fa-earth-asia"></i>
+                        </div>
+                        <h4>International Market Access</h4>
+                        <p>
+                            Expand your business globally and reach customers
+                            across international markets.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iec-benefit-card">
+                        <div class="iec-benefit-icon">
+                            <i class="fa-solid fa-file-circle-check"></i>
+                        </div>
+                        <h4>No Annual Compliance</h4>
+                        <p>
+                            IEC comes with minimal compliance requirements and no
+                            regular return filing obligations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iec-benefit-card">
+                        <div class="iec-benefit-icon">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                        </div>
+                        <h4>Government Benefits</h4>
+                        <p>
+                            Avail various export promotion schemes and government
+                            incentives for exporters.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iec-benefit-card">
+                        <div class="iec-benefit-icon">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                        </div>
+                        <h4>Easy Customs Clearance</h4>
+                        <p>
+                            Smooth import and export transactions with customs
+                            authorities and ports.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iec-benefit-card">
+                        <div class="iec-benefit-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h4>Business Growth</h4>
+                        <p>
+                            Increase revenue opportunities by entering foreign
+                            markets and expanding operations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iec-benefit-card">
+                        <div class="iec-benefit-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h4>Global Brand Recognition</h4>
+                        <p>
+                            Build credibility and establish your brand presence in
+                            international markets.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="iec-eligibility py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Eligibility Criteria</span>
+                <h2>IEC Registration Eligibility</h2>
+                <p>
+                    Any individual or business entity involved in import-export
+                    activities can apply for an Import Export Code (IEC)
+                    Registration issued by DGFT.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iec-eligibility-card">
+                        <i class="fa-solid fa-user"></i>
+                        <h4>Individual Proprietor</h4>
+                        <p>
+                            Sole proprietors engaged in import or export activities.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iec-eligibility-card">
+                        <i class="fa-solid fa-handshake"></i>
+                        <h4>Partnership Firm</h4>
+                        <p>
+                            Registered partnership firms involved in international trade.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iec-eligibility-card">
+                        <i class="fa-solid fa-building"></i>
+                        <h4>Limited Liability Partnership</h4>
+                        <p>
+                            LLPs looking to expand business globally.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iec-eligibility-card">
+                        <i class="fa-solid fa-city"></i>
+                        <h4>Private Limited Company</h4>
+                        <p>
+                            Companies importing or exporting goods and services.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iec-eligibility-card">
+                        <i class="fa-solid fa-landmark"></i>
+                        <h4>Trust</h4>
+                        <p>
+                            Registered trusts involved in foreign transactions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iec-eligibility-card">
+                        <i class="fa-solid fa-users"></i>
+                        <h4>Society</h4>
+                        <p>
+                            Societies participating in international trade activities.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="iec-documents py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Required Documents</span>
+                <h2>Documents Required for IEC Registration</h2>
+                <p>
+                    To obtain an Import Export Code (IEC), applicants must submit
+                    basic identity, address and business-related documents for
+                    verification by DGFT.
+                </p>
+            </div>
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-5">
+
+                    <div class="iec-documents-content">
+
+                        <h3>Simple Documentation Process</h3>
+
+                        <p>
+                            IEC Registration requires only a few essential documents.
+                            Our experts verify all documents and ensure error-free
+                            application filing for faster approval.
+                        </p>
+
+                        <div class="iec-doc-points">
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Quick Verification
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Online Submission
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Fast Processing
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Expert Assistance
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-7">
+
+                    <div class="iec-documents-grid">
+
+                        <div class="iec-document-card">
+                            <i class="fa-solid fa-id-card"></i>
+                            <h4>PAN Card</h4>
+                        </div>
+
+                        <div class="iec-document-card">
+                            <i class="fa-solid fa-address-card"></i>
+                            <h4>Aadhaar Card</h4>
+                        </div>
+
+                        <div class="iec-document-card">
+                            <i class="fa-solid fa-image"></i>
+                            <h4>Passport Size Photo</h4>
+                        </div>
+
+                        <div class="iec-document-card">
+                            <i class="fa-solid fa-building-columns"></i>
+                            <h4>Cancelled Cheque</h4>
+                        </div>
+
+                        <div class="iec-document-card">
+                            <i class="fa-solid fa-file-invoice"></i>
+                            <h4>Bank Certificate</h4>
+                        </div>
+
+                        <div class="iec-document-card">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h4>Address Proof</h4>
+                        </div>
+
+                        <div class="iec-document-card">
+                            <i class="fa-solid fa-file-signature"></i>
+                            <h4>Business Registration Proof</h4>
+                        </div>
+
+                        <div class="iec-document-card">
+                            <i class="fa-solid fa-receipt"></i>
+                            <h4>GST Certificate</h4>
+                            <small>(If Applicable)</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="iec-process py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Simple Registration Process</span>
+                <h2>IEC Registration Process</h2>
+                <p>
+                    Our experts handle the complete IEC registration procedure,
+                    ensuring smooth filing, quick approval and hassle-free
+                    documentation support.
+                </p>
+            </div>
+
+            <div class="iec-process-timeline">
+
+                <div class="iec-process-card">
+                    <div class="iec-step-number">01</div>
+                    <div class="iec-process-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h4>Consultation</h4>
+                    <p>
+                        Discuss your import-export requirements with our experts.
+                    </p>
+                </div>
+
+                <div class="iec-process-card">
+                    <div class="iec-step-number">02</div>
+                    <div class="iec-process-icon">
+                        <i class="fa-solid fa-folder-open"></i>
+                    </div>
+                    <h4>Document Collection</h4>
+                    <p>
+                        Submit all required business and identity documents.
+                    </p>
+                </div>
+
+                <div class="iec-process-card">
+                    <div class="iec-step-number">03</div>
+                    <div class="iec-process-icon">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+                    <h4>Application Preparation</h4>
+                    <p>
+                        Our team prepares and reviews your IEC application.
+                    </p>
+                </div>
+
+                <div class="iec-process-card">
+                    <div class="iec-step-number">04</div>
+                    <div class="iec-process-icon">
+                        <i class="fa-solid fa-laptop-file"></i>
+                    </div>
+                    <h4>DGFT Filing</h4>
+                    <p>
+                        Application is filed online through the DGFT portal.
+                    </p>
+                </div>
+
+                <div class="iec-process-card">
+                    <div class="iec-step-number">05</div>
+                    <div class="iec-process-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <h4>Verification</h4>
+                    <p>
+                        Documents and application details are verified.
+                    </p>
+                </div>
+
+                <div class="iec-process-card">
+                    <div class="iec-step-number">06</div>
+                    <div class="iec-process-icon">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <h4>IEC Certificate Issued</h4>
+                    <p>
+                        Receive your Import Export Code Certificate successfully.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="iec-features-section py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Key Advantages</span>
+                <h2>Features of IEC Certificate</h2>
+                <p>
+                    IEC Registration offers businesses a simple and efficient way
+                    to participate in international trade with minimal compliance
+                    requirements and lifetime validity.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iec-feature-card">
+                        <div class="iec-feature-icon">
+                            <i class="fa-solid fa-infinity"></i>
+                        </div>
+                        <h4>Lifetime Validity</h4>
+                        <p>
+                            IEC remains valid for the lifetime of the business and
+                            does not require periodic renewal.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iec-feature-card">
+                        <div class="iec-feature-icon">
+                            <i class="fa-solid fa-file-circle-check"></i>
+                        </div>
+                        <h4>One-Time Registration</h4>
+                        <p>
+                            A single registration process grants businesses access
+                            to global trade opportunities.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iec-feature-card">
+                        <div class="iec-feature-icon">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+                        <h4>No Return Filing</h4>
+                        <p>
+                            IEC holders are not required to file regular returns
+                            solely for maintaining the certificate.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iec-feature-card">
+                        <div class="iec-feature-icon">
+                            <i class="fa-solid fa-earth-asia"></i>
+                        </div>
+                        <h4>Global Trade Access</h4>
+                        <p>
+                            Import and export goods and services across international
+                            markets with ease.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iec-feature-card">
+                        <div class="iec-feature-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h4>Government Recognition</h4>
+                        <p>
+                            Officially recognized by DGFT for conducting international
+                            trade activities.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="iec-feature-card">
+                        <div class="iec-feature-icon">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                        <h4>Easy Online Process</h4>
+                        <p>
+                            Complete the registration process online with minimal
+                            documentation and quick approval.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="iec-faq py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Frequently Asked Questions</span>
+                <h2>IEC Registration FAQs</h2>
+                <p>
+                    Find answers to the most commonly asked questions about
+                    Import Export Code (IEC) Registration.
+                </p>
+            </div>
+
+            <div class="accordion" id="iecFaqAccordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#iecFaq1">
+                            Is IEC mandatory for import and export business?
+                        </button>
+                    </h2>
+
+                    <div id="iecFaq1" class="accordion-collapse collapse show" data-bs-parent="#iecFaqAccordion">
+
+                        <div class="accordion-body">
+                            Yes, IEC is mandatory for businesses and individuals
+                            involved in importing or exporting goods and services
+                            from India.
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#iecFaq2">
+                            How long does IEC registration take?
+                        </button>
+                    </h2>
+
+                    <div id="iecFaq2" class="accordion-collapse collapse" data-bs-parent="#iecFaqAccordion">
+
+                        <div class="accordion-body">
+                            IEC registration is generally processed within
+                            1-3 working days after successful document submission.
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#iecFaq3">
+                            What is the validity of IEC Certificate?
+                        </button>
+                    </h2>
+
+                    <div id="iecFaq3" class="accordion-collapse collapse" data-bs-parent="#iecFaqAccordion">
+
+                        <div class="accordion-body">
+                            IEC comes with lifetime validity and generally does
+                            not require renewal.
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#iecFaq4">
+                            Can IEC details be modified later?
+                        </button>
+                    </h2>
+
+                    <div id="iecFaq4" class="accordion-collapse collapse" data-bs-parent="#iecFaqAccordion">
+
+                        <div class="accordion-body">
+                            Yes, business information and other details can be
+                            updated through the DGFT portal whenever required.
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#iecFaq5">
+                            Do service exporters need IEC?
+                        </button>
+                    </h2>
+
+                    <div id="iecFaq5" class="accordion-collapse collapse" data-bs-parent="#iecFaqAccordion">
+
+                        <div class="accordion-body">
+                            Yes, service exporters receiving foreign currency
+                            payments may require IEC depending on the nature
+                            of services provided.
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="iec-cta py-5">
+    <div class="container">
+
+        <div class="iec-cta-box">
+
+            <span>Start Global Trading Today</span>
+
+            <h2>
+                Get Your IEC Certificate Registration Online
+            </h2>
+
+            <p>
+                Expand your business globally with a DGFT-approved
+                Import Export Code. Our experts handle the complete
+                registration process from documentation to approval.
+            </p>
+
+            <div class="iec-cta-buttons">
+
+                <a href="#iecForm" class="iec-btn-primary">
+                    Apply Now
+                </a>
+
+                <a href="tel:+919999999999" class="iec-btn-secondary">
+                    Talk To Expert
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/iec-registration.js"></script>
+</body>
+
+</html>

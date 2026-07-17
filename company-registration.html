@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Registration</title>
+
+    <!-- bootstap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/company-registration.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="premium-navbar">
+        <div class="nav-container">
+              <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <!-- Navigation -->
+            <ul class="nav-menu">
+
+                <li><a href="index.html">Home</a></li>
+
+                <!-- Business Setup -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Business Setup
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="company-registration.html">Company Registration</a></li>
+                        <li><a class="dropdown-item" href="fssai-registration.html">FSSAI Registration</a></li>
+                        <li><a class="dropdown-item" href="iec-registration.html">IEC Certification</a></li>
+                        <li><a class="dropdown-item" href="iso-certification.html">ISO Certification</a></li>
+                    </ul>
+                </li>
+
+                <!-- Tax & Compliance -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Tax & Compliance
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="gst-registration.html">GST Registration</a></li>
+                        <li><a class="dropdown-item" href="gst-return-filing.html">GST Return Filing</a></li>
+                        <li><a class="dropdown-item" href="itr-filing.html">ITR Filing</a></li>
+                        <li><a class="dropdown-item" href="income-tax-calculator.html">Income Tax Calculator</a></li>
+                        <li><a class="dropdown-item" href="gst-calculator.html">GST Calculator</a></li>
+                    </ul>
+                </li>
+
+                <!-- Trademark -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Trademark & IP
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="trademark-registration.html">Trademark Registration</a></li>
+                    </ul>
+                </li>
+
+                <!-- Digital Services -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Digital Services
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="website-designing.html">Website Designing</a></li>
+                        <li><a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="#" class="consult-btn">
+                Get Consultation
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+    </nav>
+
+    <section class="company-hero">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-7">
+                    <span class="hero-badge">
+                        Business Setup Services
+                    </span>
+
+                    <h1>
+                        Register Your Company Online With Expert Assistance
+                    </h1>
+
+                    <p>
+                        Start your business legally with complete company registration support.
+                        Fast documentation, professional guidance and hassle-free incorporation.
+                    </p>
+
+                    <div class="hero-features">
+
+                        <div class="feature-item">
+                            <i class="fa-solid fa-headset"></i>
+                            <span>Expert Support</span>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>Fast Processing</span>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Government Compliant</span>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <span>Dedicated Consultant</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="service-form-card">
+
+                        <h3>Get Free Consultation</h3>
+
+                        <form id="registrationForm">
+
+                            <input type="text" id="name" class="form-control" placeholder="Full Name">
+                            <small id="nameError"></small>
+
+                            <input type="tel" id="phone" class="form-control" placeholder="Mobile Number">
+                            <small id="phoneError"></small>
+
+                            <input type="email" id="email" class="form-control" placeholder="Email Address">
+                            <small id="emailError"></small>
+
+                            <input type="text" id="city" class="form-control" placeholder="City">
+                            <small id="cityError"></small>
+
+                            <button type="submit">
+                                Talk To Expert
+                            </button>
+
+                            <div id="successMsg"></div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="company-overview py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Business Setup</span>
+                <h2>What is Company Registration?</h2>
+            </div>
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+                    <div class="overview-content">
+                        <p>
+                            Company Registration is the legal process of establishing
+                            a business entity under the Companies Act. It provides
+                            your business with a separate legal identity and helps
+                            build trust among customers, investors, and financial
+                            institutions.
+                        </p>
+
+                        <p>
+                            A registered company can open current bank accounts,
+                            raise funding, hire employees, enter legal contracts,
+                            and expand operations across India.
+                        </p>
+
+                        <div class="overview-points">
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Separate Legal Entity
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Limited Liability Protection
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Better Business Credibility
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Easy Funding Opportunities
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="overview-card">
+
+                        <div class="info-box">
+                            <i class="fa-solid fa-building"></i>
+                            <h4>Legal Identity</h4>
+                            <p>Your company gets a separate legal existence.</p>
+                        </div>
+
+                        <div class="info-box">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <h4>Liability Protection</h4>
+                            <p>Protect personal assets from business risks.</p>
+                        </div>
+
+                        <div class="info-box">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <h4>Business Growth</h4>
+                            <p>Improve credibility and expand operations.</p>
+                        </div>
+
+                        <div class="info-box">
+                            <i class="fa-solid fa-handshake"></i>
+                            <h4>Investor Trust</h4>
+                            <p>Build confidence among investors and clients.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="business-types py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Business Structures</span>
+                <h2>Types of Business Registration</h2>
+                <p>
+                    Choose the right business structure based on your goals,
+                    ownership, compliance requirements, and future growth plans.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="type-card">
+
+                        <div class="type-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+
+                        <h4>Private Limited Company</h4>
+
+                        <p>
+                            Best option for startups and growing businesses seeking
+                            investment and long-term expansion.
+                        </p>
+
+                        <ul>
+                            <li>Limited Liability</li>
+                            <li>Investor Friendly</li>
+                            <li>High Credibility</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="type-card">
+
+                        <div class="type-icon">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+
+                        <h4>LLP Registration</h4>
+
+                        <p>
+                            Suitable for professionals and businesses wanting
+                            limited liability with flexible management.
+                        </p>
+
+                        <ul>
+                            <li>Low Compliance</li>
+                            <li>Separate Legal Entity</li>
+                            <li>Partner Flexibility</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="type-card">
+
+                        <div class="type-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <h4>One Person Company</h4>
+
+                        <p>
+                            Designed for solo entrepreneurs who want company
+                            benefits without multiple shareholders.
+                        </p>
+
+                        <ul>
+                            <li>Single Owner</li>
+                            <li>Limited Liability</li>
+                            <li>Professional Image</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="type-card">
+
+                        <div class="type-icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+
+                        <h4>Sole Proprietorship</h4>
+
+                        <p>
+                            Simple and cost-effective business structure for
+                            individual business owners.
+                        </p>
+
+                        <ul>
+                            <li>Easy Setup</li>
+                            <li>Low Cost</li>
+                            <li>Full Control</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="company-benefits py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Why Register Your Company</span>
+                <h2>Benefits of Company Registration</h2>
+                <p>
+                    Company registration provides legal protection, enhances credibility,
+                    and helps businesses grow with confidence.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h4>Limited Liability Protection</h4>
+                        <p>
+                            Protect personal assets from business debts and liabilities.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <i class="fa-solid fa-building"></i>
+                        <h4>Separate Legal Identity</h4>
+                        <p>
+                            Your company becomes a separate legal entity from its owners.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <h4>Easy Funding</h4>
+                        <p>
+                            Attract investors and secure business loans more easily.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                        <h4>Tax Benefits</h4>
+                        <p>
+                            Enjoy various tax advantages and government incentives.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <i class="fa-solid fa-award"></i>
+                        <h4>Business Credibility</h4>
+                        <p>
+                            Build trust among customers, suppliers and investors.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <i class="fa-solid fa-infinity"></i>
+                        <h4>Perpetual Succession</h4>
+                        <p>
+                            The company continues to exist regardless of ownership changes.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="documents-section py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Required Documents</span>
+                <h2>Documents Required For Company Registration</h2>
+            </div>
+
+            <div class="document-wrapper">
+
+                <h4>For Directors</h4>
+
+                <ul>
+                    <li>PAN Card</li>
+                    <li>Aadhaar Card</li>
+                    <li>Passport Size Photo</li>
+                    <li>Email Address</li>
+                    <li>Mobile Number</li>
+                </ul>
+
+                <h4>Registered Office Documents</h4>
+
+                <ul>
+                    <li>Electricity Bill</li>
+                    <li>Rent Agreement</li>
+                    <li>NOC From Owner</li>
+                </ul>
+
+                <h4>Business Information</h4>
+
+                <ul>
+                    <li>Company Name Preference</li>
+                    <li>Business Activity Details</li>
+                    <li>Shareholding Pattern</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="registration-process py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Simple Process</span>
+                <h2>Company Registration Process</h2>
+                <p>
+                    Our streamlined process ensures quick and hassle-free company registration.
+                </p>
+            </div>
+
+            <div class="process-wrapper">
+
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h4>Business Consultation</h4>
+                    <p>Discuss your business requirements with our experts.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-folder-open"></i>
+                    </div>
+                    <h4>Document Collection</h4>
+                    <p>Submit all required documents for verification.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-signature"></i>
+                    </div>
+                    <h4>DSC Application</h4>
+                    <p>Apply for Digital Signature Certificate.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-check-circle"></i>
+                    </div>
+                    <h4>Name Approval</h4>
+                    <p>Reserve and approve your company name.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-file-circle-plus"></i>
+                    </div>
+                    <h4>Company Filing</h4>
+                    <p>Registration application filed with MCA.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">06</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h4>Certificate Issued</h4>
+                    <p>Receive your Incorporation Certificate.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="content-section py-5 bg-light">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Business Benefits</span>
+                <h2>Why Choose A Private Limited Company?</h2>
+            </div>
+
+            <p>
+                A Private Limited Company is one of the most preferred business
+                structures in India. It offers limited liability protection,
+                better credibility, easy fundraising opportunities and a separate
+                legal identity.
+            </p>
+
+            <p>
+                Investors and financial institutions generally prefer private
+                limited companies because of their transparency and regulated
+                corporate structure.
+            </p>
+
+        </div>
+    </section>
+    <section class="fees-section py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Affordable Pricing</span>
+                <h2>Company Registration Packages</h2>
+                <p>Choose the package that best fits your business needs.</p>
+            </div>
+
+            <div class="pricing-table-wrapper">
+
+                <table class="table custom-table align-middle">
+
+                    <thead>
+                        <tr>
+                            <th>Package</th>
+                            <th>Features Included</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <div class="package-name">
+                                    <i class="fa-solid fa-seedling"></i>
+                                    Basic
+                                </div>
+                            </td>
+                            <td>Company Registration Assistance</td>
+                            <td>
+                                <span class="price-tag">₹2,999</span>
+                            </td>
+                        </tr>
+
+                        <tr class="featured-row">
+                            <td>
+                                <div class="package-name">
+                                    <i class="fa-solid fa-star"></i>
+                                    Standard
+                                    <span class="popular-badge">Popular</span>
+                                </div>
+                            </td>
+                            <td>DSC + PAN + TAN + Registration</td>
+                            <td>
+                                <span class="price-tag">₹5,999</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="package-name">
+                                    <i class="fa-solid fa-crown"></i>
+                                    Premium
+                                </div>
+                            </td>
+                            <td>Complete Business Setup & Support</td>
+                            <td>
+                                <span class="price-tag">₹9,999</span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="content-section py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Post Registration</span>
+                <h2>Compliance After Company Registration</h2>
+            </div>
+
+            <ul class="content-list">
+                <li>Annual ROC Filing</li>
+                <li>Income Tax Return Filing</li>
+                <li>GST Registration (If Applicable)</li>
+                <li>Accounting & Bookkeeping</li>
+                <li>Statutory Compliance Maintenance</li>
+            </ul>
+
+        </div>
+    </section>
+    <section class="faq-section py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>FAQs</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="accordion custom-accordion" id="faqAccordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            How many days does company registration take?
+                        </button>
+                    </h2>
+
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Company registration generally takes 7-15 working days,
+                            depending on document verification and government approvals.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2">
+                            What is the minimum capital requirement?
+                        </button>
+                    </h2>
+
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            There is no minimum capital requirement for registering a Private Limited Company in India.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq3">
+                            Can one person register a company?
+                        </button>
+                    </h2>
+
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, a One Person Company (OPC) can be registered by a single entrepreneur.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq4">
+                            Is GST mandatory after registration?
+                        </button>
+                    </h2>
+
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            GST registration is required only if your business crosses the prescribed turnover limit or
+                            falls under mandatory GST categories.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq5">
+                            Can foreigners become directors?
+                        </button>
+                    </h2>
+
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, foreign nationals can become directors in an Indian company subject to applicable legal
+                            requirements.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container text-center">
+
+            <h2>Ready To Register Your Company?</h2>
+
+            <p>
+                Get expert assistance and complete your company registration quickly.
+            </p>
+
+            <a href="#" class="btn btn-primary">
+                Talk To Expert
+            </a>
+
+        </div>
+    </section>
+
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="js/company-registration.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

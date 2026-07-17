@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trademark - Registration</title>
+
+    <!-- bootstap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/website-designing.css">
+</head>
+
+<body>
+    <nav class="premium-navbar">
+        <div class="nav-container">
+              <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <!-- Navigation -->
+            <ul class="nav-menu">
+
+                <li><a href="index.html">Home</a></li>
+
+                <!-- Business Setup -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Business Setup
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="company-registration.html">Company Registration</a></li>
+                        <li><a class="dropdown-item" href="fssai-registration.html">FSSAI Registration</a></li>
+                        <li><a class="dropdown-item" href="iec-registration.html">IEC Certification</a></li>
+                        <li><a class="dropdown-item" href="iso-certification.html">ISO Certification</a></li>
+                    </ul>
+                </li>
+
+                <!-- Tax & Compliance -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Tax & Compliance
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="gst-registration.html">GST Registration</a></li>
+                        <li><a class="dropdown-item" href="gst-return-filing.html">GST Return Filing</a></li>
+                        <li><a class="dropdown-item" href="itr-filing.html">ITR Filing</a></li>
+                        <li><a class="dropdown-item" href="incomeTax.html">Income Tax Calculator</a></li>
+                        <li><a class="dropdown-item" href="gstCalculator.html">GST Calculator</a></li>
+                    </ul>
+                </li>
+
+                <!-- Trademark -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Trademark & IP
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="trademark-registration.html">Trademark Registration</a></li>
+                    </ul>
+                </li>
+
+                <!-- Digital Services -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Digital Services
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="website-designing.html">Website Designing</a></li>
+                        <li><a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="#" class="consult-btn">
+                Get Consultation
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+    </nav>
+
+    <section class="service-hero">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Content -->
+                <div class="col-lg-7 col-md-12">
+
+                    <div class="service-content">
+
+                        <span class="service-tag">
+                            Website Designing Services
+                        </span>
+
+                        <h1>
+                            Professional Website Designing
+                            For Your Business Growth
+                        </h1>
+
+                        <p>
+                            Get a modern, responsive and user-friendly website
+                            designed to build your online presence and attract more customers.
+                            Our expert designers create websites that are fast, secure and
+                            optimized for all devices.
+                        </p>
+
+                        <div class="service-points">
+                            <div>
+                                <i class="fa-solid fa-laptop-code"></i>
+                                Custom Website Design
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Mobile Responsive Design
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-chart-line"></i>
+                                SEO Friendly Structure
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="col-lg-5 col-md-12">
+                    <div class="service-form-card">
+                        <h3>
+                            Apply For Website Designing
+                        </h3>
+
+                        <form id="websiteForm">
+
+                            <input type="text" class="form-control" id="websiteName" placeholder="Full Name">
+
+                            <small id="websiteNameError"></small>
+
+                            <input type="tel" class="form-control" id="websitePhone" placeholder="Mobile Number">
+
+                            <small id="websitePhoneError"></small>
+
+                            <input type="email" class="form-control" id="websiteEmail" placeholder="Email Address">
+
+                            <small id="websiteEmailError"></small>
+
+                            <textarea class="form-control" id="websiteMessage"
+                                placeholder="Your Requirement"></textarea>
+
+                            <button type="submit">
+                                Submit Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="about-service-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Image -->
+                <div class="col-lg-5 col-md-12">
+                    <div class="service-image-box">
+                        <img src="images/website.png" alt="Website Designing" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="col-lg-7 col-md-12">
+                    <div class="service-about-content">
+                        <span class="service-tag">
+                            About Website Designing
+                        </span>
+
+                        <h2>
+                            What Is Website Designing?
+                        </h2>
+
+                        <p>
+                            Website designing is the process of creating a
+                            visually attractive, user-friendly and functional
+                            website that represents your business online.
+                        </p>
+
+                        <p>
+                            A professionally designed website helps businesses
+                            build trust, showcase their services, generate leads
+                            and provide a better experience to customers.
+                        </p>
+
+                        <p>
+                            Our website designers create modern websites with
+                            responsive layouts, fast loading speed and a clean
+                            user interface that works smoothly on desktop, tablet
+                            and mobile devices.
+                        </p>
+
+                        <div class="about-points">
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Modern & Creative UI Design
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Fully Responsive Websites
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                User Friendly Experience
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                SEO Optimized Structure
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="benefits-section">
+
+        <div class="container">
+            <div class="section-heading text-center">
+                <span class="service-tag">
+                    Why Choose Professional Website
+                </span>
+                <h2>
+                    Benefits of Professional Website Designing
+                </h2>
+                <p>
+                    A professionally designed website helps your business grow
+                    by improving visibility, trust and customer engagement.
+                </p>
+
+            </div>
+            <div class="row mt-5">
+
+                <!-- Card 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <h4>
+                            Build Customer Trust
+                        </h4>
+                        <p>
+                            A professional website creates a strong first
+                            impression and increases customer confidence.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h4>
+                            Mobile Responsive
+                        </h4>
+                        <p>
+                            Websites that work perfectly on mobiles, tablets
+                            and desktop devices.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h4>
+                            Better Performance
+                        </h4>
+                        <p>
+                            Fast loading speed and optimized structure for
+                            better user experience.
+                        </p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h4>
+                            Increase Sales
+                        </h4>
+                        <p>
+                            Convert visitors into customers with an attractive
+                            and effective website design.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="website-types">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <span class="service-tag">Our Website Services</span>
+                <h2>Types of Websites We Design</h2>
+                <p>We create modern and professional websites according to your business requirements.</p>
+            </div>
+
+
+            <div class="row mt-4">
+
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h4>Business Website</h4>
+                        <p>
+                            Professional websites to showcase your company, services and brand identity.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <h4>E-Commerce Website</h4>
+                        <p>
+                            Online shopping websites with product pages, cart and secure user experience.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <h4>Portfolio Website</h4>
+                        <p>
+                            Creative portfolio websites to display your work, skills and achievements.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h4>Landing Page</h4>
+                        <p>
+                            High converting landing pages designed for campaigns and lead generation.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fa-solid fa-blog"></i>
+                        </div>
+                        <h4>Blog Website</h4>
+                        <p>
+                            SEO-friendly blog websites for sharing content and growing audience.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="type-card">
+                        <div class="type-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h4>Custom Web Application</h4>
+                        <p>
+                            Customized web solutions according to your business workflow.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <section class="design-process">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <span class="service-tag">Our Working Process</span>
+                <h2>Website Designing Process</h2>
+                <p>
+                    We follow a simple and effective process to create high-quality websites.
+                </p>
+            </div>
+
+
+            <div class="process-wrapper mt-4">
+
+                <div class="process-item">
+                    <div class="process-number">01</div>
+                    <div>
+                        <h4>Requirement Analysis</h4>
+                        <p>
+                            We understand your business goals, target audience and website requirements.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="process-item">
+                    <div class="process-number">02</div>
+                    <div>
+                        <h4>Planning & Strategy</h4>
+                        <p>
+                            We prepare website structure, layout and user experience planning.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="process-item">
+                    <div class="process-number">03</div>
+                    <div>
+                        <h4>UI/UX Design</h4>
+                        <p>
+                            Our designers create attractive and user-friendly website designs.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="process-item">
+                    <div class="process-number">04</div>
+                    <div>
+                        <h4>Development</h4>
+                        <p>
+                            We convert designs into fast, responsive and functional websites.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="process-item">
+                    <div class="process-number">05</div>
+                    <div>
+                        <h4>Testing & Launch</h4>
+                        <p>
+                            After testing performance, we launch your website successfully.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <section class="features-section">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <span class="service-tag">Our Features</span>
+                <h2>Features We Provide</h2>
+                <p>
+                    We build websites with modern features for better performance and user experience.
+                </p>
+            </div>
+
+
+            <div class="row mt-4">
+
+
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+
+                        <h4>Responsive Design</h4>
+
+                        <p>
+                            Website works smoothly on mobile, tablet and desktop devices.
+                        </p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+
+                        <h4>Fast Loading</h4>
+
+                        <p>
+                            Optimized websites with better speed and performance.
+                        </p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+                        <h4>SEO Friendly</h4>
+
+                        <p>
+                            SEO-ready structure to improve online visibility.
+                        </p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <h4>Secure Website</h4>
+
+                        <p>
+                            Secure coding practices to protect your website.
+                        </p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+
+                        <h4>Creative UI Design</h4>
+
+                        <p>
+                            Modern layouts with attractive user interface.
+                        </p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+
+                        <h4>Easy Management</h4>
+
+                        <p>
+                            Simple and manageable website structure.
+                        </p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+
+                        <h4>Support</h4>
+
+                        <p>
+                            Continuous support after website delivery.
+                        </p>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <h4>Custom Development</h4>
+
+                        <p>
+                            Customized solutions according to business needs.
+                        </p>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <span class="service-tag">Our Pricing</span>
+                <h2>Website Designing Packages</h2>
+                <p>
+                    Choose the perfect website package according to your business needs.
+                </p>
+            </div>
+
+
+            <div class="row mt-4">
+
+
+                <!-- Basic -->
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="price-card">
+
+                        <h4>Basic Plan</h4>
+
+                        <div class="price">
+                            ₹9,999
+                        </div>
+
+                        <p>Perfect for small businesses</p>
+
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> 5 Pages Website</li>
+                            <li><i class="fa-solid fa-check"></i> Responsive Design</li>
+                            <li><i class="fa-solid fa-check"></i> Contact Form</li>
+                            <li><i class="fa-solid fa-check"></i> Basic SEO Setup</li>
+                            <li><i class="fa-solid fa-check"></i> Mobile Friendly</li>
+                        </ul>
+
+                        <a href="#" class="price-btn">
+                            Get Started
+                        </a>
+
+                    </div>
+                </div>
+
+
+
+                <!-- Standard -->
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="price-card active">
+
+                        <span class="popular">
+                            Popular
+                        </span>
+
+                        <h4>Standard Plan</h4>
+
+                        <div class="price">
+                            ₹19,999
+                        </div>
+
+                        <p>Best for growing businesses</p>
+
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> 10 Pages Website</li>
+                            <li><i class="fa-solid fa-check"></i> Premium UI Design</li>
+                            <li><i class="fa-solid fa-check"></i> WhatsApp Integration</li>
+                            <li><i class="fa-solid fa-check"></i> Advanced SEO Setup</li>
+                            <li><i class="fa-solid fa-check"></i> Speed Optimization</li>
+                        </ul>
+
+                        <a href="#" class="price-btn">
+                            Get Started
+                        </a>
+
+                    </div>
+                </div>
+
+
+
+                <!-- Premium -->
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="price-card">
+
+                        <h4>Premium Plan</h4>
+
+                        <div class="price">
+                            ₹39,999
+                        </div>
+
+                        <p>For advanced requirements</p>
+
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Custom Website</li>
+                            <li><i class="fa-solid fa-check"></i> Advanced Features</li>
+                            <li><i class="fa-solid fa-check"></i> Database Integration</li>
+                            <li><i class="fa-solid fa-check"></i> Admin Panel</li>
+                            <li><i class="fa-solid fa-check"></i> Complete Support</li>
+                        </ul>
+
+                        <a href="#" class="price-btn">
+                            Get Started
+                        </a>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <span class="service-tag">FAQ</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>
+                    Find answers to common questions about our website designing services.
+                </p>
+            </div>
+
+
+            <div class="faq-box mt-4">
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        What type of websites do you design?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            We design business websites, e-commerce websites, portfolio websites,
+                            landing pages and custom web applications.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        How much time does it take to design a website?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Website development time depends on project requirements.
+                            Generally, a basic website takes 7-15 working days.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        Will my website work on mobile devices?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes, we create fully responsive websites that work smoothly on
+                            mobile, tablet and desktop devices.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        Do you provide SEO services with website design?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes, we provide SEO-friendly website structure to improve your
+                            online visibility.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        Can I update my website later?
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes, we build websites that can be easily updated and managed in future.
+                        </p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+
+            <div class="cta-box">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-8 col-md-12">
+
+                        <h2>
+                            Ready To Grow Your Business Online?
+                        </h2>
+
+                        <p>
+                            Get a professionally designed website that helps you attract customers,
+                            build trust and grow your business digitally.
+                        </p>
+
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-12 text-lg-end text-center">
+
+                        <a href="#" class="cta-btn">
+                            Get Free Consultation
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/website-designing.js"></script>
+</body>
+
+</html>

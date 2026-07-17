@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profit Calculator</title>
+
+        <link rel="stylesheet" href="css/ProfitCalculator.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+
+    <body>
+        <nav class="premium-navbar">
+        <div class="nav-container">
+              <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <!-- Navigation -->
+            <ul class="nav-menu">
+
+                <li><a href="index.html">Home</a></li>
+
+                <!-- Business Setup -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Business Setup
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="company-registration.html">Company Registration</a></li>
+                        <li><a class="dropdown-item" href="fssai-registration.html">FSSAI Registration</a></li>
+                        <li><a class="dropdown-item" href="iec-registration.html">IEC Certification</a></li>
+                        <li><a class="dropdown-item" href="iso-certification.html">ISO Certification</a></li>
+                    </ul>
+                </li>
+
+                <!-- Tax & Compliance -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Tax & Compliance
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="gst-registration.html">GST Registration</a></li>
+                        <li><a class="dropdown-item" href="gst-return-filing.html">GST Return Filing</a></li>
+                        <li><a class="dropdown-item" href="itr-filing.html">ITR Filing</a></li>
+                        <li><a class="dropdown-item" href="incomeTax.html">Income Tax Calculator</a></li>
+                        <li><a class="dropdown-item" href="gstCalculator.html">GST Calculator</a></li>
+                    </ul>
+                </li>
+
+                <!-- Trademark -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Trademark & IP
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="trademark-registration.html">Trademark Registration</a></li>
+                    </ul>
+                </li>
+
+                <!-- Digital Services -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Digital Services
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="website-designing.html">Website Designing</a></li>
+                        <li><a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="#" class="consult-btn">
+                Get Consultation
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+    </nav>
+        <section class="profit-section">
+            <div class="calculator-card">
+
+                <div class="heading">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <h2>Profit Calculator</h2>
+                    <p>Calculate your business profit, revenue and margin instantly.</p>
+                </div>
+
+                <div class="input-group">
+                    <label>Cost Price (₹)</label>
+                    <input type="number" id="costPrice" placeholder="Enter Cost Price">
+                </div>
+
+                <div class="input-group">
+                    <label>Selling Price (₹)</label>
+                    <input type="number" id="sellingPrice" placeholder="Enter Selling Price">
+                </div>
+
+                <div class="input-group">
+                    <label>Quantity</label>
+                    <input type="number" id="quantity" placeholder="Enter Quantity">
+                </div>
+
+                <button onclick="calculateProfit()">
+                    Calculate Profit
+                </button>
+
+                <div class="results">
+
+                    <div class="result-card">
+                        <span>Total Revenue</span>
+                        <h3 id="revenue">₹0</h3>
+                    </div>
+
+                    <div class="result-card profit-card">
+                        <span>Profit Amount</span>
+                        <h3 id="profit">₹0</h3>
+                    </div>
+
+                    <div class="result-card">
+                        <span>Profit Margin</span>
+                        <h3 id="margin">0%</h3>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <script src="css/ProfitCalculator.css"></script>
+    </body>
+
+</html>

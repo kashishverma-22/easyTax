@@ -1,0 +1,973 @@
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title span {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.section-title h2 {
+    font-size: 28px !important;
+    color: var(--fivth-color);
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.section-title p {
+    font-size: 14px !important;
+    font-weight: 500;
+}
+
+.trademark-hero{
+    padding: 90px 0;
+    margin-top: 30px;
+    background: linear-gradient(135deg,#f8fbff,#ffffff);
+}
+
+.service-tag{
+    display: inline-block;
+    padding: 10px 22px;
+    background: rgba(122,170,206,.15);
+    color: var(--primary-color);
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.trademark-content h1{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--fivth-color);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.trademark-content p{
+    font-size: 17px;
+    color: #64748b;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.trademark-points{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.point-box{
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-weight: 500;
+    color: var(--fivth-color);
+}
+
+.point-box i{
+    color: var(--secondary-color);
+    margin-right: 8px;
+}
+
+/* Form Card */
+
+.trademark-form-card{
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,.08);
+}
+
+.trademark-form-card h3{
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.trademark-form-card .form-control{
+    height: 55px;
+    border-radius: 12px;
+    margin-bottom: 5px;
+    border: 1px solid #dbe4ee;
+}
+
+.trademark-form-card .form-control:focus{
+    box-shadow: none;
+    border-color: var(--secondary-color);
+}
+
+.trademark-form-card small{
+    display: block;
+    color: red;
+    margin-bottom: 12px;
+}
+
+.trademark-btn{
+    width: 100%;
+    height: 55px;
+    border: none;
+    border-radius: 12px;
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+    transition: .3s;
+}
+
+/* ======================================= */
+
+.trademark-about{
+    background: #fff;
+}
+
+.section-heading{
+    max-width: 750px;
+    margin: auto;
+}
+
+.section-heading span{
+    display: inline-block;
+    padding: 8px 18px;
+    background: rgba(122,170,206,.15);
+    color: var(--primary-color);
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.section-heading h2{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--fivth-color);
+    margin-bottom: 15px;
+}
+
+.section-heading p{
+    color: #64748b;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.about-image img{
+    width: 100%;
+}
+
+.about-content h3{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--fivth-color);
+    margin-bottom: 20px;
+}
+
+.about-content p{
+    color: #64748b;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-features{
+    margin-top: 30px;
+}
+
+.feature-card{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    background: #f8fbff;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: .3s;
+}
+
+.feature-card:hover{
+    transform: translateY(-5px);
+}
+
+.feature-card i{
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+}
+
+.feature-card h5{
+    margin-bottom: 5px;
+    color: var(--fivth-color);
+    font-weight: 600;
+}
+
+.feature-card p{
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ===================================== */
+.trademark-benefits{
+    background: #f8fbff;
+}
+
+.benefit-card{
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    height: 100%;
+    transition: .4s;
+    border: 1px solid #edf2f7;
+}
+
+.benefit-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+}
+
+.icon-box{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+    background: rgba(122,170,206,.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box i{
+    font-size: 22px;
+    color: var(--primary-color);
+}
+
+.benefit-card h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--fivth-color);
+    margin-bottom: 12px;
+}
+
+.benefit-card p{
+    color: #64748b;
+    line-height: 1.8;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* =================================== */
+.trademark-eligibility{
+    background: #fff;
+}
+
+.eligibility-card{
+    background: #fff;
+    border: 1px solid #e8eef5;
+    border-radius: 20px;
+    padding: 30px 25px;
+    text-align: center;
+    height: 100%;
+    transition: .4s;
+}
+
+.eligibility-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+    border-color: var(--secondary-color);
+}
+
+.eligibility-card i{
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    background: rgba(122,170,206,.15);
+    color: var(--primary-color);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.eligibility-card h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--fivth-color);
+    margin-bottom: 12px;
+}
+
+.eligibility-card p{
+    color: #64748b;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ========================================= */
+
+.trademark-types{
+    background: #f8fbff;
+}
+
+.type-card{
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    height: 100%;
+    border: 1px solid #e8eef5;
+    transition: .4s;
+}
+
+.type-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+}
+
+.type-card i{
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.type-card h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--fivth-color);
+    margin-bottom: 12px;
+}
+
+.type-card p{
+    color: #64748b;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* =================================== */
+.trademark-documents{
+    background: #fff;
+}
+
+.document-image{
+    text-align: center;
+}
+
+.document-image img{
+    max-width: 100%;
+}
+
+.document-list{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.document-card{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 13px;
+    background: #f8fbff;
+    border-radius: 16px;
+    border-left: 4px solid var(--secondary-color);
+    transition: .3s;
+}
+
+.document-card:hover{
+    transform: translateX(8px);
+}
+
+.document-card i{
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+}
+
+.document-card h5{
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--fivth-color);
+}
+
+.document-card p{
+    margin: 0;
+    font-size: 15px;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+/* ====================================== */
+.trademark-process{
+    background: #f8fbff;
+}
+
+.process-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.process-card{
+    position: relative;
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #e8eef5;
+    transition: .4s;
+}
+
+.process-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+}
+
+.step-number{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(53,88,114,.15);
+}
+
+.process-card i{
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.process-card h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--fivth-color);
+    margin-bottom: 12px;
+}
+
+.process-card p{
+    color: #64748b;
+    line-height: 1.8;
+    margin: 0;
+     font-size: 14px;
+}
+
+/* ============================================== */
+.why-choose-trademark{
+    background: #fff;
+}
+
+.choose-card{
+    background: #fff;
+    border: 1px solid #e8eef5;
+    border-radius: 20px;
+    padding: 30px 25px;
+    text-align: center;
+    height: 100%;
+    transition: .4s;
+}
+
+.choose-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+}
+
+.choose-card i{
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.choose-card h4{
+    font-size: 18px;
+    font-weight:600;
+    color: var(--fivth-color);
+    margin-bottom: 12px;
+}
+
+.choose-card p{
+    color: #64748b;
+    line-height: 1.8;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Stats */
+
+.stats-card{
+    background: linear-gradient(135deg,var(--primary-color),var(--secondary-color));
+    border-radius: 18px;
+    padding: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.stats-card h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.stats-card p{
+    margin: 0;
+    font-size: 16px;
+}
+
+/* =================================== */
+
+.trademark-pricing{
+    background: #f8fbff;
+}
+
+.pricing-card{
+    position: relative;
+    background: #fff;
+    border-radius: 25px;
+    padding: 40px 30px;
+    text-align: center;
+    border: 1px solid #e8eef5;
+    transition: .4s;
+    height: 100%;
+}
+
+.pricing-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+}
+
+.active-plan{
+    border: 2px solid var(--primary-color);
+    transform: scale(1.03);
+}
+
+.popular-badge{
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.pricing-card h4{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--fivth-color);
+    margin-bottom: 20px;
+}
+
+.price{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.pricing-card ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+}
+
+.pricing-card ul li{
+    padding: 12px 0;
+    border-bottom: 1px solid #edf2f7;
+    color: #64748b;
+}
+
+.pricing-card ul li i{
+    color: #22c55e;
+    margin-right: 10px;
+}
+
+.pricing-btn{
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    background: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.pricing-btn:hover{
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+/* ====================================== */
+.trademark-faq-section{
+    background: #fff;
+}
+
+/* FAQ */
+
+.faq-wrapper{
+    max-width: 900px;
+    margin: auto;
+}
+
+.accordion-item{
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 15px !important;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+
+.accordion-button{
+    font-weight: 600;
+    padding: 20px;
+    color: var(--fivth-color);
+}
+
+.accordion-button:not(.collapsed){
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-body{
+    color: #64748b;
+    line-height: 1.8;
+}
+
+/* CTA */
+
+.trademark-cta{
+    margin-top: 80px;
+    background: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    border-radius: 25px;
+    padding: 60px 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.trademark-cta h2{
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.trademark-cta p{
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.cta-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cta-btn-primary,
+.cta-btn-outline{
+    padding: 14px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.cta-btn-primary{
+    background: #fff;
+    color: var(--primary-color);
+}
+
+.cta-btn-primary:hover{
+    transform: translateY(-3px);
+}
+
+.cta-btn-outline{
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.cta-btn-outline:hover{
+    background: #fff;
+    color: var(--primary-color);
+}
+
+
+/* =========================================
+   RESPONSIVE CSS
+========================================= */
+
+/* Laptop */
+@media (max-width:1200px){
+
+    .trademark-content h1{
+        font-size:28px;
+    }
+
+    .trademark-cta h2{
+        font-size:36px;
+    }
+
+    .process-wrapper{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* Tablet */
+@media (max-width:991px){
+
+    .section-title{
+        margin-bottom:40px;
+    }
+
+    .section-title h2{
+        font-size:24px !important;
+    }
+
+    .trademark-hero{
+        padding:140px 0 70px;
+    }
+
+    .trademark-content{
+        text-align:center;
+        margin-bottom:40px;
+    }
+
+    .trademark-content h1{
+        font-size:26px;
+    }
+
+    .trademark-content p{
+        font-size:15px;
+    }
+
+    .trademark-points{
+        justify-content:center;
+    }
+
+    .section-heading h2{
+        font-size:24px;
+    }
+
+    .about-content{
+        margin-top:30px;
+    }
+
+    .process-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .active-plan{
+        transform:none;
+    }
+
+    .pricing-card{
+        margin-bottom:25px;
+    }
+
+    .stats-card{
+        margin-top:20px;
+    }
+
+    .trademark-cta{
+        padding:50px 25px;
+    }
+
+    .trademark-cta h2{
+        font-size:30px;
+    }
+
+    .trademark-cta p{
+        font-size:14px;
+    }
+}
+
+/* Mobile */
+@media (max-width:767px){
+
+    .trademark-hero{
+        padding:120px 0 60px;
+        text-align:center;
+    }
+
+    .service-tag{
+        font-size:12px;
+        padding:8px 18px;
+    }
+
+    .trademark-content h1{
+        font-size:24px;
+        line-height:1.3;
+    }
+
+    .trademark-content p{
+        font-size:14px;
+    }
+
+    .trademark-points{
+        flex-direction:column;
+    }
+
+    .point-box{
+        width:100%;
+        text-align:left;
+    }
+
+    .trademark-form-card{
+        padding:25px 20px;
+    }
+
+    .trademark-form-card h3{
+        font-size:18px;
+    }
+
+    .section-heading h2{
+        font-size:22px;
+    }
+
+    .about-content h3{
+        font-size:20px;
+    }
+
+    .feature-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .benefit-card,
+    .eligibility-card,
+    .type-card,
+    .choose-card,
+    .pricing-card{
+        padding:25px 20px;
+    }
+
+    .document-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .document-card i{
+        margin-bottom:10px;
+    }
+
+    .process-card{
+        padding:25px 20px;
+    }
+
+    .pricing-card h4{
+        font-size:20px;
+    }
+
+    .price{
+        font-size:26px;
+    }
+
+    .accordion-button{
+        font-size:15px;
+        padding:16px;
+    }
+
+    .trademark-cta{
+        padding:40px 20px;
+    }
+
+    .trademark-cta h2{
+        font-size:26px;
+    }
+
+    .cta-buttons{
+        flex-direction:column;
+    }
+
+    .cta-btn-primary,
+    .cta-btn-outline{
+        width:100%;
+        text-align:center;
+    }
+}
+
+/* Small Mobile */
+@media (max-width:480px){
+
+    .section-title h2{
+        font-size:20px !important;
+    }
+
+    .trademark-content h1{
+        font-size:22px;
+    }
+
+    .section-heading h2{
+        font-size:20px;
+    }
+
+    .trademark-form-card{
+        padding:20px 15px;
+    }
+
+    .trademark-form-card .form-control{
+        height:50px;
+    }
+
+    .trademark-btn{
+        height:50px;
+    }
+
+    .benefit-card h4,
+    .eligibility-card h4,
+    .type-card h4,
+    .choose-card h4{
+        font-size:16px;
+    }
+
+    .price{
+        font-size:24px;
+    }
+
+    .trademark-cta h2{
+        font-size:22px;
+    }
+
+    .trademark-cta p{
+        font-size:13px;
+    }
+}

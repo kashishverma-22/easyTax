@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Calculator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/gstCalculator.css">
+</head>
+
+<body>
+    <nav class="premium-navbar">
+        <div class="nav-container">
+              <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <!-- Navigation -->
+            <ul class="nav-menu">
+
+                <li><a href="index.html">Home</a></li>
+
+                <!-- Business Setup -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Business Setup
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="company-registration.html">Company Registration</a></li>
+                        <li><a class="dropdown-item" href="fssai-registration.html">FSSAI Registration</a></li>
+                        <li><a class="dropdown-item" href="iec-registration.html">IEC Certification</a></li>
+                        <li><a class="dropdown-item" href="iso-certification.html">ISO Certification</a></li>
+                    </ul>
+                </li>
+
+                <!-- Tax & Compliance -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Tax & Compliance
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="gst-registration.html">GST Registration</a></li>
+                        <li><a class="dropdown-item" href="gst-return-filing.html">GST Return Filing</a></li>
+                        <li><a class="dropdown-item" href="itr-filing.html">ITR Filing</a></li>
+                        <li><a class="dropdown-item" href="incomeTax.html">Income Tax Calculator</a></li>
+                        <li><a class="dropdown-item" href="gstCalculator.html">GST Calculator</a></li>
+                    </ul>
+                </li>
+
+                <!-- Trademark -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Trademark & IP
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="trademark-registration.html">Trademark Registration</a></li>
+                    </ul>
+                </li>
+
+                <!-- Digital Services -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Digital Services
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="website-designing.html">Website Designing</a></li>
+                        <li><a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="#" class="consult-btn">
+                Get Consultation
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+    </nav>
+
+
+    <main class="gst-page">
+        <div class="page-header">
+            <h1>GST Calculator Online</h1>
+
+        </div>
+
+        <section class="gst-card">
+            <div class="gst-form">
+                <div class="form-grid">
+                    <div>
+                        <label>Amount</label>
+                        <div class="amount-input">
+                            <span>₹</span>
+                            <input type="number" id="amount" value="1000" min="0">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label>GST Rate (%)</label>
+                        <select id="gstRate">
+                            <option value="3">3%</option>
+                            <option value="5" selected>5%</option>
+                            <option value="12">12%</option>
+                            <option value="18">18%</option>
+                            <option value="28">28%</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="switch-row">
+                    <span>Does the amount include GST?</span>
+                    <label class="switch">
+                        <input type="checkbox" id="includeGst">
+                        <b></b>
+                    </label>
+                    <strong id="includeGstText">No</strong>
+                </div>
+            </div>
+
+            <div class="gst-result">
+                <div class="result-row">
+                    <span>Amount</span>
+                    <strong id="baseAmount">₹0</strong>
+                </div>
+
+                <div class="tax-lines" id="sameStateTaxLines">
+                    <div class="result-row green-row">
+                        <span id="cgstLabel">CGST Amount</span>
+                        <strong id="cgstAmount">₹0</strong>
+                    </div>
+
+                    <div class="result-row green-row">
+                        <span id="sgstLabel">SGST Amount</span>
+                        <strong id="sgstAmount">₹0</strong>
+                    </div>
+                </div>
+
+                <div class="tax-lines" id="differentStateTaxLines">
+                    <div class="result-row green-row">
+                        <span id="igstLabel">IGST Amount</span>
+                        <strong id="igstAmount">₹0</strong>
+                    </div>
+                </div>
+
+                <div class="result-row total-row">
+                    <span>Total Amount</span>
+                    <strong id="totalAmount">₹0</strong>
+                </div>
+
+                <div class="switch-row state-row">
+                    <span>Are you selling within the same State?</span>
+                    <label class="switch blue">
+                        <input type="checkbox" id="sameState" checked>
+                        <b></b>
+                    </label>
+                    <strong id="sameStateText">Yes</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="gst-info">
+            <h2>What Is GST Calculator?</h2>
+            <p>
+                A GST Calculator helps you calculate the tax amount charged under Goods and
+                Services Tax. You can use it to find the base amount, GST amount and final
+                invoice value for both GST-inclusive and GST-exclusive prices.
+            </p>
+
+            <h2>How To Calculate Tax Component Under GST</h2>
+            <div class="formula-grid">
+                <div class="formula-card">
+                    <h3>When GST is not included</h3>
+                    <p>GST Amount = Amount x GST Rate / 100</p>
+                    <p>Total Amount = Amount + GST Amount</p>
+                </div>
+
+                <div class="formula-card">
+                    <h3>When GST is already included</h3>
+                    <p>Base Amount = Amount x 100 / (100 + GST Rate)</p>
+                    <p>GST Amount = Amount - Base Amount</p>
+                </div>
+            </div>
+
+            <h2>GST Components</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>CGST</h3>
+                    <p>Central GST is collected by the central government on intra-state sales.</p>
+                </div>
+
+                <div class="content-card">
+                    <h3>SGST</h3>
+                    <p>State GST is collected by the state government on sales within the same state.</p>
+                </div>
+
+                <div class="content-card">
+                    <h3>IGST</h3>
+                    <p>Integrated GST applies when goods or services are sold between different states.</p>
+                </div>
+            </div>
+
+            <h2>How To Use GST Calculator</h2>
+            <div class="steps-list">
+                <div class="step-item">
+                    <span>01</span>
+                    <div>
+                        <h3>Enter Amount</h3>
+                        <p>Add the product or service value in the amount field.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <span>02</span>
+                    <div>
+                        <h3>Select GST Rate</h3>
+                        <p>Choose the applicable GST rate such as 5%, 12%, 18% or 28%.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <span>03</span>
+                    <div>
+                        <h3>Choose GST Type</h3>
+                        <p>Select whether the amount includes GST and whether the sale is within the same state.</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <script src="js/gstCalculator.js"></script>
+</body>
+
+</html>

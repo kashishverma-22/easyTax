@@ -1,0 +1,862 @@
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title span {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.section-title h2 {
+    font-size: 28px !important;
+    color: var(--fivth-color);
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.section-title p {
+    font-size: 14px !important;
+    font-weight: 500;
+}
+
+/* ================= ITR HERO ================= */
+
+.itr-hero-section{
+    padding:180px 0 80px;
+    background:linear-gradient(
+    135deg,
+    rgba(122,170,206,.12),
+    rgba(156,213,255,.08));
+}
+
+.itr-hero-content .hero-tag{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:50px;
+    background:var(--third-color);
+    color:var(--fivth-color);
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.itr-hero-content h1{
+    font-size:30px;
+    line-height:1.2;
+    font-weight:700;
+    color:var(--fivth-color);
+    margin-bottom:20px;
+}
+
+.itr-hero-content h1 span{
+    color:var(--primary-color);
+    display:block;
+}
+
+.itr-hero-content p{
+    color:#64748b;
+    font-size:14px;
+    line-height:1.9;
+    margin-bottom:30px;
+    max-width:620px;
+}
+
+.itr-points{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.point-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:#fff;
+    padding:14px 18px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    transition:.35s;
+}
+
+.point-item:hover{
+    transform:translateY(-4px);
+}
+
+.point-item i{
+    width:40px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:12px;
+    background:rgba(122,170,206,.15);
+    color:var(--primary-color);
+}
+
+.point-item span{
+    font-weight:600;
+    color:var(--fivth-color);
+    font-size:14px;
+}
+
+/* ================= FORM ================= */
+
+.itr-form-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+}
+
+.itr-form-card h3{
+    text-align:center;
+    margin-bottom:25px;
+    color:var(--fivth-color);
+    font-size:22px;
+    font-weight:700;
+}
+
+.itr-form-card .form-control{
+    height:52px;
+    border-radius:12px;
+    margin-bottom:10px;
+    border:1px solid #e2e8f0;
+}
+
+.itr-form-card .form-control:focus{
+    border-color:var(--secondary-color);
+    box-shadow:none;
+}
+
+.itr-form-card button{
+    width:100%;
+    height:52px;
+    border:none;
+    border-radius:12px;
+    background:var(--primary-color);
+    color:#fff;
+    font-weight:600;
+    margin-top:10px;
+    transition:.35s;
+}
+
+.itr-form-card button:hover{
+    background:var(--secondary-color);
+}
+
+#itrNameError,
+#itrPhoneError,
+#itrEmailError,
+#itrTypeError{
+    display:block;
+    color:#dc2626;
+    font-size:13px;
+    margin:-5px 0 12px;
+}
+
+#itrSuccessMsg{
+    text-align:center;
+    margin-top:15px;
+    font-size:14px;
+    font-weight:600;
+}
+/* ================= ITR OVERVIEW ================= */
+
+  .itr-overview-section{
+    padding:80px 0;
+    background:#fff;
+}
+
+.itr-overview-grid{
+    display:grid;
+    grid-template-columns:1.5fr .8fr;
+    gap:50px;
+    align-items:center;
+}
+
+.itr-overview-content span{
+    color:var(--secondary-color);
+    font-weight:600;
+    font-size:16px;
+}
+
+.itr-overview-content h2{
+    font-size:28px;
+    font-weight:800;
+    color:var(--fivth-color);
+    margin:10px 0 20px;
+}
+
+.itr-overview-content p{
+    color:#64748b;
+    font-size:16px;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+.itr-overview-points{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-top:25px;
+}
+
+.itr-overview-points div{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:14px;
+    font-weight:600;
+    color:var(--fivth-color);
+}
+
+.itr-overview-points i{
+    color:var(--primary-color);
+}
+
+.itr-overview-card{
+    background:#fff;
+    padding:40px 30px;
+    border-radius:24px;
+    text-align:center;
+    border:1px solid rgba(122,170,206,.15);
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    transition:.35s;
+}
+
+.itr-overview-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(53,88,114,.12);
+}
+
+.itr-icon{
+    width:70px;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 20px;
+    border-radius:20px;
+    background:rgba(122,170,206,.15);
+    color:var(--primary-color);
+    font-size:30px;
+}
+
+.itr-overview-card h3{
+    font-size:22px;
+    font-weight:700;
+    color:var(--fivth-color);
+    margin-bottom:15px;
+}
+
+.itr-overview-card p{
+    color:#64748b;
+    font-size:14px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.itr-overview-card a{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 25px;
+    border-radius:50px;
+    background:var(--primary-color);
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    transition:.35s;
+}
+
+.itr-overview-card a:hover{
+    background:var(--secondary-color);
+    color:#fff;
+}
+
+
+/* ================= ITR BENEFITS ================= */
+
+.itr-benefits-section{
+    padding:80px 0;
+    background:#f8fbff;
+}
+
+.itr-benefit-card{
+    background:#fff;
+    padding:30px 25px;
+    border-radius:24px;
+    text-align:center;
+    height:100%;
+    border:1px solid rgba(122,170,206,.15);
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    transition:.35s;
+}
+
+.itr-benefit-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(53,88,114,.12);
+}
+
+.benefit-icon{
+    width:65px;
+    height:65px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 20px;
+    border-radius:20px;
+    background:rgba(122,170,206,.15);
+    color:var(--primary-color);
+    font-size:24px;
+}
+
+.itr-benefit-card h4{
+    font-size:18px;
+    font-weight:700;
+    color:var(--fivth-color);
+    margin-bottom:12px;
+}
+
+.itr-benefit-card p{
+    color:#64748b;
+    font-size:14px;
+    line-height:1.8;
+    margin:0;
+}
+/* ================= ITR ELIGIBILITY ================= */
+
+.itr-eligible-section{
+    padding:80px 0;
+    background:#fff;
+}
+
+.itr-eligible-card{
+    background:#fff;
+    padding:30px 25px;
+    border-radius:24px;
+    text-align:center;
+    height:100%;
+    border:1px solid rgba(122,170,206,.15);
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    transition:.35s;
+}
+
+.itr-eligible-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(53,88,114,.12);
+}
+
+.eligible-icon{
+    width:65px;
+    height:65px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 20px;
+    border-radius:20px;
+    background:rgba(122,170,206,.15);
+    color:var(--primary-color);
+    font-size:24px;
+}
+
+.itr-eligible-card h4{
+    font-size:18px;
+    font-weight:700;
+    color:var(--fivth-color);
+    margin-bottom:12px;
+}
+
+.itr-eligible-card p{
+    color:#64748b;
+    font-size:14px;
+    line-height:1.8;
+    margin:0;
+}
+/* ================= ITR DOCUMENTS ================= */
+
+.itr-documents-section{
+    padding:80px 0;
+    background:#f8fbff;
+}
+
+.itr-document-card{
+    background:#fff;
+    padding:35px 25px;
+    border-radius:24px;
+    text-align:center;
+    height:100%;
+    border:1px solid rgba(122,170,206,.15);
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    transition:.35s;
+}
+
+.itr-document-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(53,88,114,.12);
+}
+
+.itr-doc-icon{
+    width:65px;
+    height:65px;
+    margin:0 auto 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:20px;
+    background:rgba(122,170,206,.15);
+    color:var(--primary-color);
+    font-size:24px;
+}
+
+.itr-document-card h4{
+    font-size:18px;
+    font-weight:700;
+    color:var(--fivth-color);
+    margin-bottom:12px;
+}
+
+.itr-document-card p{
+    color:#64748b;
+    font-size:14px;
+    line-height:1.8;
+    margin:0;
+}
+
+/* ================= ITR PROCESS ================= */
+
+.itr-process-section{
+    padding:80px 0;
+    background:#fff;
+}
+
+.itr-process-wrapper{
+    max-width:850px;
+    margin:auto;
+    position:relative;
+}
+
+.itr-process-wrapper::before{
+    content:"";
+    position:absolute;
+    left:25px;
+    top:0;
+    width:3px;
+    height:100%;
+    background:linear-gradient(
+    var(--secondary-color),
+    var(--third-color));
+}
+
+.itr-process-card{
+    display:flex;
+    gap:30px;
+    margin-bottom:35px;
+    position:relative;
+}
+
+.process-number{
+    min-width:52px;
+    height:52px;
+    border-radius:50%;
+    background:linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color));
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:16px;
+    font-weight:700;
+    z-index:2;
+    box-shadow:0 10px 25px rgba(53,88,114,.25);
+}
+
+.process-content{
+    background:#fff;
+    padding:22px;
+    border-radius:18px;
+    flex:1;
+    border:1px solid #e6eef7;
+    transition:.35s;
+}
+
+.process-content:hover{
+    transform:translateX(8px);
+    box-shadow:0 15px 35px rgba(53,88,114,.12);
+}
+
+.process-content h3{
+    color:var(--primary-color);
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.process-content p{
+    color:#64748b;
+    line-height:1.8;
+    font-size:14px;
+    margin:0;
+}
+
+/* ================= ITR PROCESS ================= */
+
+.itr-process-section{
+    padding:80px 0;
+    background:#f8fbff;
+}
+
+.itr-process-wrapper{
+    max-width:850px;
+    margin:auto;
+    position:relative;
+}
+
+.itr-process-wrapper::before{
+    content:"";
+    position:absolute;
+    left:25px;
+    top:0;
+    width:3px;
+    height:100%;
+    background:linear-gradient(
+        var(--secondary-color),
+        var(--third-color)
+    );
+}
+
+.itr-process-card{
+    display:flex;
+    gap:30px;
+    margin-bottom:35px;
+    position:relative;
+}
+
+.process-number{
+    min-width:52px;
+    height:52px;
+    border-radius:50%;
+    background:linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:16px;
+    font-weight:700;
+    z-index:2;
+    box-shadow:0 10px 25px rgba(53,88,114,.25);
+}
+
+.process-content{
+    background:#fff;
+    padding:22px;
+    border-radius:18px;
+    flex:1;
+    border:1px solid rgba(122,170,206,.15);
+    transition:.35s;
+}
+
+.process-content:hover{
+    transform:translateX(8px);
+    box-shadow:0 15px 35px rgba(53,88,114,.12);
+}
+
+.process-content h3{
+    color:var(--primary-color);
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.process-content p{
+    color:#64748b;
+    font-size:14px;
+    line-height:1.8;
+    margin:0;
+}
+
+
+/* ================= ITR TYPES ================= */
+
+.itr-types-section{
+    padding:80px 0;
+    background:#f8fbff;
+}
+
+.itr-type-card{
+    background:#fff;
+    padding:35px 25px;
+    border-radius:24px;
+    text-align:center;
+    height:100%;
+    border:1px solid rgba(122,170,206,.15);
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    transition:.35s;
+}
+
+.itr-type-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(53,88,114,.12);
+}
+
+.itr-type-icon{
+    width:65px;
+    height:65px;
+    margin:0 auto 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:20px;
+    background:rgba(122,170,206,.15);
+    color:var(--primary-color);
+    font-size:24px;
+}
+
+.itr-type-card h4{
+    font-size:20px;
+    font-weight:700;
+    color:var(--fivth-color);
+    margin-bottom:12px;
+}
+
+.itr-type-card p{
+    color:#64748b;
+    font-size:14px;
+    line-height:1.8;
+    margin:0;
+}
+/* ================= ITR FAQ ================= */
+
+.itr-faq-section{
+    padding:80px 0;
+    background:#f8fbff;
+}
+
+.faq-wrapper{
+    max-width:850px;
+    margin:auto;
+}
+
+.faq-item{
+    background:#fff;
+    border-radius:16px;
+    margin-bottom:18px;
+    border:1px solid #e5eef7;
+    overflow:hidden;
+}
+
+.faq-question{
+    width:100%;
+    padding:22px 25px;
+    border:none;
+    background:transparent;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    font-size:17px;
+    font-weight:600;
+    color:var(--primary-color);
+}
+
+.faq-question i{
+    transition:.3s;
+}
+
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+}
+
+.faq-answer p{
+    padding:0 25px 22px;
+    color:#64748b;
+    line-height:1.8;
+    margin:0;
+    font-size:14px;
+}
+
+.faq-item.active .faq-answer{
+    max-height:180px;
+}
+
+.faq-item.active .faq-question i{
+    transform:rotate(45deg);
+}
+/* ================= ITR CTA ================= */
+
+.itr-cta-section{
+    padding:80px 0;
+    background:#fff;
+}
+
+.itr-cta-box{
+    background:linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    border-radius:30px;
+    padding:60px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    overflow:hidden;
+}
+
+.itr-cta-content{
+    max-width:650px;
+}
+
+.itr-cta-content span{
+    color:#dff2ff;
+    font-size:16px;
+    font-weight:600;
+}
+
+.itr-cta-content h2{
+    color:#fff;
+    font-size:32px;
+    font-weight:700;
+    margin:15px 0;
+    line-height:1.2;
+}
+
+.itr-cta-content p{
+    color:#e8f4ff;
+    font-size:16px;
+    line-height:1.8;
+}
+
+.itr-cta-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+}
+
+.itr-primary-btn,
+.itr-secondary-btn{
+    padding:14px 28px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    transition:.3s;
+}
+
+.itr-primary-btn{
+    background:#fff;
+    color:var(--primary-color);
+}
+
+.itr-secondary-btn{
+    border:1px solid #fff;
+    color:#fff;
+}
+
+.itr-primary-btn:hover,
+.itr-secondary-btn:hover{
+    transform:translateY(-4px);
+}
+
+.itr-cta-icon{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    background:rgba(255,255,255,.15);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:75px;
+}
+
+/* responsive */
+
+@media (max-width: 768px){
+
+    .itr-hero-section{
+        padding:140px 0 60px;
+    }
+
+    .itr-hero-content h1{
+        font-size:24px;
+    }
+
+    .itr-points{
+        grid-template-columns:1fr;
+    }
+
+    .itr-overview-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .itr-overview-points{
+        grid-template-columns:1fr;
+    }
+
+    .itr-cta-box{
+        flex-direction:column;
+        text-align:center;
+        padding:40px 25px;
+    }
+
+    .itr-cta-content h2{
+        font-size:26px;
+    }
+
+    .itr-cta-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .itr-cta-icon{
+        width:100px;
+        height:100px;
+        font-size:50px;
+    }
+
+    .process-content{
+        padding:18px;
+    }
+}
+
+@media (max-width:576px){
+
+    .section-title h2{
+        font-size:22px !important;
+    }
+
+    .itr-form-card{
+        padding:25px;
+    }
+
+    .itr-type-card,
+    .itr-document-card,
+    .itr-benefit-card,
+    .itr-eligible-card{
+        padding:25px 20px;
+    }
+
+    .faq-question{
+        font-size:15px;
+        padding:18px;
+    }
+
+    .faq-answer p{
+        padding:0 18px 18px;
+    }
+}

@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trademark - Registration</title>
+
+    <!-- bootstap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/trademark-registration.css">
+</head>
+
+<body>
+    <nav class="premium-navbar">
+        <div class="nav-container">
+              <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <!-- Navigation -->
+            <ul class="nav-menu">
+
+                <li><a href="index.html">Home</a></li>
+
+                <!-- Business Setup -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Business Setup
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="company-registration.html">Company Registration</a></li>
+                        <li><a class="dropdown-item" href="fssai-registration.html">FSSAI Registration</a></li>
+                        <li><a class="dropdown-item" href="iec-registration.html">IEC Certification</a></li>
+                        <li><a class="dropdown-item" href="iso-certification.html">ISO Certification</a></li>
+                    </ul>
+                </li>
+
+                <!-- Tax & Compliance -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Tax & Compliance
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="gst-registration.html">GST Registration</a></li>
+                        <li><a class="dropdown-item" href="gst-return-filing.html">GST Return Filing</a></li>
+                        <li><a class="dropdown-item" href="itr-filing.html">ITR Filing</a></li>
+                        <li><a class="dropdown-item" href="incomeTax.html">Income Tax Calculator</a></li>
+                        <li><a class="dropdown-item" href="gstCalculator.html">GST Calculator</a></li>
+                    </ul>
+                </li>
+
+                <!-- Trademark -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Trademark & IP
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="trademark-registration.html">Trademark Registration</a></li>
+                    </ul>
+                </li>
+
+                <!-- Digital Services -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Digital Services
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="website-designing.html">Website Designing</a></li>
+                        <li><a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="#" class="consult-btn">
+                Get Consultation
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+    </nav>
+
+    <section class="trademark-hero">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-7">
+                    <div class="trademark-content">
+
+                        <span class="service-tag">
+                            ™ Trademark Registration
+                        </span>
+
+                        <h1>
+                            Protect Your Brand Identity with Trademark Registration
+                        </h1>
+
+                        <p>
+                            Register your business name, logo, tagline, or brand identity and get exclusive legal
+                            rights. Trademark registration helps protect your brand from unauthorized use and builds
+                            trust among customers.
+                        </p>
+
+                        <div class="trademark-points">
+
+                            <div class="point-box">
+                                <i class="fas fa-shield-alt"></i>
+                                Brand Protection
+                            </div>
+
+                            <div class="point-box">
+                                <i class="fas fa-certificate"></i>
+                                Legal Ownership
+                            </div>
+
+                            <div class="point-box">
+                                <i class="fas fa-user-check"></i>
+                                Expert Support
+                            </div>
+
+                            <div class="point-box">
+                                <i class="fas fa-check-circle"></i>
+                                Quick Filing
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+
+                    <div class="trademark-form-card">
+
+                        <h3>Apply For Trademark Registration</h3>
+
+                        <form id="trademarkForm">
+
+                            <input type="text" id="trademarkName" class="form-control" placeholder="Full Name">
+
+                            <small id="trademarkNameError"></small>
+
+                            <input type="tel" id="trademarkPhone" class="form-control" placeholder="Mobile Number">
+
+                            <small id="trademarkPhoneError"></small>
+
+                            <input type="email" id="trademarkEmail" class="form-control" placeholder="Email Address">
+
+                            <small id="trademarkEmailError"></small>
+
+                            <input type="text" id="brandName" class="form-control" placeholder="Brand Name">
+
+                            <small id="brandNameError"></small>
+
+                            <button type="submit" class="trademark-btn">
+                                Apply Now
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="trademark-about py-5">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <span>About Trademark Registration</span>
+                <h2>What is Trademark Registration?</h2>
+                <p>
+                    Trademark Registration is a legal process that protects your
+                    brand identity and gives you exclusive rights over your
+                    business name, logo, slogan, symbol, or product name.
+                </p>
+            </div>
+
+            <div class="row align-items-center mt-5">
+
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="images/trademark.png" alt="Trademark Registration" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="about-content">
+
+                        <h3>Secure Your Brand Before Someone Else Does</h3>
+
+                        <p>
+                            A trademark acts as a unique identity for your business.
+                            Once registered, it prevents competitors from using a
+                            similar brand name or logo that could confuse customers.
+                        </p>
+
+                        <p>
+                            Trademark registration helps build customer trust,
+                            strengthens brand value, and provides legal protection
+                            against infringement.
+                        </p>
+
+                        <div class="about-features">
+
+                            <div class="feature-card">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <h5>Legal Protection</h5>
+                                    <p>Protect your brand from unauthorized use.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-card">
+                                <i class="fas fa-certificate"></i>
+                                <div>
+                                    <h5>Exclusive Rights</h5>
+                                    <p>Gain ownership over your brand identity.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-card">
+                                <i class="fas fa-chart-line"></i>
+                                <div>
+                                    <h5>Business Growth</h5>
+                                    <p>Increase brand recognition and trust.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="trademark-benefits py-5">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <span>Key Advantages</span>
+                <h2>Benefits of Trademark Registration</h2>
+                <p>
+                    Trademark registration provides legal protection, strengthens
+                    brand identity, and helps your business stand out in a competitive market.
+                </p>
+            </div>
+
+            <div class="row g-4 mt-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="icon-box">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Brand Protection</h4>
+                        <p>
+                            Prevent others from using your brand name, logo, or slogan without permission.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="icon-box">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h4>Exclusive Rights</h4>
+                        <p>
+                            Gain exclusive ownership rights and legal authority over your trademark.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="icon-box">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h4>Customer Trust</h4>
+                        <p>
+                            A registered trademark increases credibility and customer confidence.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="icon-box">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Business Growth</h4>
+                        <p>
+                            Build a strong brand identity that contributes to long-term growth.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="icon-box">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Nationwide Recognition</h4>
+                        <p>
+                            Enjoy legal recognition and protection across India.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-card">
+                        <div class="icon-box">
+                            <i class="fas fa-money-check-alt"></i>
+                        </div>
+                        <h4>Business Asset</h4>
+                        <p>
+                            A trademark becomes a valuable intellectual property asset.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="trademark-eligibility py-5">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <span>Eligibility</span>
+                <h2>Who Can Apply For Trademark Registration?</h2>
+                <p>
+                    Trademark registration is available for individuals, startups,
+                    businesses, organizations, and legal entities looking to protect
+                    their brand identity.
+                </p>
+            </div>
+
+            <div class="row g-4 mt-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="eligibility-card">
+                        <i class="fas fa-user"></i>
+                        <h4>Individual</h4>
+                        <p>Any individual can register a trademark in their own name.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="eligibility-card">
+                        <i class="fas fa-rocket"></i>
+                        <h4>Startup</h4>
+                        <p>Startups can secure their brand and establish market identity.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="eligibility-card">
+                        <i class="fas fa-store"></i>
+                        <h4>Proprietorship</h4>
+                        <p>Protect your business name and logo from unauthorized use.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="eligibility-card">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Partnership Firm</h4>
+                        <p>Partnership businesses can register trademarks for branding.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="eligibility-card">
+                        <i class="fas fa-building"></i>
+                        <h4>LLP</h4>
+                        <p>Limited Liability Partnerships can secure their intellectual property.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="eligibility-card">
+                        <i class="fas fa-city"></i>
+                        <h4>Private Limited</h4>
+                        <p>Companies can register trademarks to strengthen brand value.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="eligibility-card">
+                        <i class="fas fa-users"></i>
+                        <h4>NGO / Trust</h4>
+                        <p>Organizations can protect their identity and reputation.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="eligibility-card">
+                        <i class="fas fa-globe"></i>
+                        <h4>Foreign Entity</h4>
+                        <p>Foreign businesses operating in India can apply for trademarks.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="trademark-types py-5">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <span>Trademark Categories</span>
+                <h2>Types of Trademark Registration</h2>
+                <p>
+                    Different types of trademarks are available depending on the nature
+                    of your business, products, services, and branding requirements.
+                </p>
+            </div>
+
+            <div class="row g-4 mt-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="type-card">
+                        <i class="fas fa-font"></i>
+                        <h4>Word Mark</h4>
+                        <p>
+                            Protects a business name, brand name, or slogan in text format.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="type-card">
+                        <i class="fas fa-palette"></i>
+                        <h4>Logo Mark</h4>
+                        <p>
+                            Protects your company logo, symbol, design, or visual identity.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="type-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h4>Service Mark</h4>
+                        <p>
+                            Used by service providers to distinguish their services.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="type-card">
+                        <i class="fas fa-box-open"></i>
+                        <h4>Product Mark</h4>
+                        <p>
+                            Used for products to establish uniqueness and brand identity.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="type-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Collective Mark</h4>
+                        <p>
+                            Represents a group, association, or organization collectively.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="type-card">
+                        <i class="fas fa-award"></i>
+                        <h4>Certification Mark</h4>
+                        <p>
+                            Indicates products meet specific quality or certification standards.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="trademark-documents py-5">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <span>Required Documents</span>
+                <h2>Documents Required For Trademark Registration</h2>
+                <p>
+                    To complete your trademark registration process smoothly,
+                    keep the following documents ready before applying.
+                </p>
+            </div>
+
+            <div class="row align-items-center mt-5">
+
+                <div class="col-lg-5">
+                    <div class="document-image">
+                        <img src="images/document.png" alt="Trademark Documents" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+
+                    <div class="document-list">
+
+                        <div class="document-card">
+                            <i class="fas fa-id-card"></i>
+                            <div>
+                                <h5>PAN Card</h5>
+                                <p>PAN card of the applicant or business entity.</p>
+                            </div>
+                        </div>
+
+                        <div class="document-card">
+                            <i class="fas fa-address-card"></i>
+                            <div>
+                                <h5>Aadhaar Card</h5>
+                                <p>Valid identity proof of the applicant.</p>
+                            </div>
+                        </div>
+
+                        <div class="document-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h5>Address Proof</h5>
+                                <p>Electricity bill, voter ID, passport, etc.</p>
+                            </div>
+                        </div>
+
+                        <div class="document-card">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <h5>Business Registration Proof</h5>
+                                <p>GST, MSME, Partnership Deed or Incorporation Certificate.</p>
+                            </div>
+                        </div>
+
+                        <div class="document-card">
+                            <i class="fas fa-image"></i>
+                            <div>
+                                <h5>Logo Copy (Optional)</h5>
+                                <p>Required if applying for logo trademark registration.</p>
+                            </div>
+                        </div>
+
+                        <div class="document-card">
+                            <i class="fas fa-file-signature"></i>
+                            <div>
+                                <h5>Power of Attorney</h5>
+                                <p>Required when filing through a trademark consultant.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="trademark-process py-5">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <span>Registration Process</span>
+                <h2>Trademark Registration Process</h2>
+                <p>
+                    Our experts follow a simple and hassle-free process to
+                    register your trademark and protect your brand identity.
+                </p>
+            </div>
+
+            <div class="process-wrapper mt-5">
+
+                <div class="process-card">
+                    <div class="step-number">01</div>
+                    <i class="fas fa-search"></i>
+                    <h4>Trademark Search</h4>
+                    <p>
+                        We check trademark availability and identify any conflicts.
+                    </p>
+                </div>
+
+                <div class="process-card">
+                    <div class="step-number">02</div>
+                    <i class="fas fa-folder-open"></i>
+                    <h4>Document Collection</h4>
+                    <p>
+                        Collect and verify all required documents for filing.
+                    </p>
+                </div>
+
+                <div class="process-card">
+                    <div class="step-number">03</div>
+                    <i class="fas fa-file-signature"></i>
+                    <h4>Application Filing</h4>
+                    <p>
+                        Submit the trademark application with the authorities.
+                    </p>
+                </div>
+
+                <div class="process-card">
+                    <div class="step-number">04</div>
+                    <i class="fas fa-user-check"></i>
+                    <h4>Examination</h4>
+                    <p>
+                        Government officers examine the trademark application.
+                    </p>
+                </div>
+
+                <div class="process-card">
+                    <div class="step-number">05</div>
+                    <i class="fas fa-newspaper"></i>
+                    <h4>Journal Publication</h4>
+                    <p>
+                        Trademark is published in the official trademark journal.
+                    </p>
+                </div>
+
+                <div class="process-card">
+                    <div class="step-number">06</div>
+                    <i class="fas fa-certificate"></i>
+                    <h4>Registration Certificate</h4>
+                    <p>
+                        Trademark certificate is issued after successful approval.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="why-choose-trademark py-5">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <span>Why Choose Us</span>
+                <h2>Why Choose Easy Tax Filing?</h2>
+                <p>
+                    We provide professional trademark registration services with
+                    expert guidance, affordable pricing, and end-to-end support.
+                </p>
+            </div>
+
+            <div class="row g-4 mt-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="choose-card">
+                        <i class="fas fa-user-tie"></i>
+                        <h4>Expert Professionals</h4>
+                        <p>
+                            Experienced professionals handle your trademark application efficiently.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="choose-card">
+                        <i class="fas fa-bolt"></i>
+                        <h4>Fast Processing</h4>
+                        <p>
+                            Quick documentation and application filing process.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="choose-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Secure Documentation</h4>
+                        <p>
+                            Your business information remains safe and confidential.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="choose-card">
+                        <i class="fas fa-headset"></i>
+                        <h4>Dedicated Support</h4>
+                        <p>
+                            Get assistance from our support team whenever needed.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="choose-card">
+                        <i class="fas fa-wallet"></i>
+                        <h4>Affordable Pricing</h4>
+                        <p>
+                            Transparent pricing with no hidden charges.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="choose-card">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>100% Online Process</h4>
+                        <p>
+                            Complete registration process from the comfort of your home.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Stats -->
+
+            <div class="row mt-5 g-4">
+
+                <div class="col-lg-3 col-6">
+                    <div class="stats-card">
+                        <h3>5000+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="stats-card">
+                        <h3>99%</h3>
+                        <p>Success Rate</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="stats-card">
+                        <h3>10+</h3>
+                        <p>Expert Advisors</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="stats-card">
+                        <h3>24/7</h3>
+                        <p>Customer Support</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="trademark-pricing py-5">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <span>Pricing Plans</span>
+                <h2>Choose The Right Plan For Your Business</h2>
+                <p>
+                    Affordable trademark registration packages designed for startups,
+                    individuals, and growing businesses.
+                </p>
+            </div>
+
+            <div class="row g-4 mt-4">
+
+                <!-- Basic Plan -->
+
+                <div class="col-lg-4">
+                    <div class="pricing-card">
+
+                        <h4>Basic</h4>
+
+                        <div class="price">
+                            ₹999
+                        </div>
+
+                        <ul>
+                            <li><i class="fas fa-check"></i> Trademark Filing</li>
+                            <li><i class="fas fa-check"></i> Application Drafting</li>
+                            <li><i class="fas fa-check"></i> Email Support</li>
+                            <li><i class="fas fa-check"></i> Expert Guidance</li>
+                        </ul>
+
+                        <a href="#" class="pricing-btn">
+                            Get Started
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Standard Plan -->
+
+                <div class="col-lg-4">
+                    <div class="pricing-card active-plan">
+
+                        <span class="popular-badge">
+                            Most Popular
+                        </span>
+
+                        <h4>Standard</h4>
+
+                        <div class="price">
+                            ₹1,999
+                        </div>
+
+                        <ul>
+                            <li><i class="fas fa-check"></i> Trademark Search</li>
+                            <li><i class="fas fa-check"></i> Trademark Filing</li>
+                            <li><i class="fas fa-check"></i> Application Drafting</li>
+                            <li><i class="fas fa-check"></i> Priority Support</li>
+                            <li><i class="fas fa-check"></i> Expert Consultation</li>
+                        </ul>
+
+                        <a href="#" class="pricing-btn">
+                            Get Started
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Premium Plan -->
+
+                <div class="col-lg-4">
+                    <div class="pricing-card">
+
+                        <h4>Premium</h4>
+
+                        <div class="price">
+                            ₹3,999
+                        </div>
+
+                        <ul>
+                            <li><i class="fas fa-check"></i> Complete Assistance</li>
+                            <li><i class="fas fa-check"></i> Trademark Search</li>
+                            <li><i class="fas fa-check"></i> Filing & Documentation</li>
+                            <li><i class="fas fa-check"></i> Dedicated Manager</li>
+                            <li><i class="fas fa-check"></i> Premium Support</li>
+                        </ul>
+
+                        <a href="#" class="pricing-btn">
+                            Get Started
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="trademark-faq-section py-5">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <span>Frequently Asked Questions</span>
+                <h2>Trademark Registration FAQs</h2>
+                <p>
+                    Find answers to the most common questions about trademark registration.
+                </p>
+            </div>
+
+            <div class="faq-wrapper mt-5">
+
+                <div class="accordion" id="trademarkFaq">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq1">
+                                What is a Trademark?
+                            </button>
+                        </h2>
+
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#trademarkFaq">
+                            <div class="accordion-body">
+                                A trademark is a unique name, logo, symbol, or slogan
+                                that identifies and distinguishes your business or products.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq2">
+                                Who can apply for a trademark?
+                            </button>
+                        </h2>
+
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#trademarkFaq">
+                            <div class="accordion-body">
+                                Individuals, startups, proprietorships, LLPs,
+                                companies, and organizations can apply.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq3">
+                                How long is a trademark valid?
+                            </button>
+                        </h2>
+
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#trademarkFaq">
+                            <div class="accordion-body">
+                                A registered trademark remains valid for 10 years and can be renewed.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq4">
+                                Can I trademark my logo?
+                            </button>
+                        </h2>
+
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#trademarkFaq">
+                            <div class="accordion-body">
+                                Yes, logos, brand names, slogans, and symbols can all be trademarked.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq5">
+                                How much time does registration take?
+                            </button>
+                        </h2>
+
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#trademarkFaq">
+                            <div class="accordion-body">
+                                Trademark filing is completed quickly, while final registration may take several months
+                                depending on examination and approvals.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+
+            <div class="trademark-cta">
+
+                <h2>Ready To Protect Your Brand?</h2>
+
+                <p>
+                    Register your trademark today and secure your business identity with expert assistance.
+                </p>
+
+                <div class="cta-buttons">
+
+                    <a href="#" class="cta-btn-primary">
+                        Apply Now
+                    </a>
+
+                    <a href="tel:+919999999999" class="cta-btn-outline">
+                        Call Now
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/trademark-registration.js"></script>
+</body>
+
+</html>

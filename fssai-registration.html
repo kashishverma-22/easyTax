@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSSAI-registration</title>
+
+    <!-- bootstap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/fssai-registration.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="premium-navbar">
+        <div class="nav-container">
+              <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <!-- Navigation -->
+            <ul class="nav-menu">
+
+                <li><a href="index.html">Home</a></li>
+
+                <!-- Business Setup -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Business Setup
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="company-registration.html">Company Registration</a></li>
+                        <li><a class="dropdown-item" href="fssai-registration.html">FSSAI Registration</a></li>
+                        <li><a class="dropdown-item" href="iec-registration.html">IEC Certification</a></li>
+                        <li><a class="dropdown-item" href="iso-certification.html">ISO Certification</a></li>
+                    </ul>
+                </li>
+
+                <!-- Tax & Compliance -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Tax & Compliance
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="gst-registration.html">GST Registration</a></li>
+                        <li><a class="dropdown-item" href="gst-return-filing.html">GST Return Filing</a></li>
+                        <li><a class="dropdown-item" href="itr-filing.html">ITR Filing</a></li>
+                        <li><a class="dropdown-item" href="income-tax-calculator.html">Income Tax Calculator</a></li>
+                        <li><a class="dropdown-item" href="gst-calculator.html">GST Calculator</a></li>
+                    </ul>
+                </li>
+
+                <!-- Trademark -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Trademark & IP
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="trademark-registration.html">Trademark Registration</a></li>
+                    </ul>
+                </li>
+
+                <!-- Digital Services -->
+                <li class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown">
+                        Digital Services
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="website-designing.html">Website Designing</a></li>
+                        <li><a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="#" class="consult-btn">
+                Get Consultation
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+    </nav>
+
+    <section class="fssai-hero">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-7">
+
+                    <span class="fssai-badge">
+                        Food License Services
+                    </span>
+
+                    <h1>
+                        Get FSSAI Registration & Food License Online
+                    </h1>
+
+                    <p>
+                        Obtain your FSSAI Registration quickly with expert guidance.
+                        We help food manufacturers, restaurants, cloud kitchens,
+                        traders, distributors and startups get licensed with ease.
+                    </p>
+
+                    <div class="fssai-features">
+
+                        <div class="fssai-feature-item">
+                            <i class="fa-solid fa-file-shield"></i>
+                            <span>Government Approved</span>
+                        </div>
+
+                        <div class="fssai-feature-item">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>Fast Processing</span>
+                        </div>
+
+                        <div class="fssai-feature-item">
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>Food Safety Compliance</span>
+                        </div>
+
+                        <div class="fssai-feature-item">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <span>Expert Assistance</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5">
+
+                    <div class="fssai-form-card">
+
+                        <h3>Apply For FSSAI License</h3>
+
+                        <form id="fssaiForm">
+
+                            <input type="text" id="fssaiName" class="form-control" placeholder="Full Name">
+
+                            <small id="fssaiNameError"></small>
+
+                            <input type="tel" id="fssaiPhone" class="form-control" placeholder="Mobile Number">
+
+                            <small id="fssaiPhoneError"></small>
+
+                            <input type="email" id="fssaiEmail" class="form-control" placeholder="Email Address">
+
+                            <small id="fssaiEmailError"></small>
+
+                            <input type="text" id="businessType" class="form-control" placeholder="Food Business Type">
+
+                            <small id="businessTypeError"></small>
+
+                            <button type="submit">
+                                Get Free Consultation
+                            </button>
+
+                            <div id="fssaiSuccessMsg"></div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="fssai-overview py-5">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>Food Safety Compliance</span>
+                <h2>What Is FSSAI Registration?</h2>
+            </div>
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <div class="fssai-content">
+
+                        <p>
+                            FSSAI Registration is a mandatory certification issued
+                            by the Food Safety and Standards Authority of India
+                            (FSSAI) for businesses involved in food manufacturing,
+                            processing, storage, distribution, transportation,
+                            or sale of food products.
+                        </p>
+
+                        <p>
+                            It helps ensure food safety, legal compliance and
+                            enhances trust among customers and business partners.
+                        </p>
+
+                        <div class="overview-points">
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Legal Food Business Operation
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Consumer Trust & Credibility
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Government Compliance
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Easy Business Expansion
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="fssai-info-grid">
+
+                        <div class="fssai-info-box">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <h4>Food Safety</h4>
+                            <p>Follow food quality and safety standards.</p>
+                        </div>
+
+                        <div class="fssai-info-box">
+                            <i class="fa-solid fa-certificate"></i>
+                            <h4>Licensed Business</h4>
+                            <p>Operate legally with official approval.</p>
+                        </div>
+
+                        <div class="fssai-info-box">
+                            <i class="fa-solid fa-users"></i>
+                            <h4>Customer Trust</h4>
+                            <p>Build confidence among consumers.</p>
+                        </div>
+
+                        <div class="fssai-info-box">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <h4>Business Growth</h4>
+                            <p>Expand your food business nationwide.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="fssai-license-types py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Food License Categories</span>
+                <h2>Types of FSSAI Food License in India</h2>
+                <p>
+                    FSSAI provides different types of licenses based on annual
+                    turnover, business size and food business activities.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="license-card">
+
+                        <div class="license-icon">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+
+                        <h4>Basic Registration</h4>
+
+                        <p>
+                            Suitable for small food businesses and startups with
+                            annual turnover up to ₹12 Lakhs.
+                        </p>
+
+                        <ul>
+                            <li>Small Vendors</li>
+                            <li>Home Kitchens</li>
+                            <li>Petty Retailers</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="license-card">
+
+                        <div class="license-icon">
+                            <i class="fa-solid fa-shop"></i>
+                        </div>
+
+                        <h4>State License</h4>
+
+                        <p>
+                            Required for medium-sized food businesses having
+                            turnover between ₹12 Lakhs and ₹20 Crore.
+                        </p>
+
+                        <ul>
+                            <li>Restaurants</li>
+                            <li>Distributors</li>
+                            <li>Manufacturers</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="license-card">
+
+                        <div class="license-icon">
+                            <i class="fa-solid fa-industry"></i>
+                        </div>
+
+                        <h4>Central License</h4>
+
+                        <p>
+                            Mandatory for large food businesses with turnover
+                            exceeding ₹20 Crore.
+                        </p>
+
+                        <ul>
+                            <li>Import Export</li>
+                            <li>Large Industries</li>
+                            <li>Food Chains</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="license-card">
+
+                        <div class="license-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+
+                        <h4>Special Category</h4>
+
+                        <p>
+                            Applicable to e-commerce operators, airports,
+                            seaports and special food businesses.
+                        </p>
+
+                        <ul>
+                            <li>E-Commerce</li>
+                            <li>Airports</li>
+                            <li>Government Units</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="fssai-applicants py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Eligibility</span>
+                <h2>Who Is Required To Apply For FSSAI License?</h2>
+                <p>
+                    Every food business operator involved in manufacturing,
+                    processing, storage, distribution, transportation or sale
+                    of food products must obtain FSSAI Registration or License.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="applicant-card">
+                        <div class="applicant-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <h4>Restaurants</h4>
+                        <p>
+                            Dine-in restaurants, cafes, hotels and food outlets.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="applicant-card">
+                        <div class="applicant-icon">
+                            <i class="fa-solid fa-burger"></i>
+                        </div>
+                        <h4>Cloud Kitchens</h4>
+                        <p>
+                            Online food delivery and cloud kitchen businesses.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="applicant-card">
+                        <div class="applicant-icon">
+                            <i class="fa-solid fa-industry"></i>
+                        </div>
+                        <h4>Manufacturers</h4>
+                        <p>
+                            Food processing units and manufacturing companies.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="applicant-card">
+                        <div class="applicant-icon">
+                            <i class="fa-solid fa-shop"></i>
+                        </div>
+                        <h4>Retailers</h4>
+                        <p>
+                            Grocery stores, supermarkets and food retailers.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="applicant-card">
+                        <div class="applicant-icon">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                        <h4>Distributors</h4>
+                        <p>
+                            Food transporters, distributors and suppliers.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="applicant-card">
+                        <div class="applicant-icon">
+                            <i class="fa-solid fa-bread-slice"></i>
+                        </div>
+                        <h4>Bakeries</h4>
+                        <p>
+                            Bakeries, sweet shops and confectionery businesses.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="applicant-card">
+                        <div class="applicant-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <h4>Import Export</h4>
+                        <p>
+                            Food importers and exporters operating globally.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="applicant-card">
+                        <div class="applicant-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <h4>E-Commerce</h4>
+                        <p>
+                            Online food sellers and marketplace operators.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="fssai-eligibility py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Eligibility Criteria</span>
+                <h2>FSSAI Licence Registration Eligibility</h2>
+            </div>
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <div class="eligibility-content">
+
+                        <p>
+                            Any individual, startup, partnership firm, company,
+                            restaurant, cloud kitchen, food manufacturer, distributor,
+                            retailer or food-related business operating in India must
+                            obtain FSSAI Registration or License based on turnover
+                            and business activities.
+                        </p>
+
+                        <p>
+                            The type of FSSAI approval required depends on the size
+                            of the business, annual turnover, production capacity
+                            and nature of operations.
+                        </p>
+
+                        <div class="eligibility-points">
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Food Manufacturers
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Food Processors
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Restaurants & Cafes
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Online Food Sellers
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Importers & Exporters
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Distributors & Traders
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="eligibility-grid">
+
+                        <div class="eligibility-box">
+                            <i class="fa-solid fa-store"></i>
+                            <h4>Small Business</h4>
+                            <p>
+                                Businesses with turnover up to ₹12 Lakhs can apply
+                                for Basic FSSAI Registration.
+                            </p>
+                        </div>
+
+                        <div class="eligibility-box">
+                            <i class="fa-solid fa-shop"></i>
+                            <h4>Medium Business</h4>
+                            <p>
+                                Businesses with turnover above ₹12 Lakhs require
+                                State FSSAI License.
+                            </p>
+                        </div>
+
+                        <div class="eligibility-box">
+                            <i class="fa-solid fa-building"></i>
+                            <h4>Large Enterprises</h4>
+                            <p>
+                                Businesses with turnover exceeding ₹20 Crore require
+                                Central FSSAI License.
+                            </p>
+                        </div>
+
+                        <div class="eligibility-box">
+                            <i class="fa-solid fa-globe"></i>
+                            <h4>Import Export Units</h4>
+                            <p>
+                                Importers and exporters must obtain Central FSSAI
+                                License regardless of turnover.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="fssai-documents py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Required Documents</span>
+                <h2>Documents Required for FSSAI Registration</h2>
+                <p>
+                    Keep the following documents ready to ensure quick approval
+                    of your FSSAI Registration or Food License application.
+                </p>
+            </div>
+
+            <div class="documents-grid">
+
+                <div class="document-card">
+
+                    <div class="document-icon">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+
+                    <h4>Identity Proof</h4>
+
+                    <ul>
+                        <li>Aadhaar Card</li>
+                        <li>PAN Card</li>
+                        <li>Passport Size Photo</li>
+                        <li>Mobile Number</li>
+                        <li>Email Address</li>
+                    </ul>
+
+                </div>
+
+                <div class="document-card">
+
+                    <div class="document-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <h4>Business Documents</h4>
+
+                    <ul>
+                        <li>Business Registration Proof</li>
+                        <li>GST Certificate (If Applicable)</li>
+                        <li>Partnership Deed / MOA</li>
+                        <li>Shop Establishment Certificate</li>
+                        <li>Business Activity Details</li>
+                    </ul>
+
+                </div>
+
+                <div class="document-card">
+
+                    <div class="document-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <h4>Address Proof</h4>
+
+                    <ul>
+                        <li>Electricity Bill</li>
+                        <li>Water Bill</li>
+                        <li>Rent Agreement</li>
+                        <li>Property Tax Receipt</li>
+                        <li>NOC From Owner</li>
+                    </ul>
+
+                </div>
+
+                <div class="document-card">
+
+                    <div class="document-icon">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+
+                    <h4>Food Business Details</h4>
+
+                    <ul>
+                        <li>Food Category Details</li>
+                        <li>Product List</li>
+                        <li>Manufacturing Details</li>
+                        <li>Processing Unit Information</li>
+                        <li>Food Safety Plan</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="fssai-process py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Simple Process</span>
+                <h2>Food License Registration Process</h2>
+                <p>
+                    Our experts handle the entire FSSAI registration process,
+                    ensuring quick approval and hassle-free compliance.
+                </p>
+            </div>
+
+            <div class="process-timeline">
+
+                <div class="process-card">
+                    <div class="process-number">01</div>
+                    <div class="process-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h4>Consultation</h4>
+                    <p>
+                        Discuss your food business requirements with our FSSAI experts.
+                    </p>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-number">02</div>
+                    <div class="process-icon">
+                        <i class="fa-solid fa-folder-open"></i>
+                    </div>
+                    <h4>Document Collection</h4>
+                    <p>
+                        Submit all required documents for verification and processing.
+                    </p>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-number">03</div>
+                    <div class="process-icon">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+                    <h4>Application Filing</h4>
+                    <p>
+                        We prepare and submit your application on the FoSCoS portal.
+                    </p>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-number">04</div>
+                    <div class="process-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <h4>Verification</h4>
+                    <p>
+                        Authorities review documents and verify business details.
+                    </p>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-number">05</div>
+                    <div class="process-icon">
+                        <i class="fa-solid fa-check-double"></i>
+                    </div>
+                    <h4>Approval</h4>
+                    <p>
+                        Application gets approved after successful verification.
+                    </p>
+                </div>
+
+                <div class="process-card">
+                    <div class="process-number">06</div>
+                    <div class="process-icon">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <h4>License Issued</h4>
+                    <p>
+                        Receive your FSSAI Registration Certificate or Food License.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="fssai-benefits py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Why Choose FSSAI</span>
+                <h2>Benefits of FSSAI License Registration</h2>
+                <p>
+                    An FSSAI License not only ensures legal compliance but also
+                    helps businesses build trust, improve brand reputation and
+                    expand operations confidently.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-box">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </div>
+
+                        <h4>Legal Compliance</h4>
+
+                        <p>
+                            Operate your food business legally and avoid penalties
+                            by complying with FSSAI regulations.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-box">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+
+                        <h4>Customer Trust</h4>
+
+                        <p>
+                            Gain customer confidence by displaying your FSSAI
+                            registration number and license details.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-box">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+
+                        <h4>Brand Reputation</h4>
+
+                        <p>
+                            Improve business credibility and establish a strong
+                            professional image in the market.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-box">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+
+                        <h4>Business Expansion</h4>
+
+                        <p>
+                            Easily expand your food business across cities and
+                            states with proper licensing.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-box">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+
+                        <h4>Government Recognition</h4>
+
+                        <p>
+                            Get official approval from the Food Safety and
+                            Standards Authority of India.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="benefit-box">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <h4>Food Safety Assurance</h4>
+
+                        <p>
+                            Demonstrate your commitment to food quality, hygiene
+                            and consumer safety standards.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="fssai-renewal py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>License Renewal</span>
+                <h2>FoSCoS FSSAI License Renewal</h2>
+                <p>
+                    Renew your FSSAI License through the FoSCoS portal before
+                    expiry to avoid penalties, suspension, or interruption in
+                    business operations.
+                </p>
+            </div>
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+
+                    <div class="renewal-content">
+
+                        <h3>
+                            Why Is FSSAI Renewal Important?
+                        </h3>
+
+                        <p>
+                            Every FSSAI Registration or License is issued for a
+                            specific validity period. Businesses must renew their
+                            license before expiry to continue operating legally
+                            and maintain compliance with food safety regulations.
+                        </p>
+
+                        <div class="renewal-points">
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Avoid Heavy Penalties
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Continue Business Operations
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Maintain Legal Compliance
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Retain Existing License Number
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Online Renewal Through FoSCoS
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Quick Approval Process
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="renewal-grid">
+
+                        <div class="renewal-card">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <h4>Validity Period</h4>
+                            <p>
+                                FSSAI Licenses can be issued for 1 to 5 years.
+                            </p>
+                        </div>
+
+                        <div class="renewal-card">
+                            <i class="fa-solid fa-clock"></i>
+                            <h4>Renew Before Expiry</h4>
+                            <p>
+                                Apply for renewal at least 30 days before expiry.
+                            </p>
+                        </div>
+
+                        <div class="renewal-card">
+                            <i class="fa-solid fa-laptop"></i>
+                            <h4>Online Process</h4>
+                            <p>
+                                Renewal applications are filed through FoSCoS.
+                            </p>
+                        </div>
+
+                        <div class="renewal-card">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <h4>Compliance Protection</h4>
+                            <p>
+                                Keep your business legally compliant at all times.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="fssai-comparison py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Comparison Guide</span>
+                <h2>Difference Between FSSAI Registration and FSSAI License</h2>
+                <p>
+                    FSSAI Registration and FSSAI License serve different categories
+                    of food businesses based on turnover, business size and operations.
+                </p>
+            </div>
+
+            <div class="comparison-wrapper">
+
+                <div class="table-responsive">
+
+                    <table class="table comparison-table">
+
+                        <thead>
+                            <tr>
+                                <th>Particulars</th>
+                                <th>FSSAI Registration</th>
+                                <th>FSSAI License</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Business Size</td>
+                                <td>Small Food Businesses</td>
+                                <td>Medium & Large Businesses</td>
+                            </tr>
+
+                            <tr>
+                                <td>Annual Turnover</td>
+                                <td>Up to ₹12 Lakhs</td>
+                                <td>Above ₹12 Lakhs</td>
+                            </tr>
+
+                            <tr>
+                                <td>Certificate Type</td>
+                                <td>Basic Registration Certificate</td>
+                                <td>State / Central License</td>
+                            </tr>
+
+                            <tr>
+                                <td>Compliance Level</td>
+                                <td>Basic Compliance</td>
+                                <td>Higher Compliance Requirements</td>
+                            </tr>
+
+                            <tr>
+                                <td>Business Coverage</td>
+                                <td>Local Operations</td>
+                                <td>Statewide & Nationwide Operations</td>
+                            </tr>
+
+                            <tr>
+                                <td>Applicable For</td>
+                                <td>Small Vendors & Startups</td>
+                                <td>Restaurants, Manufacturers, Importers</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="fssai-penalty py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Legal Consequences</span>
+                <h2>Penalty for Non-Compliance</h2>
+                <p>
+                    Failure to comply with FSSAI regulations can result in heavy
+                    penalties, license suspension and legal action against food
+                    business operators.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="fssai-penalty-card">
+                        <div class="penalty-icon">
+                            <i class="fa-solid fa-ban"></i>
+                        </div>
+                        <h4>Operating Without License</h4>
+                        <p>
+                            Running a food business without valid FSSAI approval
+                            can attract severe penalties and prosecution.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="fssai-penalty-card">
+                        <div class="penalty-icon">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <h4>Misleading Information</h4>
+                        <p>
+                            False labeling or misleading claims may result in
+                            fines and regulatory action.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="fssai-penalty-card">
+                        <div class="penalty-icon">
+                            <i class="fa-solid fa-bacteria"></i>
+                        </div>
+                        <h4>Unsafe Food Practices</h4>
+                        <p>
+                            Supplying unsafe or contaminated food can lead to
+                            strict legal penalties.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="fssai-penalty-alert">
+
+                <h4>
+                    <i class="fa-solid fa-shield-exclamation"></i>
+                    Possible Consequences
+                </h4>
+
+                <div class="penalty-list">
+
+                    <div>Heavy Monetary Penalties</div>
+                    <div>License Suspension</div>
+                    <div>License Cancellation</div>
+                    <div>Business Closure Risk</div>
+                    <div>Legal Proceedings</div>
+                    <div>Loss of Customer Trust</div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="fssai-faq py-5">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Frequently Asked Questions</span>
+                <h2>FSSAI Registration FAQs</h2>
+            </div>
+
+            <div class="accordion" id="fssaiFaq">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            Is FSSAI Registration mandatory?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#fssaiFaq">
+                        <div class="accordion-body">
+                            Yes, every food business operator must obtain FSSAI Registration or License.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            How long does FSSAI Registration take?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#fssaiFaq">
+                        <div class="accordion-body">
+                            Generally it takes 7-15 working days depending on the application type.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            What is the validity of FSSAI License?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#fssaiFaq">
+                        <div class="accordion-body">
+                            FSSAI License can be obtained for 1 to 5 years.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            Can I renew my FSSAI License online?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#fssaiFaq">
+                        <div class="accordion-body">
+                            Yes, renewal can be completed online through the FoSCoS portal.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="fssai-cta py-5">
+        <div class="container">
+
+            <div class="fssai-cta-box">
+
+                <span>Get Started Today</span>
+
+                <h2>
+                    Apply For Your FSSAI Registration Online
+                </h2>
+
+                <p>
+                    Our experts simplify the entire registration process and help
+                    you obtain your FSSAI License quickly with complete compliance.
+                </p>
+
+                <div class="cta-buttons">
+
+                    <a href="#fssaiForm" class="btn-apply">
+                        Apply Now
+                    </a>
+
+                    <a href="tel:+919999999999" class="btn-call">
+                        Talk To Expert
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/fssai-registration.js"></script>
+</body>
+
+</html>
