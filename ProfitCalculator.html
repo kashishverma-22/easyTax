@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Profit Calculator</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Calculator</title>
 
-        <link rel="stylesheet" href="css/ProfitCalculator.css">
+    <link rel="stylesheet" href="css/ProfitCalculator.css">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
 
-    <body>
-        <nav class="premium-navbar">
+<body>
+    <nav class="premium-navbar">
         <div class="nav-container">
-              <div class="menu-toggle">
+            <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
 
@@ -98,60 +98,60 @@
 
         </div>
     </nav>
-        <section class="profit-section">
-            <div class="calculator-card">
+    <section class="profit-section">
+        <div class="calculator-card">
 
-                <div class="heading">
-                    <div class="icon-box">
-                        <i class="fa-solid fa-chart-line"></i>
-                    </div>
-
-                    <h2>Profit Calculator</h2>
-                    <p>Calculate your business profit, revenue and margin instantly.</p>
+            <div class="heading">
+                <div class="icon-box">
+                    <i class="fa-solid fa-chart-line"></i>
                 </div>
 
-                <div class="input-group">
-                    <label>Cost Price (₹)</label>
-                    <input type="number" id="costPrice" placeholder="Enter Cost Price">
+                <h2>Profit Calculator</h2>
+                <p>Calculate your business profit, revenue and margin instantly.</p>
+            </div>
+
+            <div class="input-group">
+                <label>Cost Price (₹)</label>
+                <input type="number" id="costPrice" placeholder="Enter Cost Price">
+            </div>
+
+            <div class="input-group">
+                <label>Selling Price (₹)</label>
+                <input type="number" id="sellingPrice" placeholder="Enter Selling Price">
+            </div>
+
+            <div class="input-group">
+                <label>Quantity</label>
+                <input type="number" id="quantity" placeholder="Enter Quantity">
+            </div>
+
+            <button onclick="calculateProfit()">
+                Calculate Profit
+            </button>
+
+            <div class="results">
+
+                <div class="result-card">
+                    <span>Total Revenue</span>
+                    <h3 id="revenue">₹0</h3>
                 </div>
 
-                <div class="input-group">
-                    <label>Selling Price (₹)</label>
-                    <input type="number" id="sellingPrice" placeholder="Enter Selling Price">
+                <div class="result-card profit-card">
+                    <span>Profit Amount</span>
+                    <h3 id="profit">₹0</h3>
                 </div>
 
-                <div class="input-group">
-                    <label>Quantity</label>
-                    <input type="number" id="quantity" placeholder="Enter Quantity">
-                </div>
-
-                <button onclick="calculateProfit()">
-                    Calculate Profit
-                </button>
-
-                <div class="results">
-
-                    <div class="result-card">
-                        <span>Total Revenue</span>
-                        <h3 id="revenue">₹0</h3>
-                    </div>
-
-                    <div class="result-card profit-card">
-                        <span>Profit Amount</span>
-                        <h3 id="profit">₹0</h3>
-                    </div>
-
-                    <div class="result-card">
-                        <span>Profit Margin</span>
-                        <h3 id="margin">0%</h3>
-                    </div>
-
+                <div class="result-card">
+                    <span>Profit Margin</span>
+                    <h3 id="margin">0%</h3>
                 </div>
 
             </div>
-        </section>
 
-        <script src="js/ProfitCalculator.js"></script>
-    </body>
+        </div>
+    </section>
+
+    <script src="js/ProfitCalculator.js"></script>
+</body>
 
 </html>
