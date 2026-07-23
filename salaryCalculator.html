@@ -4,29 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Easy Tax Filing</title>
+    <title>EMI Calculator</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/salaryCalculator.css">
     <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
-    
-     <nav class="premium-navbar">
+    <nav class="premium-navbar">
         <div class="nav-container">
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -66,7 +55,7 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                       
+
                         <li><a class="dropdown-item" href="gst-return-filing.html">GST Return Filing</a></li>
                         <li><a class="dropdown-item" href="itr-filing.html">ITR Filing</a></li>
                         <li><a class="dropdown-item" href="incomeTax.html">Income Tax Calculator</a></li>
@@ -112,152 +101,222 @@
 
         </div>
     </nav>
-   <!-- Breadcrumb -->
-    <section class="contact-banner">
+
+    <!--==========================================
+        Salary Calculator
+===========================================-->
+
+    <section class="salary-calculator-section">
+
         <div class="container">
-            <h1>Contact Us</h1>
-        </div>
-    </section>
 
-    <!-- Hero -->
-    <section class="contact-hero">
-        <div class="container">
-            <div class="row align-items-center gy-5">
+            <div class="section-title text-center mb-5">
 
-                <div class="col-lg-6" data-aos="fade-right">
+                <span>Financial Calculator</span>
 
-                    <span class="sub-title">
-                        Get In Touch
-                    </span>
+                <h2>Salary Calculator</h2>
 
-                    <h2>
-                        We'd Love To Hear From You
-                    </h2>
-
-                    <p>
-                        Need help with GST Registration,
-                        ITR Filing, Company Registration,
-                        Website Designing or Digital Marketing?
-                        Our experts are always ready to help you.
-                    </p>
-
-                    <a href="#contactForm" class="theme-btn">
-                        Contact Now
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                </div>
-
-                <div class="col-lg-6 text-center" data-aos="fade-left">
-
-                    <img src="images/contact.png"
-                        class="img-fluid contact-img"
-                        alt="Contact">
-
-                </div>
+                <p>
+                    Calculate your monthly take-home salary, deductions and tax instantly.
+                </p>
 
             </div>
-        </div>
-    </section>
 
-    <!-- Contact -->
-    <section class="contact-area">
-        <div class="container">
+            <div class="row g-4">
 
-            <div class="row gy-5">
+                <!--=========================
+                    Left Card
+            ==========================-->
 
-                <!-- Form -->
                 <div class="col-lg-7">
 
-                    <div class="contact-form" data-aos="fade-up">
+                    <div class="salary-card">
 
-                        <h3>Send Us A Message</h3>
+                        <!-- Annual CTC -->
 
-                        <form id="contactForm">
+                        <div class="mb-4">
 
-                            <div class="row">
+                            <label class="form-label">
 
-                                <div class="col-md-6">
-                                    <input type="text" id="name" class="form-control" placeholder="Full Name">
-                                    <small id="nameError"></small>
-                                </div>
+                                Annual CTC
 
-                                <div class="col-md-6">
-                                    <input type="email" id="email" class="form-control" placeholder="Email Address">
-                                    <small id="emailError"></small>
-                                </div>
+                            </label>
 
-                                <div class="col-md-6">
-                                    <input type="tel" id="phone" class="form-control" placeholder="Mobile Number">
-                                    <small id="phoneError"></small>
-                                </div>
+                            <div class="input-group">
 
-                                <div class="col-md-6">
-                                    <select id="service" class="form-select">
-                                        <option value="">Select Service</option>
-                                        <option>GST Registration</option>
-                                        <option>ITR Filing</option>
-                                        <option>Company Registration</option>
-                                        <option>Trademark Registration</option>
-                                        <option>Website Designing</option>
-                                        <option>Digital Marketing</option>
-                                    </select>
-                                </div>
+                                <span class="input-group-text">
+                                    ₹
+                                </span>
 
-                                <div class="col-12">
-                                    <textarea rows="6"
-                                        id="message"
-                                        class="form-control"
-                                        placeholder="Write Your Message"></textarea>
-                                </div>
+                                <input type="number" id="annualCTC" class="form-control" value="1500000">
 
                             </div>
 
-                            <button class="theme-btn mt-4" type="submit">
-                                Send Message
+                            <input type="range" id="salaryRange" class="form-range mt-3" min="100000" max="10000000"
+                                step="50000" value="1500000">
+
+                        </div>
+
+                        <!-- Bonus -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+
+                                Bonus / Variable Pay (%)
+
+                            </label>
+
+                            <input type="number" id="bonus" class="form-control" value="20">
+
+                        </div>
+
+                        <!-- Monthly Deduction -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+
+                                Monthly Deductions
+
+                            </label>
+
+                            <div class="input-group">
+
+                                <span class="input-group-text">
+                                    ₹
+                                </span>
+
+                                <input type="number" id="deduction" class="form-control" value="0">
+
+                            </div>
+
+                        </div>
+
+                        <!-- Tax Regime -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+
+                                Tax Regime
+
+                            </label>
+
+                            <select id="taxRegime" class="form-select">
+
+                                <option value="new">
+
+                                    New Regime
+
+                                </option>
+
+                                <option value="old">
+
+                                    Old Regime
+
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <!-- Buttons -->
+
+                        <div class="d-grid d-md-flex gap-3">
+
+                            <button class="btn calculate-btn" id="calculateSalary">
+
+                                Calculate Salary
+
                             </button>
 
-                        </form>
+                            <button class="btn reset-btn" id="resetSalary">
+
+                                Reset
+
+                            </button>
+
+                        </div>
 
                     </div>
 
                 </div>
 
-                <!-- Contact Info -->
+                <!--=========================
+                Right Result Card
+            ==========================-->
+
                 <div class="col-lg-5">
 
-                    <div class="contact-info" data-aos="fade-left">
+                    <div class="result-card">
 
-                        <div class="info-box">
-                            <i class="fa-solid fa-phone"></i>
-                            <div>
-                                <h5>Call Us</h5>
-                                <p>+91 9116856688</p>
-                            </div>
+                        <div class="result-item">
+
+                            <span>Total CTC</span>
+
+                            <strong id="totalCTC">
+                                ₹0
+                            </strong>
+
                         </div>
 
-                        <div class="info-box">
-                            <i class="fa-solid fa-envelope"></i>
-                            <div>
-                                <h5>Email</h5>
-                                <p>contact@easytaxfiling.com</p>
-                            </div>
+                        <div class="result-item">
+
+                            <span>Total Deductions</span>
+
+                            <strong id="totalDeduction">
+                                ₹0
+                            </strong>
+
                         </div>
 
-                        <div class="info-box">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <div>
-                                <h5>Office</h5>
-                                <p>Jaipur, Rajasthan</p>
-                            </div>
+                        <div class="result-item">
+
+                            <span>Income Tax</span>
+
+                            <strong id="incomeTax">
+                                ₹0
+                            </strong>
+
                         </div>
 
-                        <div class="info-box">
-                            <i class="fa-solid fa-clock"></i>
-                            <div>
-                                <h5>Working Hours</h5>
-                                <p>Monday - Saturday<br>9:00 AM - 7:00 PM</p>
-                            </div>
+                        <div class="result-item">
+
+                            <span>Annual Take Home</span>
+
+                            <strong id="annualTakeHome">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+                        <div class="take-home-box">
+
+                            <h6>
+
+                                Monthly Take Home
+
+                            </h6>
+
+                            <h3 id="monthlyTakeHome">
+
+                                ₹0
+
+                            </h3>
+
+                        </div>
+
+                        <div class="result-item">
+
+                            <span>Selected Regime</span>
+
+                            <strong id="selectedRegime">
+
+                                New Regime
+
+                            </strong>
+
                         </div>
 
                     </div>
@@ -266,22 +325,134 @@
 
             </div>
 
+            <!--=========================
+            Salary Breakdown
+        ==========================-->
+
+            <div class="salary-table-card mt-5">
+
+                <div class="table-responsive">
+
+                    <table class="table align-middle mb-0">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Particulars</th>
+
+                                <th>Monthly</th>
+
+                                <th>Yearly</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>Basic Salary</td>
+
+                                <td id="basicMonthly">₹0</td>
+
+                                <td id="basicYearly">₹0</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Bonus</td>
+
+                                <td id="bonusMonthly">₹0</td>
+
+                                <td id="bonusYearly">₹0</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Total Deductions</td>
+
+                                <td id="deductionMonthly">₹0</td>
+
+                                <td id="deductionYearly">₹0</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Income Tax</td>
+
+                                <td id="taxMonthly">₹0</td>
+
+                                <td id="taxYearly">₹0</td>
+
+                            </tr>
+
+                            <tr class="table-success">
+
+                                <td>
+
+                                    <strong>Net Take Home</strong>
+
+                                </td>
+
+                                <td id="netMonthly">
+
+                                    <strong>₹0</strong>
+
+                                </td>
+
+                                <td id="netYearly">
+
+                                    <strong>₹0</strong>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <!--=========================
+              Charts
+        ==========================-->
+
+            <div class="row g-4 mt-3">
+
+
+                <div class="col-lg-12">
+
+                    <div class="graph-card">
+
+                        <div class="graph-title">
+
+                            Salary Breakdown
+
+                        </div>
+
+                        <canvas id="salaryBarChart"></canvas>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
+
     </section>
 
-    <!-- Map -->
-    <section class="map-section">
-        <div class="container">
 
-            <iframe
-                src="https://www.google.com/maps/embed?pb="
-                loading="lazy">
-            </iframe>
 
-        </div>
-    </section>
-
-<footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="row gy-5">
                 <!-- Company -->
@@ -387,27 +558,9 @@
     </footer>
 
 
-
-
-
-
-
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true
-        });
-    </script>
-
-    <!-- JS -->
-    <script src="js/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/salaryCalculator.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

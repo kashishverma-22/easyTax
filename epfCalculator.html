@@ -4,29 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Easy Tax Filing</title>
+    <title>EMI Calculator</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/epfCalculator.css">
     <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
-    
-     <nav class="premium-navbar">
+    <nav class="premium-navbar">
         <div class="nav-container">
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -66,7 +55,7 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                       
+
                         <li><a class="dropdown-item" href="gst-return-filing.html">GST Return Filing</a></li>
                         <li><a class="dropdown-item" href="itr-filing.html">ITR Filing</a></li>
                         <li><a class="dropdown-item" href="incomeTax.html">Income Tax Calculator</a></li>
@@ -112,152 +101,222 @@
 
         </div>
     </nav>
-   <!-- Breadcrumb -->
-    <section class="contact-banner">
+
+    <section class="epf-calculator-section py-5">
+
         <div class="container">
-            <h1>Contact Us</h1>
-        </div>
-    </section>
 
-    <!-- Hero -->
-    <section class="contact-hero">
-        <div class="container">
-            <div class="row align-items-center gy-5">
+            <!-- Heading -->
 
-                <div class="col-lg-6" data-aos="fade-right">
+            <div class="section-title text-center mb-5">
 
-                    <span class="sub-title">
-                        Get In Touch
-                    </span>
+                <span>Financial Calculator</span>
 
-                    <h2>
-                        We'd Love To Hear From You
-                    </h2>
+                <h2>EPF Calculator</h2>
 
-                    <p>
-                        Need help with GST Registration,
-                        ITR Filing, Company Registration,
-                        Website Designing or Digital Marketing?
-                        Our experts are always ready to help you.
-                    </p>
-
-                    <a href="#contactForm" class="theme-btn">
-                        Contact Now
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                </div>
-
-                <div class="col-lg-6 text-center" data-aos="fade-left">
-
-                    <img src="images/contact.png"
-                        class="img-fluid contact-img"
-                        alt="Contact">
-
-                </div>
+                <p>
+                    Calculate your EPF savings, interest earned and retirement corpus instantly.
+                </p>
 
             </div>
-        </div>
-    </section>
 
-    <!-- Contact -->
-    <section class="contact-area">
-        <div class="container">
+            <div class="row g-4 align-items-start">
 
-            <div class="row gy-5">
+                <!-- Left Form -->
 
-                <!-- Form -->
-                <div class="col-lg-7">
+                <div class="col-lg-7 col-md-12">
 
-                    <div class="contact-form" data-aos="fade-up">
+                    <div class="epf-card">
 
-                        <h3>Send Us A Message</h3>
+                        <!-- Salary -->
 
-                        <form id="contactForm">
+                        <div class="mb-4">
 
-                            <div class="row">
+                            <label class="form-label">
 
-                                <div class="col-md-6">
-                                    <input type="text" id="name" class="form-control" placeholder="Full Name">
-                                    <small id="nameError"></small>
-                                </div>
+                                Basic Monthly Salary
 
-                                <div class="col-md-6">
-                                    <input type="email" id="email" class="form-control" placeholder="Email Address">
-                                    <small id="emailError"></small>
-                                </div>
+                            </label>
 
-                                <div class="col-md-6">
-                                    <input type="tel" id="phone" class="form-control" placeholder="Mobile Number">
-                                    <small id="phoneError"></small>
-                                </div>
+                            <div class="input-group">
 
-                                <div class="col-md-6">
-                                    <select id="service" class="form-select">
-                                        <option value="">Select Service</option>
-                                        <option>GST Registration</option>
-                                        <option>ITR Filing</option>
-                                        <option>Company Registration</option>
-                                        <option>Trademark Registration</option>
-                                        <option>Website Designing</option>
-                                        <option>Digital Marketing</option>
-                                    </select>
-                                </div>
+                                <span class="input-group-text">
+                                    ₹
+                                </span>
 
-                                <div class="col-12">
-                                    <textarea rows="6"
-                                        id="message"
-                                        class="form-control"
-                                        placeholder="Write Your Message"></textarea>
-                                </div>
+                                <input type="number" id="basicSalary" class="form-control" value="30000">
 
                             </div>
 
-                            <button class="theme-btn mt-4" type="submit">
-                                Send Message
+                            <input type="range" id="salaryRange" class="form-range mt-3" min="5000" max="300000"
+                                step="1000" value="30000">
+
+                        </div>
+
+                        <!-- Employee Contribution -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+
+                                Employee Contribution (%)
+
+                            </label>
+
+                            <div class="input-group">
+
+                                <input type="number" id="employeeContribution" class="form-control" value="12">
+
+                                <span class="input-group-text">
+                                    %
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Employer Contribution -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+
+                                Employer Contribution (%)
+
+                            </label>
+
+                            <div class="input-group">
+
+                                <input type="number" id="employerContribution" class="form-control" value="12">
+
+                                <span class="input-group-text">
+                                    %
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Interest -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+
+                                Annual Interest Rate
+
+                            </label>
+
+                            <div class="input-group">
+
+                                <input type="number" id="interestRate" class="form-control" value="8.25" step="0.1">
+
+                                <span class="input-group-text">
+                                    %
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Years -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+
+                                Investment Period (Years)
+
+                            </label>
+
+                            <div class="input-group">
+
+                                <input type="number" id="investmentYears" class="form-control" value="25">
+
+                                <span class="input-group-text">
+                                    Years
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Buttons -->
+
+                        <div class="d-grid d-md-flex gap-3">
+
+                            <button class="btn calculate-btn" id="calculateEPF">
+
+                                Calculate EPF
+
                             </button>
 
-                        </form>
+                            <button class="btn reset-btn" id="resetEPF">
+
+                                Reset
+
+                            </button>
+
+                        </div>
 
                     </div>
 
                 </div>
 
-                <!-- Contact Info -->
-                <div class="col-lg-5">
+                <!-- Result -->
 
-                    <div class="contact-info" data-aos="fade-left">
+                <div class="col-lg-5 col-md-12">
 
-                        <div class="info-box">
-                            <i class="fa-solid fa-phone"></i>
-                            <div>
-                                <h5>Call Us</h5>
-                                <p>+91 9116856688</p>
-                            </div>
+                    <div class="result-card">
+
+                        <div class="chart-box">
+
+                            <canvas id="epfChart"></canvas>
+
                         </div>
 
-                        <div class="info-box">
-                            <i class="fa-solid fa-envelope"></i>
-                            <div>
-                                <h5>Email</h5>
-                                <p>contact@easytaxfiling.com</p>
-                            </div>
-                        </div>
+                        <div class="emi-result">
 
-                        <div class="info-box">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <div>
-                                <h5>Office</h5>
-                                <p>Jaipur, Rajasthan</p>
-                            </div>
-                        </div>
+                            <div class="result-item">
 
-                        <div class="info-box">
-                            <i class="fa-solid fa-clock"></i>
-                            <div>
-                                <h5>Working Hours</h5>
-                                <p>Monday - Saturday<br>9:00 AM - 7:00 PM</p>
+                                <span>Employee Contribution</span>
+
+                                <strong id="employeeAmount">
+                                    ₹0
+                                </strong>
+
                             </div>
+
+                            <div class="result-item">
+
+                                <span>Employer Contribution</span>
+
+                                <strong id="employerAmount">
+                                    ₹0
+                                </strong>
+
+                            </div>
+
+                            <div class="result-item">
+
+                                <span>Interest Earned</span>
+
+                                <strong id="interestEarned">
+                                    ₹0
+                                </strong>
+
+                            </div>
+
+                            <div class="result-item">
+
+                                <span>Total EPF Corpus</span>
+
+                                <strong id="totalCorpus">
+                                    ₹0
+                                </strong>
+
+                            </div>
+
                         </div>
 
                     </div>
@@ -266,22 +325,40 @@
 
             </div>
 
+            <!-- Growth Chart -->
+
+            <div class="graph-card mt-5">
+
+                <div class="graph-title">
+
+                    EPF Growth Overview
+
+                </div>
+
+                <canvas id="growthChart"></canvas>
+
+            </div>
+
+            <!-- Contribution Chart -->
+
+            <div class="graph-card mt-4">
+
+                <div class="graph-title">
+
+                    Employee vs Employer Contribution
+
+                </div>
+
+                <canvas id="contributionChart"></canvas>
+
+            </div>
+
         </div>
+
     </section>
 
-    <!-- Map -->
-    <section class="map-section">
-        <div class="container">
 
-            <iframe
-                src="https://www.google.com/maps/embed?pb="
-                loading="lazy">
-            </iframe>
-
-        </div>
-    </section>
-
-<footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="row gy-5">
                 <!-- Company -->
@@ -387,27 +464,9 @@
     </footer>
 
 
-
-
-
-
-
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true
-        });
-    </script>
-
-    <!-- JS -->
-    <script src="js/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/epfCalculator.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

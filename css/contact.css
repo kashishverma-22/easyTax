@@ -28,6 +28,188 @@ body {
     background: var(--forth-color);
 }
 
+.premium-navbar {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 98%;
+    max-width: 1800px;
+    z-index: 999;
+    background: rgba(202, 227, 245, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 22px;
+}
+
+.logo img {
+    max-width: 200px;
+    width: 130px;
+    height: 50px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--fivth-color);
+    font-weight: 500;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.nav-menu a:hover {
+    color: #6e9af8;
+}
+
+.nav-menu .dropdown {
+    position: relative;
+}
+
+.nav-menu .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: .3s ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 250px;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .12);
+}
+
+.nav-menu .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background: #f3f7ff;
+    color: #2563eb;
+}
+
+.consult-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 10px 18px;
+    background: var(--fivth-color);
+    /* background: linear-gradient(135deg, #9ab9fc, #7baef7); */
+    color: var(--forth-color);
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: .3s;
+    /* box-shadow: 0 10px 30px rgba(37, 99, 235, .35); */
+}
+
+.consult-btn:hover {
+    transform: translateY(-3px);
+}
+
+.menu-toggle{
+    display:none;
+    font-size:24px;
+    cursor:pointer;
+    color:var(--fivth-color);
+}
+
+@media(max-width:991px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-menu{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#fff;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:0;
+        padding:15px;
+        border-radius:0 0 15px 15px;
+        box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+        opacity:0;
+        visibility:hidden;
+        transform:translateY(-15px);
+        transition:.3s;
+    }
+
+    .nav-menu.active{
+        opacity:1;
+        visibility:visible;
+        transform:translateY(0);
+    }
+
+    .nav-menu li{
+        width:100%;
+        padding:8px 0;
+    }
+
+    .nav-menu a{
+        display:block;
+        width:100%;
+    }
+
+    .consult-btn{
+        display:none;
+    }
+
+    /* Dropdown Mobile */
+
+    .nav-menu .dropdown-menu{
+        position:static;
+        opacity:1;
+        visibility:visible;
+        transform:none;
+        display:none;
+        width:100%;
+        box-shadow:none;
+        padding-left:15px;
+        margin-top:10px;
+    }
+
+    .nav-menu .dropdown.active .dropdown-menu{
+        display:block;
+    }
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -47,7 +229,8 @@ Banner
 
 .contact-banner {
     background: linear-gradient(135deg, #355872, #7AAACE);
-    padding: 80px 0;
+    padding: 50px 0;
+    margin-top: 90px;
     text-align: center;
     color: #fff;
 }
@@ -98,8 +281,9 @@ Hero
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: var(--primary);
-    color: var(--fivth-color);
+    background: var(--fivth-color);
+    color: #fff;
+
     padding: 12px 30px;
     border-radius: 50px;
     transition: .3s;
@@ -107,8 +291,9 @@ Hero
 }
 
 .theme-btn:hover {
-    background: var(--fivth-color);
-    color: #fff;
+    background: var(--primary);
+    color: var(--fivth-color);
+    border: 1px solid var(--fivth-color);
     transform: translateY(-3px);
 }
 
@@ -381,7 +566,9 @@ Responsive
         font-size: 15px;
         line-height: 28px;
     }
-    #contactForm input,select{
+
+    #contactForm input,
+    select {
         margin-top: 10px;
     }
 
